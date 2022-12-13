@@ -1,0 +1,27 @@
+# Use postgres/example user/password credentials
+version: '2.2.3'
+
+services:
+  web:
+    container_name: riskevaluator-backend
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - A_HOST      =   $DB_HOST
+        - A_PORT      =   $DB_PORT
+        - A_NAME      =   $DB_NAME
+        - A_USER      =   $DB_USER
+        - A_PASSWORD  =   $DB_PASSWORD
+    environment:
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT}
+      DB_NAME: ${DB_NAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_USER: ${DB_USER}
+    ports:
+      # Opens port 3306 on the container
+      - '8080:8080'
+    expose:
+      - '8080'
+    network_mode: "bridge"

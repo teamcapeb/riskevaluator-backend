@@ -1,0 +1,1142 @@
+[
+    {
+      "id_categorie": 60,
+      "id_evaluation": 11,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 62,
+      "id_evaluation": 11,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 64,
+      "id_evaluation": 11,
+      "nb_points": 29
+    },
+    {
+      "id_categorie": 61,
+      "id_evaluation": 11,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 54,
+      "id_evaluation": 12,
+      "nb_points": 50
+    },
+    {
+      "id_categorie": 42,
+      "id_evaluation": 12,
+      "nb_points": 70
+    },
+    {
+      "id_categorie": 47,
+      "id_evaluation": 12,
+      "nb_points": 50
+    },
+    {
+      "id_categorie": 53,
+      "id_evaluation": 12,
+      "nb_points": 60
+    },
+    {
+      "id_categorie": 41,
+      "id_evaluation": 12,
+      "nb_points": 33
+    },
+    {
+      "id_categorie": 50,
+      "id_evaluation": 12,
+      "nb_points": 57
+    },
+    {
+      "id_categorie": 55,
+      "id_evaluation": 12,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 46,
+      "id_evaluation": 12,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 43,
+      "id_evaluation": 12,
+      "nb_points": 36
+    },
+    {
+      "id_categorie": 49,
+      "id_evaluation": 12,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 58,
+      "id_evaluation": 12,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 44,
+      "id_evaluation": 12,
+      "nb_points": 74
+    },
+    {
+      "id_categorie": 51,
+      "id_evaluation": 12,
+      "nb_points": 50
+    },
+    {
+      "id_categorie": 56,
+      "id_evaluation": 12,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 52,
+      "id_evaluation": 12,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 48,
+      "id_evaluation": 12,
+      "nb_points": 50
+    },
+    {
+      "id_categorie": 38,
+      "id_evaluation": 13,
+      "nb_points": 29
+    },
+    {
+      "id_categorie": 37,
+      "id_evaluation": 13,
+      "nb_points": 38
+    },
+    {
+      "id_categorie": 35,
+      "id_evaluation": 13,
+      "nb_points": 18
+    },
+    {
+      "id_categorie": 36,
+      "id_evaluation": 13,
+      "nb_points": 27
+    },
+    {
+      "id_categorie": 34,
+      "id_evaluation": 13,
+      "nb_points": 25
+    },
+    {
+      "id_categorie": 39,
+      "id_evaluation": 13,
+      "nb_points": 20
+    },
+    {
+      "id_categorie": 58,
+      "id_evaluation": 14,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 48,
+      "id_evaluation": 14,
+      "nb_points": 63
+    },
+    {
+      "id_categorie": 44,
+      "id_evaluation": 14,
+      "nb_points": 50
+    },
+    {
+      "id_categorie": 54,
+      "id_evaluation": 14,
+      "nb_points": 69
+    },
+    {
+      "id_categorie": 43,
+      "id_evaluation": 14,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 52,
+      "id_evaluation": 14,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 46,
+      "id_evaluation": 14,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 42,
+      "id_evaluation": 14,
+      "nb_points": 30
+    },
+    {
+      "id_categorie": 41,
+      "id_evaluation": 14,
+      "nb_points": 33
+    },
+    {
+      "id_categorie": 51,
+      "id_evaluation": 14,
+      "nb_points": 69
+    },
+    {
+      "id_categorie": 56,
+      "id_evaluation": 14,
+      "nb_points": 40
+    },
+    {
+      "id_categorie": 50,
+      "id_evaluation": 14,
+      "nb_points": 57
+    },
+    {
+      "id_categorie": 53,
+      "id_evaluation": 14,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 38,
+      "id_evaluation": 15,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 34,
+      "id_evaluation": 15,
+      "nb_points": 17
+    },
+    {
+      "id_categorie": 37,
+      "id_evaluation": 15,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 35,
+      "id_evaluation": 15,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 39,
+      "id_evaluation": 15,
+      "nb_points": 20
+    },
+    {
+      "id_categorie": 36,
+      "id_evaluation": 15,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 36,
+      "id_evaluation": 16,
+      "nb_points": 27
+    },
+    {
+      "id_categorie": 35,
+      "id_evaluation": 16,
+      "nb_points": 24
+    },
+    {
+      "id_categorie": 34,
+      "id_evaluation": 16,
+      "nb_points": 33
+    },
+    {
+      "id_categorie": 39,
+      "id_evaluation": 16,
+      "nb_points": 40
+    },
+    {
+      "id_categorie": 38,
+      "id_evaluation": 16,
+      "nb_points": 21
+    },
+    {
+      "id_categorie": 37,
+      "id_evaluation": 16,
+      "nb_points": 19
+    },
+    {
+      "id_categorie": 48,
+      "id_evaluation": 17,
+      "nb_points": 38
+    },
+    {
+      "id_categorie": 43,
+      "id_evaluation": 17,
+      "nb_points": 36
+    },
+    {
+      "id_categorie": 56,
+      "id_evaluation": 17,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 53,
+      "id_evaluation": 17,
+      "nb_points": 50
+    },
+    {
+      "id_categorie": 50,
+      "id_evaluation": 17,
+      "nb_points": 43
+    },
+    {
+      "id_categorie": 51,
+      "id_evaluation": 17,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 49,
+      "id_evaluation": 17,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 58,
+      "id_evaluation": 17,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 47,
+      "id_evaluation": 17,
+      "nb_points": 50
+    },
+    {
+      "id_categorie": 41,
+      "id_evaluation": 17,
+      "nb_points": 33
+    },
+    {
+      "id_categorie": 42,
+      "id_evaluation": 17,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 46,
+      "id_evaluation": 17,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 54,
+      "id_evaluation": 17,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 34,
+      "id_evaluation": 18,
+      "nb_points": 25
+    },
+    {
+      "id_categorie": 39,
+      "id_evaluation": 18,
+      "nb_points": 20
+    },
+    {
+      "id_categorie": 36,
+      "id_evaluation": 18,
+      "nb_points": 13
+    },
+    {
+      "id_categorie": 37,
+      "id_evaluation": 18,
+      "nb_points": 46
+    },
+    {
+      "id_categorie": 35,
+      "id_evaluation": 18,
+      "nb_points": 18
+    },
+    {
+      "id_categorie": 38,
+      "id_evaluation": 18,
+      "nb_points": 14
+    },
+    {
+      "id_categorie": 34,
+      "id_evaluation": 19,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 36,
+      "id_evaluation": 19,
+      "nb_points": 20
+    },
+    {
+      "id_categorie": 35,
+      "id_evaluation": 19,
+      "nb_points": 12
+    },
+    {
+      "id_categorie": 38,
+      "id_evaluation": 19,
+      "nb_points": 14
+    },
+    {
+      "id_categorie": 39,
+      "id_evaluation": 19,
+      "nb_points": 40
+    },
+    {
+      "id_categorie": 37,
+      "id_evaluation": 19,
+      "nb_points": 19
+    },
+    {
+      "id_categorie": 36,
+      "id_evaluation": 20,
+      "nb_points": 13
+    },
+    {
+      "id_categorie": 37,
+      "id_evaluation": 20,
+      "nb_points": 8
+    },
+    {
+      "id_categorie": 39,
+      "id_evaluation": 20,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 38,
+      "id_evaluation": 20,
+      "nb_points": 21
+    },
+    {
+      "id_categorie": 34,
+      "id_evaluation": 20,
+      "nb_points": 25
+    },
+    {
+      "id_categorie": 35,
+      "id_evaluation": 20,
+      "nb_points": 6
+    },
+    {
+      "id_categorie": 34,
+      "id_evaluation": 21,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 37,
+      "id_evaluation": 21,
+      "nb_points": 19
+    },
+    {
+      "id_categorie": 35,
+      "id_evaluation": 21,
+      "nb_points": 12
+    },
+    {
+      "id_categorie": 36,
+      "id_evaluation": 21,
+      "nb_points": 20
+    },
+    {
+      "id_categorie": 39,
+      "id_evaluation": 21,
+      "nb_points": 40
+    },
+    {
+      "id_categorie": 38,
+      "id_evaluation": 21,
+      "nb_points": 14
+    },
+    {
+      "id_categorie": 48,
+      "id_evaluation": 22,
+      "nb_points": 60
+    },
+    {
+      "id_categorie": 42,
+      "id_evaluation": 22,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 46,
+      "id_evaluation": 22,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 44,
+      "id_evaluation": 22,
+      "nb_points": 22
+    },
+    {
+      "id_categorie": 53,
+      "id_evaluation": 22,
+      "nb_points": 50
+    },
+    {
+      "id_categorie": 58,
+      "id_evaluation": 22,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 54,
+      "id_evaluation": 22,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 51,
+      "id_evaluation": 22,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 52,
+      "id_evaluation": 22,
+      "nb_points": 43
+    },
+    {
+      "id_categorie": 43,
+      "id_evaluation": 22,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 41,
+      "id_evaluation": 22,
+      "nb_points": 33
+    },
+    {
+      "id_categorie": 50,
+      "id_evaluation": 22,
+      "nb_points": 29
+    },
+    {
+      "id_categorie": 56,
+      "id_evaluation": 22,
+      "nb_points": 40
+    },
+    {
+      "id_categorie": 46,
+      "id_evaluation": 23,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 48,
+      "id_evaluation": 23,
+      "nb_points": 60
+    },
+    {
+      "id_categorie": 50,
+      "id_evaluation": 23,
+      "nb_points": 29
+    },
+    {
+      "id_categorie": 58,
+      "id_evaluation": 23,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 44,
+      "id_evaluation": 23,
+      "nb_points": 22
+    },
+    {
+      "id_categorie": 41,
+      "id_evaluation": 23,
+      "nb_points": 33
+    },
+    {
+      "id_categorie": 53,
+      "id_evaluation": 23,
+      "nb_points": 50
+    },
+    {
+      "id_categorie": 42,
+      "id_evaluation": 23,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 54,
+      "id_evaluation": 23,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 52,
+      "id_evaluation": 23,
+      "nb_points": 43
+    },
+    {
+      "id_categorie": 56,
+      "id_evaluation": 23,
+      "nb_points": 40
+    },
+    {
+      "id_categorie": 51,
+      "id_evaluation": 23,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 43,
+      "id_evaluation": 23,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 44,
+      "id_evaluation": 24,
+      "nb_points": 22
+    },
+    {
+      "id_categorie": 50,
+      "id_evaluation": 24,
+      "nb_points": 29
+    },
+    {
+      "id_categorie": 52,
+      "id_evaluation": 24,
+      "nb_points": 43
+    },
+    {
+      "id_categorie": 53,
+      "id_evaluation": 24,
+      "nb_points": 50
+    },
+    {
+      "id_categorie": 58,
+      "id_evaluation": 24,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 56,
+      "id_evaluation": 24,
+      "nb_points": 40
+    },
+    {
+      "id_categorie": 41,
+      "id_evaluation": 24,
+      "nb_points": 33
+    },
+    {
+      "id_categorie": 42,
+      "id_evaluation": 24,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 54,
+      "id_evaluation": 24,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 46,
+      "id_evaluation": 24,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 48,
+      "id_evaluation": 24,
+      "nb_points": 60
+    },
+    {
+      "id_categorie": 43,
+      "id_evaluation": 24,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 51,
+      "id_evaluation": 24,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 44,
+      "id_evaluation": 25,
+      "nb_points": 22
+    },
+    {
+      "id_categorie": 51,
+      "id_evaluation": 25,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 52,
+      "id_evaluation": 25,
+      "nb_points": 43
+    },
+    {
+      "id_categorie": 50,
+      "id_evaluation": 25,
+      "nb_points": 29
+    },
+    {
+      "id_categorie": 43,
+      "id_evaluation": 25,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 58,
+      "id_evaluation": 25,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 56,
+      "id_evaluation": 25,
+      "nb_points": 40
+    },
+    {
+      "id_categorie": 53,
+      "id_evaluation": 25,
+      "nb_points": 50
+    },
+    {
+      "id_categorie": 42,
+      "id_evaluation": 25,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 41,
+      "id_evaluation": 25,
+      "nb_points": 33
+    },
+    {
+      "id_categorie": 48,
+      "id_evaluation": 25,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 46,
+      "id_evaluation": 25,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 54,
+      "id_evaluation": 25,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 35,
+      "id_evaluation": 26,
+      "nb_points": 12
+    },
+    {
+      "id_categorie": 39,
+      "id_evaluation": 26,
+      "nb_points": 20
+    },
+    {
+      "id_categorie": 34,
+      "id_evaluation": 26,
+      "nb_points": 8
+    },
+    {
+      "id_categorie": 37,
+      "id_evaluation": 26,
+      "nb_points": 15
+    },
+    {
+      "id_categorie": 38,
+      "id_evaluation": 26,
+      "nb_points": 7
+    },
+    {
+      "id_categorie": 36,
+      "id_evaluation": 26,
+      "nb_points": 27
+    },
+    {
+      "id_categorie": 39,
+      "id_evaluation": 27,
+      "nb_points": 20
+    },
+    {
+      "id_categorie": 37,
+      "id_evaluation": 27,
+      "nb_points": 19
+    },
+    {
+      "id_categorie": 38,
+      "id_evaluation": 27,
+      "nb_points": 7
+    },
+    {
+      "id_categorie": 36,
+      "id_evaluation": 27,
+      "nb_points": 27
+    },
+    {
+      "id_categorie": 35,
+      "id_evaluation": 27,
+      "nb_points": 6
+    },
+    {
+      "id_categorie": 34,
+      "id_evaluation": 27,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 41,
+      "id_evaluation": 28,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 58,
+      "id_evaluation": 28,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 48,
+      "id_evaluation": 28,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 56,
+      "id_evaluation": 28,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 53,
+      "id_evaluation": 28,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 54,
+      "id_evaluation": 28,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 42,
+      "id_evaluation": 28,
+      "nb_points": 35
+    },
+    {
+      "id_categorie": 50,
+      "id_evaluation": 28,
+      "nb_points": 86
+    },
+    {
+      "id_categorie": 51,
+      "id_evaluation": 28,
+      "nb_points": 50
+    },
+    {
+      "id_categorie": 43,
+      "id_evaluation": 28,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 46,
+      "id_evaluation": 28,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 52,
+      "id_evaluation": 28,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 35,
+      "id_evaluation": 29,
+      "nb_points": 47
+    },
+    {
+      "id_categorie": 39,
+      "id_evaluation": 29,
+      "nb_points": 40
+    },
+    {
+      "id_categorie": 36,
+      "id_evaluation": 29,
+      "nb_points": 13
+    },
+    {
+      "id_categorie": 34,
+      "id_evaluation": 29,
+      "nb_points": 17
+    },
+    {
+      "id_categorie": 37,
+      "id_evaluation": 29,
+      "nb_points": 42
+    },
+    {
+      "id_categorie": 38,
+      "id_evaluation": 29,
+      "nb_points": 21
+    },
+    {
+      "id_categorie": 34,
+      "id_evaluation": 30,
+      "nb_points": 17
+    },
+    {
+      "id_categorie": 35,
+      "id_evaluation": 30,
+      "nb_points": 47
+    },
+    {
+      "id_categorie": 38,
+      "id_evaluation": 30,
+      "nb_points": 21
+    },
+    {
+      "id_categorie": 36,
+      "id_evaluation": 30,
+      "nb_points": 13
+    },
+    {
+      "id_categorie": 37,
+      "id_evaluation": 30,
+      "nb_points": 42
+    },
+    {
+      "id_categorie": 39,
+      "id_evaluation": 30,
+      "nb_points": 40
+    },
+    {
+      "id_categorie": 56,
+      "id_evaluation": 31,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 47,
+      "id_evaluation": 31,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 57,
+      "id_evaluation": 31,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 44,
+      "id_evaluation": 31,
+      "nb_points": 74
+    },
+    {
+      "id_categorie": 48,
+      "id_evaluation": 31,
+      "nb_points": 89
+    },
+    {
+      "id_categorie": 46,
+      "id_evaluation": 31,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 52,
+      "id_evaluation": 31,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 41,
+      "id_evaluation": 31,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 43,
+      "id_evaluation": 31,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 42,
+      "id_evaluation": 31,
+      "nb_points": 70
+    },
+    {
+      "id_categorie": 53,
+      "id_evaluation": 31,
+      "nb_points": 60
+    },
+    {
+      "id_categorie": 49,
+      "id_evaluation": 31,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 50,
+      "id_evaluation": 31,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 51,
+      "id_evaluation": 31,
+      "nb_points": 90
+    },
+    {
+      "id_categorie": 54,
+      "id_evaluation": 31,
+      "nb_points": 70
+    },
+    {
+      "id_categorie": 58,
+      "id_evaluation": 31,
+      "nb_points": 100
+    },
+    {
+      "id_categorie": 37,
+      "id_evaluation": 64,
+      "nb_points": 35
+    },
+    {
+      "id_categorie": 36,
+      "id_evaluation": 64,
+      "nb_points": 40
+    },
+    {
+      "id_categorie": 38,
+      "id_evaluation": 64,
+      "nb_points": 7
+    },
+    {
+      "id_categorie": 39,
+      "id_evaluation": 64,
+      "nb_points": 20
+    },
+    {
+      "id_categorie": 35,
+      "id_evaluation": 64,
+      "nb_points": 35
+    },
+    {
+      "id_categorie": 34,
+      "id_evaluation": 64,
+      "nb_points": 42
+    },
+    {
+      "id_categorie": 37,
+      "id_evaluation": 65,
+      "nb_points": 27
+    },
+    {
+      "id_categorie": 39,
+      "id_evaluation": 65,
+      "nb_points": 40
+    },
+    {
+      "id_categorie": 35,
+      "id_evaluation": 65,
+      "nb_points": 18
+    },
+    {
+      "id_categorie": 38,
+      "id_evaluation": 65,
+      "nb_points": 29
+    },
+    {
+      "id_categorie": 36,
+      "id_evaluation": 65,
+      "nb_points": 33
+    },
+    {
+      "id_categorie": 34,
+      "id_evaluation": 65,
+      "nb_points": 33
+    },
+    {
+      "id_categorie": 39,
+      "id_evaluation": 66,
+      "nb_points": 40
+    },
+    {
+      "id_categorie": 38,
+      "id_evaluation": 66,
+      "nb_points": 21
+    },
+    {
+      "id_categorie": 37,
+      "id_evaluation": 66,
+      "nb_points": 27
+    },
+    {
+      "id_categorie": 35,
+      "id_evaluation": 66,
+      "nb_points": 12
+    },
+    {
+      "id_categorie": 36,
+      "id_evaluation": 66,
+      "nb_points": 33
+    },
+    {
+      "id_categorie": 34,
+      "id_evaluation": 66,
+      "nb_points": 17
+    },
+    {
+      "id_categorie": 39,
+      "id_evaluation": 67,
+      "nb_points": 60
+    },
+    {
+      "id_categorie": 38,
+      "id_evaluation": 67,
+      "nb_points": 29
+    },
+    {
+      "id_categorie": 37,
+      "id_evaluation": 67,
+      "nb_points": 4
+    },
+    {
+      "id_categorie": 36,
+      "id_evaluation": 67,
+      "nb_points": 67
+    },
+    {
+      "id_categorie": 34,
+      "id_evaluation": 67,
+      "nb_points": 8
+    },
+    {
+      "id_categorie": 35,
+      "id_evaluation": 67,
+      "nb_points": 0
+    },
+    {
+      "id_categorie": 37,
+      "id_evaluation": 68,
+      "nb_points": 12
+    },
+    {
+      "id_categorie": 38,
+      "id_evaluation": 68,
+      "nb_points": 21
+    },
+    {
+      "id_categorie": 39,
+      "id_evaluation": 68,
+      "nb_points": 60
+    },
+    {
+      "id_categorie": 35,
+      "id_evaluation": 68,
+      "nb_points": 18
+    },
+    {
+      "id_categorie": 36,
+      "id_evaluation": 68,
+      "nb_points": 47
+    },
+    {
+      "id_categorie": 34,
+      "id_evaluation": 68,
+      "nb_points": 33
+    },
+    {
+      "id_categorie": 36,
+      "id_evaluation": 69,
+      "nb_points": 33
+    },
+    {
+      "id_categorie": 38,
+      "id_evaluation": 69,
+      "nb_points": 14
+    },
+    {
+      "id_categorie": 37,
+      "id_evaluation": 69,
+      "nb_points": 19
+    },
+    {
+      "id_categorie": 34,
+      "id_evaluation": 69,
+      "nb_points": 17
+    },
+    {
+      "id_categorie": 39,
+      "id_evaluation": 69,
+      "nb_points": 40
+    },
+    {
+      "id_categorie": 35,
+      "id_evaluation": 69,
+      "nb_points": 12
+    }
+   ]

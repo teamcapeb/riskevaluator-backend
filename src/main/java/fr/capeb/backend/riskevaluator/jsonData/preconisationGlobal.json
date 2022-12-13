@@ -1,0 +1,44 @@
+[
+    {
+      "id_preconisation_g": 28,
+      "contenu": "l��quipe de d�veloppement a �t� tr�s efficace.\nMerci a tous les collaborateurs qui ont contribu� au bon fonctionnement du projet",
+      "viewifpourcentagescorelessthan": 101,
+      "id_questionnaire": 38
+    },
+    {
+      "id_preconisation_g": 22,
+      "contenu": "83% des recruteurs affirment que la marque employeur a un impact sur l�efficacit� du recrutement (LinkedIn, 2013).",
+      "viewifpourcentagescorelessthan": 60,
+      "id_questionnaire": 34
+    },
+    {
+      "id_preconisation_g": 23,
+      "contenu": "  Nous vous recommandons de prendre rendez-vous avec la CAPEB afin de r�pondre � vos questions et vous aider dans cette d�marche d�am�lioration de votre marque employeur.",
+      "viewifpourcentagescorelessthan": 70,
+      "id_questionnaire": 34
+    },
+    {
+      "id_preconisation_g": 24,
+      "contenu": "Lisez attentivement les pr�conisations par cat�gories afin de mieux cibler vos points forts et vos points faibles � am�liorer. ",
+      "viewifpourcentagescorelessthan": 70,
+      "id_questionnaire": 34
+    },
+    {
+      "id_preconisation_g": 25,
+      "contenu": "Aujourd�hui,  96% des candidats utilisent les sites internet des entreprises pour postuler (Hellowork, 2019-2020) et 81% des jeunes entre 16 et 25 ans ont un compte Instagram (Journal du Net, 2019).",
+      "viewifpourcentagescorelessthan": 80,
+      "id_questionnaire": 34
+    },
+    {
+      "id_preconisation_g": 21,
+      "contenu": "Il est n�cessaire de d�velopper en permanence votre communication interne (transparence/confiance entre salari�s et dirigeants) et externe (pr�sence sur internet via votre propre site et r�seaux sociaux). ",
+      "viewifpourcentagescorelessthan": 90,
+      "id_questionnaire": 34
+    },
+    {
+      "id_preconisation_g": 26,
+      "contenu": "Chaque ann�e, 8 millions de jours de travail sont perdus. Pour rappel, chaque ann�e, un travailleur sur 18 est victime d'un accident du travail, soit un accident toutes les deux minutes. \nEn moyenne, au cours de sa carri�re 1 salari� a 2,5 accidents du travail et cumulera 220 jours\nd�arr�t de travail. De plus, le secteur du BTP (B�timent et Travaux Publics) repr�sente plus de 19% des accidents mortels d'o� l'importance de la pr�vention des risques professionnels dans ce milieu. \nEn incluant les co�ts directs et indirects, les cons�quences financi�res des accidents du travail et des maladies professionnelles dans les m�tiers du BTP peuvent �tre estim�s � 5% des co�ts d'ouvrage.",
+      "viewifpourcentagescorelessthan": 70,
+      "id_questionnaire": 36
+    }
+   ]

@@ -1,0 +1,548 @@
+[
+    {
+      "id_question": 81,
+      "libelle_question": "Donnez-vous des consignes de s�curit� concernant l�organisation du chantier ?",
+      "score_max_possible": 7,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 43
+    },
+    {
+      "id_question": 63,
+      "libelle_question": "L�entreprise est-elle pr�sent�e sur votre page d�accueil�?",
+      "score_max_possible": 1,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 37
+    },
+    {
+      "id_question": 69,
+      "libelle_question": "Comment diffusez-vous vos offres d�emploi�?",
+      "score_max_possible": 10,
+      "q_type": "QUESTION_CHOIX_MULTIPLE",
+      "id_categorie": 38
+    },
+    {
+      "id_question": 54,
+      "libelle_question": "Proposez-vous les avantages sociaux suivant�:",
+      "score_max_possible": 5,
+      "q_type": "QUESTION_CHOIX_MULTIPLE",
+      "id_categorie": 34
+    },
+    {
+      "id_question": 76,
+      "libelle_question": "Le DUERP est-il actualis� r�guli�rement ? ",
+      "score_max_possible": 8,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 41
+    },
+    {
+      "id_question": 70,
+      "libelle_question": "Que peut trouver un candidat sur votre site internet�?",
+      "score_max_possible": 3,
+      "q_type": "QUESTION_CHOIX_MULTIPLE",
+      "id_categorie": 38
+    },
+    {
+      "id_question": 55,
+      "libelle_question": "Que mettez-vous en place pour am�liorer l�ambiance au travail ?",
+      "score_max_possible": 5,
+      "q_type": "QUESTION_CHOIX_MULTIPLE",
+      "id_categorie": 35
+    },
+    {
+      "id_question": 64,
+      "libelle_question": "Mettez-vous en avant les avantages pour les salari�s de votre entreprise�?",
+      "score_max_possible": 7,
+      "q_type": "QUESTION_CHOIX_MULTIPLE",
+      "id_categorie": 37
+    },
+    {
+      "id_question": 77,
+      "libelle_question": "Le DUERP est-il � la disposition des salari�s ? ",
+      "score_max_possible": 8,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 41
+    },
+    {
+      "id_question": 56,
+      "libelle_question": "Comment mettez-vous en valeur votre charte graphique ?",
+      "score_max_possible": 4,
+      "q_type": "QUESTION_CHOIX_MULTIPLE",
+      "id_categorie": 35
+    },
+    {
+      "id_question": 71,
+      "libelle_question": "Les t�ches � r�aliser par les salari�s sont-elles d�taill�es pr�cis�ment sur la fiche de poste ou le contrat de travail ?",
+      "score_max_possible": 1,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 38
+    },
+    {
+      "id_question": 83,
+      "libelle_question": "Un contr�le syst�matique des �quipements en hauteur (�chafaudages, �chelles..) est-il fait?",
+      "score_max_possible": 7,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 44
+    },
+    {
+      "id_question": 66,
+      "libelle_question": "Quelles cat�gories avez-vous dans les conditions d�emplois ?",
+      "score_max_possible": 4,
+      "q_type": "QUESTION_CHOIX_MULTIPLE",
+      "id_categorie": 37
+    },
+    {
+      "id_question": 57,
+      "libelle_question": "Quelles pratiques RSE avez-vous mises en place",
+      "score_max_possible": 8,
+      "q_type": "QUESTION_CHOIX_MULTIPLE",
+      "id_categorie": 35
+    },
+    {
+      "id_question": 72,
+      "libelle_question": "R�alisez-vous les entretiens individuels suivants ?",
+      "score_max_possible": 2,
+      "q_type": "QUESTION_CHOIX_MULTIPLE",
+      "id_categorie": 39
+    },
+    {
+      "id_question": 78,
+      "libelle_question": "Avant de r�aliser des travaux, demandez-vous syst�matiquement au client s�il y a la pr�sence d�amiante ?",
+      "score_max_possible": 8,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 42
+    },
+    {
+      "id_question": 53,
+      "libelle_question": "Proposez-vous les avantages �conomiques suivants:",
+      "score_max_possible": 7,
+      "q_type": "QUESTION_CHOIX_MULTIPLE",
+      "id_categorie": 34
+    },
+    {
+      "id_question": 73,
+      "libelle_question": "Comment formez-vous vos employ�s ?",
+      "score_max_possible": 3,
+      "q_type": "QUESTION_CHOIX_MULTIPLE",
+      "id_categorie": 39
+    },
+    {
+      "id_question": 67,
+      "libelle_question": "Votre site comporte-t-il :",
+      "score_max_possible": 6,
+      "q_type": "QUESTION_CHOIX_MULTIPLE",
+      "id_categorie": 37
+    },
+    {
+      "id_question": 58,
+      "libelle_question": "Sur quels r�seaux sociaux �tes-vous pr�sent ?",
+      "score_max_possible": 11,
+      "q_type": "QUESTION_CHOIX_MULTIPLE",
+      "id_categorie": 36
+    },
+    {
+      "id_question": 59,
+      "libelle_question": "A quelle fr�quence �tes-vous actifs sur les r�seaux sociaux�?",
+      "score_max_possible": 2,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 36
+    },
+    {
+      "id_question": 79,
+      "libelle_question": "Si la pr�sence d�amiante est av�r�e, des masques avec filtre P3 sont-ils � la disposition des travailleurs?",
+      "score_max_possible": 8,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 42
+    },
+    {
+      "id_question": 60,
+      "libelle_question": "De vos r�seaux sociaux, est-il possible d�acc�der � votre site internet?",
+      "score_max_possible": 1,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 36
+    },
+    {
+      "id_question": 68,
+      "libelle_question": "Comment est-il possible de prendre contact avec vous ?",
+      "score_max_possible": 5,
+      "q_type": "QUESTION_CHOIX_MULTIPLE",
+      "id_categorie": 37
+    },
+    {
+      "id_question": 61,
+      "libelle_question": "De votre site internet, est-il possible d�acc�der � vos r�seaux sociaux ?",
+      "score_max_possible": 1,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 36
+    },
+    {
+      "id_question": 65,
+      "libelle_question": "Pr�sentez-vous des t�moignages de salari� sur votre site�?",
+      "score_max_possible": 2,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 37
+    },
+    {
+      "id_question": 62,
+      "libelle_question": "Avez-vous un site internet�?",
+      "score_max_possible": 1,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 37
+    },
+    {
+      "id_question": 84,
+      "libelle_question": "Utilisez-vous une protection individuelle lors de travaux en hauteur (harnais avec un syst�me d�ancrage...) ?",
+      "score_max_possible": 7,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 44
+    },
+    {
+      "id_question": 80,
+      "libelle_question": "Les salari�s ont-ils fait la formation amiante (SS4) ?",
+      "score_max_possible": 7,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 42
+    },
+    {
+      "id_question": 93,
+      "libelle_question": "Effectuez-vous de la pr�vention sur les risques li�s au bruit ?",
+      "score_max_possible": 5,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 47
+    },
+    {
+      "id_question": 88,
+      "libelle_question": "Les salari�s ont-ils eu une formation concernant les travaux en hauteur?",
+      "score_max_possible": 6,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 44
+    },
+    {
+      "id_question": 85,
+      "libelle_question": "Les salari�s qui effectuent le montage ou d�montage des �chaffaudages ont-ils re�us une formation sp�cifique?",
+      "score_max_possible": 7,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 44
+    },
+    {
+      "id_question": 75,
+      "libelle_question": "Avez-vous le DUERP ( Document Unique d'Evaluation des Risques Professionnels) ?",
+      "score_max_possible": 8,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 41
+    },
+    {
+      "id_question": 91,
+      "libelle_question": "Pour les charges lourdes, utilisez-vous des engins de levage ou d'aide � la manutention ?",
+      "score_max_possible": 6,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 46
+    },
+    {
+      "id_question": 82,
+      "libelle_question": "D�placez-vous les mat�riaux au plus pr�s de la zone de travail ?",
+      "score_max_possible": 4,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 43
+    },
+    {
+      "id_question": 86,
+      "libelle_question": "Des protections collectives (filets, rambardes�) sont-elles mises en place pour �viter les risques de chute ?",
+      "score_max_possible": 8,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 44
+    },
+    {
+      "id_question": 89,
+      "libelle_question": "Vos �chafaudages sont-ils contr�l�s diff�remment en fonction des conditions m�t�orologiques ?",
+      "score_max_possible": 3,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 44
+    },
+    {
+      "id_question": 94,
+      "libelle_question": "Mettez-vous � disposition de vos salari�s des protections anti-bruit ?",
+      "score_max_possible": 5,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 47
+    },
+    {
+      "id_question": 90,
+      "libelle_question": "Privil�giez-vous un maximum le travail au sol gr�ce � diff�rents outils tels que des perches t�l�scopiques?",
+      "score_max_possible": 6,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 44
+    },
+    {
+      "id_question": 92,
+      "libelle_question": "Privil�giez-vous les outils et machines portatives dont le poids est r�duit ?",
+      "score_max_possible": 5,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 46
+    },
+    {
+      "id_question": 96,
+      "libelle_question": "Des protections collectives ou individuelles (filets, rambardes, harnais�) sont-elles mises en place ?",
+      "score_max_possible": 6,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 48
+    },
+    {
+      "id_question": 95,
+      "libelle_question": "L'�clairage sur les lieux de travail est-il suffisant ? ",
+      "score_max_possible": 3,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 48
+    },
+    {
+      "id_question": 98,
+      "libelle_question": "Mettez-vous en place des panneaux de signalisation pour la s�curit� des pi�tons (autres usagers susceptibles d'intervenir volontairement ou non sur le chantier) ? ",
+      "score_max_possible": 4,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 48
+    },
+    {
+      "id_question": 99,
+      "libelle_question": "Des masques anti-poussi�re sont-ils � la disposition des salari�s expos�s � des produits chimiques ou � la poussi�re ?",
+      "score_max_possible": 7,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 49
+    },
+    {
+      "id_question": 100,
+      "libelle_question": "Mettez-vous en place chaque ann�e un contr�le m�dical pour vos salari�s ?",
+      "score_max_possible": 3,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 49
+    },
+    {
+      "id_question": 87,
+      "libelle_question": "Limitez-vous le nombre de personnes pr�sentes sur un �chafaudage ?",
+      "score_max_possible": 6,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 44
+    },
+    {
+      "id_question": 97,
+      "libelle_question": "Lors d'un chantier important , un coordonateur SPS (S�curit� et Protection de la Sant�) est-il pr�sent ? ",
+      "score_max_possible": 5,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 48
+    },
+    {
+      "id_question": 104,
+      "libelle_question": "Vos salari�s disposent-ils d'une habilitation �lectrique ? ",
+      "score_max_possible": 7,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 51
+    },
+    {
+      "id_question": 130,
+      "libelle_question": "l'�quipe a �t� impliqu�?",
+      "score_max_possible": 5,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 60
+    },
+    {
+      "id_question": 101,
+      "libelle_question": "Quels sont les EPI (�quiments de Protection Individuelle) � la disposition des salari�s ? ",
+      "score_max_possible": 10,
+      "q_type": "QUESTION_CHOIX_MULTIPLE",
+      "id_categorie": 50
+    },
+    {
+      "id_question": 113,
+      "libelle_question": "Les travailleurs sont-ils form�s sur la dangerosit� des produits chimiques ? ",
+      "score_max_possible": 6,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 54
+    },
+    {
+      "id_question": 102,
+      "libelle_question": "Des gants de manutention adapt�s sont-ils � la disposition des travailleurs?",
+      "score_max_possible": 4,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 50
+    },
+    {
+      "id_question": 120,
+      "libelle_question": "Priviligiez-vous l'achat de dispositifs anti-vibrations ? ",
+      "score_max_possible": 4,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 57
+    },
+    {
+      "id_question": 103,
+      "libelle_question": "Les distances de s�curit� pour les lignes a�riennes sont-elles syst�matiquement respect�es (3m pour <50 000 Volt et 5m pour > 50 000 Volt) ? ",
+      "score_max_possible": 7,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 51
+    },
+    {
+      "id_question": 114,
+      "libelle_question": "Les salari�s ont-ils � disposition des �quipements de s�curit� pour �viter une potentielle contamination notamment avec la proximit� de lieux insalubres (�go�ts, caves, sanitaires...) ?",
+      "score_max_possible": 5,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 54
+    },
+    {
+      "id_question": 105,
+      "libelle_question": "Vos salari�s poss�dent-ils une formation �lectrique de type B0, BS, BR ou BP ?",
+      "score_max_possible": 7,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 51
+    },
+    {
+      "id_question": 137,
+      "libelle_question": "Comment avez vous g�rer la situation?",
+      "score_max_possible": 7,
+      "q_type": "QUESTION_CHOIX_MULTIPLE",
+      "id_categorie": 64
+    },
+    {
+      "id_question": 131,
+      "libelle_question": "l'�quipe a fini toutes les taches � faire?",
+      "score_max_possible": 10,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 60
+    },
+    {
+      "id_question": 106,
+      "libelle_question": "Lors de travaux hors-tension, la consignation �lectrique est-elle syst�matiquement r�alis�e ? ",
+      "score_max_possible": 7,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 51
+    },
+    {
+      "id_question": 115,
+      "libelle_question": "Limitez-vous l'utilisation de d�capants pour peinture ? ",
+      "score_max_possible": 4,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 54
+    },
+    {
+      "id_question": 107,
+      "libelle_question": "La totalit� des habilitations �lectriques sont-elles � jour ? ",
+      "score_max_possible": 8,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 51
+    },
+    {
+      "id_question": 121,
+      "libelle_question": "Vos salari�s alternent-ils les t�ches pour limiter leur temps d'exposition aux vibrations ? ",
+      "score_max_possible": 4,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 57
+    },
+    {
+      "id_question": 108,
+      "libelle_question": "Mettez-vous � disposition de vos salari�s des �quipements efficaces anti-�lectrocution ? ",
+      "score_max_possible": 6,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 51
+    },
+    {
+      "id_question": 116,
+      "libelle_question": "Les salari�s ont-ils acc�s aux FDS ( Fiche de Donn�es de S�curit�) fournies par les fournisseurs des agents chimiques ?",
+      "score_max_possible": 5,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 54
+    },
+    {
+      "id_question": 109,
+      "libelle_question": "Assurez-vous l'entretien p�riodique des engis conform�ment aux pr�scriptions du fabricant ? ",
+      "score_max_possible": 4,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 52
+    },
+    {
+      "id_question": 122,
+      "libelle_question": "Contr�lez-vous r�guli�rement les dispositifs anti-vibratifs de vos outils �lectroportatifs ?",
+      "score_max_possible": 3,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 57
+    },
+    {
+      "id_question": 110,
+      "libelle_question": "Les salari�s ont-ils la formation CACES (Certificat d'Aptitude � la Conduite En S�curit�) ?",
+      "score_max_possible": 7,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 52
+    },
+    {
+      "id_question": 117,
+      "libelle_question": "En cas de temps chaud, donnez-vous � vos salari�s une quantit� d'eau n�cessaire, soit minimum 3 litres d'eau par jour ?",
+      "score_max_possible": 3,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 55
+    },
+    {
+      "id_question": 111,
+      "libelle_question": "Proposez-vous d'�ventuelles formations � vos salari�s parmi les choix suivants? ",
+      "score_max_possible": 4,
+      "q_type": "QUESTION_CHOIX_MULTIPLE",
+      "id_categorie": 53
+    },
+    {
+      "id_question": 132,
+      "libelle_question": "l'�quipe a �t� impliqu�?",
+      "score_max_possible": 5,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 61
+    },
+    {
+      "id_question": 112,
+      "libelle_question": "Pour la r�alisation d'op�rations de soudage, les salari�s poss�dent-ils l'habilitation PGN et/ou PGP? ",
+      "score_max_possible": 6,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 53
+    },
+    {
+      "id_question": 118,
+      "libelle_question": "En cas de chaleur, laissez-vous � vos salari�s des temps de pause plus cons�quents ?",
+      "score_max_possible": 3,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 55
+    },
+    {
+      "id_question": 123,
+      "libelle_question": "Des pauses durant le temps de travail sont-elles possibles pour �viter des tendinites du coude, de l'�paule ou autres ? ",
+      "score_max_possible": 4,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 58
+    },
+    {
+      "id_question": 119,
+      "libelle_question": "Les salari�s ont-ils valid� le dipl�me du SST ? (Sauveteur Secouriste du Travail)",
+      "score_max_possible": 5,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 56
+    },
+    {
+      "id_question": 133,
+      "libelle_question": "l'�quipe a fini toutes les taches � faire?",
+      "score_max_possible": 5,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 61
+    },
+    {
+      "id_question": 129,
+      "libelle_question": "l'�quipe a fini toutes les taches � faire?",
+      "score_max_possible": 5,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 62
+    },
+    {
+      "id_question": 128,
+      "libelle_question": "l'�quipe a �t� impliqu�?",
+      "score_max_possible": 5,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 62
+    },
+    {
+      "id_question": 136,
+      "libelle_question": "La covid a impact� votre devloppement?",
+      "score_max_possible": 0,
+      "q_type": "QUESTION_CHOIX_UNIQUE",
+      "id_categorie": 64
+    }
+   ]
