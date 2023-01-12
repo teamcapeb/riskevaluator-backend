@@ -1,5 +1,6 @@
 package fr.capeb.backend.riskevaluator.model.dto;
 
+import fr.capeb.backend.riskevaluator.model.CategorieQuestion;
 import fr.capeb.backend.riskevaluator.model.Question;
 import fr.capeb.backend.riskevaluator.model.Reponse;
 import lombok.Data;
@@ -10,7 +11,9 @@ import org.hibernate.annotations.SortNatural;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Data
 @Getter
@@ -18,7 +21,7 @@ import java.util.Objects;
 @NoArgsConstructor
 public class ReponseDto {
     private Integer idReponse;
-    private Question question;
+    private PlainQuestionDto question;
     private Integer nbPoints;
     private String contenu;
 
@@ -26,7 +29,19 @@ public class ReponseDto {
         ReponseDto reponseDto = new ReponseDto();
         reponseDto.setIdReponse(reponse.getIdReponse());
         reponseDto.setContenu(reponse.getContenu());
-        reponseDto.setQuestion(reponse.getQuestion());
+        Question question = reponse.getQuestion();
+        PlainQuestionDto plainQuestionDto = new PlainQuestionDto();
+
+        plainQuestionDto.setTypeQuestion(question.getTypeQuestion());
+        plainQuestionDto.setScoreMaxPossibleQuestion(question.getScoreMaxPossibleQuestion());
+        CategorieQuestion categorieQuestion = question.getCategorieQuestion();
+        PlainCategorieQuestionDto plainCategorieQuestionDto = new PlainCategorieQuestionDto();
+        plainCategorieQuestionDto.setLibelle(categorieQuestion.getLibelle());
+        plainCategorieQuestionDto.setIdCategorie(categorieQuestion.getIdCategorie());
+        plainQuestionDto.setIdQuestion(question.getIdQuestion());
+        plainQuestionDto.setLibelleQuestion(question.getLibelleQuestion());
+
+        reponseDto.setQuestion(plainQuestionDto);
         reponseDto.setNbPoints(reponse.getNbPoints());
         return reponseDto;
     }

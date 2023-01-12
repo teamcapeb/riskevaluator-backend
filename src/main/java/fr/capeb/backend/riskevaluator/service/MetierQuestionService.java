@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
@@ -27,9 +28,7 @@ public class MetierQuestionService {
     }
 
     public List<MetierQuestion> getMetierQuestions(){
-        return StreamSupport
-                .stream(metierMetierQuestionRepository.findAll().spliterator(), false)
-                .collect(Collectors.toList());
+        return new ArrayList<>(metierMetierQuestionRepository.findAll());
     }
 
     public MetierQuestion getMetierQuestion(MetierQuestionPK id){

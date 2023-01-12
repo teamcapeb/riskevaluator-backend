@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
@@ -26,9 +27,7 @@ public class QuestionnaireService {
     }
 
     public List<Questionnaire> getQuestionnaires(){
-        return StreamSupport
-                .stream(questionnaireRepository.findAll().spliterator(), false)
-                .collect(Collectors.toList());
+        return new ArrayList<>(questionnaireRepository.findAll());
     }
 
     public Questionnaire getQuestionnaire(Integer id){

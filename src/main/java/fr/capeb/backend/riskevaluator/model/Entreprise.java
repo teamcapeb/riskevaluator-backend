@@ -2,6 +2,7 @@ package fr.capeb.backend.riskevaluator.model;
 
 import fr.capeb.backend.riskevaluator.model.dto.EntrepriseDto;
 import fr.capeb.backend.riskevaluator.model.dto.EvaluationDto;
+import fr.capeb.backend.riskevaluator.model.dto.PlainEvaluationDto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -44,7 +45,16 @@ public class Entreprise {
         Entreprise entreprise = new Entreprise();
         entreprise.setNomEntreprise(entrepriseDto.getNomEntreprise());
         entreprise.setEffectifEntreprise(entrepriseDto.getEffectifEntreprise());
-        entreprise.setEvaluations(entrepriseDto.getEvaluations());
+        Set<PlainEvaluationDto> plainEvaluationDtos = entrepriseDto.getEvaluations();
+        Set<Evaluation> evaluations1 = new HashSet<>();
+        plainEvaluationDtos.forEach(plainEvaluationDto -> {
+                    Evaluation evaluation = new Evaluation();
+                    evaluation.setIdEvaluation(plainEvaluationDto.getIdEvaluation());
+                    evaluation.setScoreGeneraleEvaluation(plainEvaluationDto.getScoreGeneraleEvaluation());
+                    evaluations1.add(evaluation);
+        });
+
+        entreprise.setEvaluations(evaluations1);
         entreprise.setAnneeDeCreation(entrepriseDto.getAnneeDeCreation());
         return entreprise;
     }

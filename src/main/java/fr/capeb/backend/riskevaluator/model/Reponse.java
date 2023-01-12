@@ -1,5 +1,8 @@
 package fr.capeb.backend.riskevaluator.model;
 
+import fr.capeb.backend.riskevaluator.model.dto.PlainCategorieQuestionDto;
+import fr.capeb.backend.riskevaluator.model.dto.PlainQuestionDto;
+import fr.capeb.backend.riskevaluator.model.dto.PlainReponseDto;
 import fr.capeb.backend.riskevaluator.model.dto.ReponseDto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,7 +11,9 @@ import org.hibernate.annotations.SortNatural;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "reponse")
@@ -38,7 +43,15 @@ public class Reponse {
     public static Reponse from(ReponseDto reponseDto){
         Reponse reponse = new Reponse();
         reponse.setContenu(reponseDto.getContenu());
-        reponse.setQuestion(reponseDto.getQuestion());
+        PlainQuestionDto plainQuestionDto = reponseDto.getQuestion();
+        Question question1 = new Question();
+        question1.setTypeQuestion(plainQuestionDto.getTypeQuestion());
+        CategorieQuestion categorieQuestion = new CategorieQuestion();
+        question1.setCategorieQuestion(categorieQuestion);
+        question1.setLibelleQuestion(plainQuestionDto.getLibelleQuestion());
+        question1.setScoreMaxPossibleQuestion(plainQuestionDto.getScoreMaxPossibleQuestion());
+        question1.setIdQuestion(plainQuestionDto.getIdQuestion());
+        reponse.setQuestion(question1);
         reponse.setNbPoints(reponseDto.getNbPoints());
         return reponse;
     }

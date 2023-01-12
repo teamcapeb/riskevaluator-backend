@@ -1,6 +1,8 @@
 package fr.capeb.backend.riskevaluator.model;
 
+import fr.capeb.backend.riskevaluator.model.dto.PlainQuestionnaireDto;
 import fr.capeb.backend.riskevaluator.model.dto.PreconisationGlobaleDto;
+import fr.capeb.backend.riskevaluator.model.dto.QuestionnaireDto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -33,7 +35,11 @@ public class PreconisationGlobale {
     public static PreconisationGlobale from(PreconisationGlobaleDto preconisationGlobaleDto){
         PreconisationGlobale preconisationGlobale = new PreconisationGlobale();
         preconisationGlobale.setViewIfPourcentageScoreLessThan(preconisationGlobaleDto.getViewIfPourcentageScoreLessThan());
-        preconisationGlobale.setQuestionnaire(preconisationGlobaleDto.getQuestionnaire());
+        Questionnaire questionnaire1 = new Questionnaire();
+        PlainQuestionnaireDto plainQuestionnaireDto = preconisationGlobaleDto.getQuestionnaire();
+        questionnaire1.setThematique(plainQuestionnaireDto.getThematique());
+        questionnaire1.setIdQuestionnaire(plainQuestionnaireDto.getIdQuestionnaire());
+        preconisationGlobale.setQuestionnaire(questionnaire1);
         preconisationGlobale.setContenu(preconisationGlobaleDto.getContenu());
         return preconisationGlobale;
     }

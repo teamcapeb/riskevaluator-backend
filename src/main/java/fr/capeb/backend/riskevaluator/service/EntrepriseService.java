@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
@@ -25,9 +26,7 @@ public class EntrepriseService {
     }
 
     public List<Entreprise> getEntreprises(){
-        return StreamSupport
-                .stream(entrepriseRepository.findAll().spliterator(), false)
-                .collect(Collectors.toList());
+        return new ArrayList<>(entrepriseRepository.findAll());
     }
 
     public Entreprise getEntreprise(Long id){

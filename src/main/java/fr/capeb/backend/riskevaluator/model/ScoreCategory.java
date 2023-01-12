@@ -1,6 +1,8 @@
 package fr.capeb.backend.riskevaluator.model;
 
 
+import fr.capeb.backend.riskevaluator.model.dto.PlainCategorieQuestionDto;
+import fr.capeb.backend.riskevaluator.model.dto.PlainEvaluationDto;
 import fr.capeb.backend.riskevaluator.model.dto.ScoreCategoryDto;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -8,6 +10,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -38,12 +42,19 @@ public class ScoreCategory {
 
     public static ScoreCategory from(ScoreCategoryDto scoreCategoryDto){
         ScoreCategory scoreCategory = new ScoreCategory();
-        scoreCategory.setCategorieQuestion(scoreCategoryDto.getCategorieQuestion());
+        PlainCategorieQuestionDto plainCategorieQuestionDto = scoreCategoryDto.getCategorieQuestion();
+        CategorieQuestion categorieQuestion = new CategorieQuestion();
+        categorieQuestion.setLibelle(plainCategorieQuestionDto.getLibelle());
+        categorieQuestion.setIdCategorie(plainCategorieQuestionDto.getIdCategorie());
+        scoreCategory.setCategorieQuestion(categorieQuestion);
         scoreCategory.setKey(scoreCategoryDto.getKey());
         scoreCategory.setNbPoints(scoreCategoryDto.getNbPoints());
-        scoreCategory.setEvaluation(scoreCategoryDto.getEvaluation());
+        PlainEvaluationDto plainEvaluationDto = scoreCategoryDto.getEvaluation();
+        Evaluation evaluation1 = new Evaluation();
+        evaluation1.setIdEvaluation(plainEvaluationDto.getIdEvaluation());
+        evaluation1.setScoreGeneraleEvaluation(plainEvaluationDto.getScoreGeneraleEvaluation());
+        scoreCategory.setEvaluation(evaluation1);
         return scoreCategory;
     }
-
 
 }

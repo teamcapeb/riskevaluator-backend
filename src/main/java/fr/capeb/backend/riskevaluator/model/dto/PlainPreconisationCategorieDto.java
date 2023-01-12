@@ -14,20 +14,14 @@ import javax.validation.constraints.NotNull;
 @Getter
 @Setter
 @NoArgsConstructor
-public class PreconisationCategorieDto {
+public class PlainPreconisationCategorieDto {
     private Integer idPreconisation;
-    private PlainCategorieQuestionDto categorieQuestion;
     private String contenu;
     private Integer viewIfPourcentageScoreLessThan;
 
-    public static PreconisationCategorieDto from(PreconisationCategorie preconisationCategorie){
-        PreconisationCategorieDto preconisationCategorieDto = new PreconisationCategorieDto();
+    public static PlainPreconisationCategorieDto from(PreconisationCategorie preconisationCategorie){
+        PlainPreconisationCategorieDto preconisationCategorieDto = new PlainPreconisationCategorieDto();
         preconisationCategorieDto.setIdPreconisation(preconisationCategorie.getIdPreconisation());
-        PlainCategorieQuestionDto plainCategorieQuestionDto = new PlainCategorieQuestionDto();
-        CategorieQuestion categorieQuestion1 = preconisationCategorie.getCategorieQuestion();
-        plainCategorieQuestionDto.setIdCategorie(categorieQuestion1.getIdCategorie());
-        plainCategorieQuestionDto.setLibelle(categorieQuestion1.getLibelle());
-        preconisationCategorieDto.setCategorieQuestion(plainCategorieQuestionDto);
         preconisationCategorieDto.setContenu(preconisationCategorie.getContenu());
         preconisationCategorieDto.setViewIfPourcentageScoreLessThan(preconisationCategorie.getViewIfPourcentageScoreLessThan());
         return preconisationCategorieDto;

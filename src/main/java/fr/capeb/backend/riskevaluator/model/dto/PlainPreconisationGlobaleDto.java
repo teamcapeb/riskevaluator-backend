@@ -2,7 +2,6 @@ package fr.capeb.backend.riskevaluator.model.dto;
 
 
 import fr.capeb.backend.riskevaluator.model.PreconisationGlobale;
-import fr.capeb.backend.riskevaluator.model.Question;
 import fr.capeb.backend.riskevaluator.model.Questionnaire;
 import lombok.Data;
 import lombok.Getter;
@@ -16,23 +15,16 @@ import javax.validation.constraints.NotNull;
 @Getter
 @Setter
 @NoArgsConstructor
-public class PreconisationGlobaleDto {
+public class PlainPreconisationGlobaleDto {
 
     private Integer idPreconisationG;
-    private PlainQuestionnaireDto questionnaire;
     private String contenu;
     private Integer viewIfPourcentageScoreLessThan;
 
-    public static PreconisationGlobaleDto from(PreconisationGlobale preconisationGlobale){
-        PreconisationGlobaleDto preconisationGlobaleDto = new PreconisationGlobaleDto();
+    public static PlainPreconisationGlobaleDto from(PreconisationGlobale preconisationGlobale){
+        PlainPreconisationGlobaleDto preconisationGlobaleDto = new PlainPreconisationGlobaleDto();
         preconisationGlobaleDto.setViewIfPourcentageScoreLessThan(preconisationGlobale.getViewIfPourcentageScoreLessThan());
         preconisationGlobaleDto.setIdPreconisationG(preconisationGlobale.getIdPreconisationG());
-
-        PlainQuestionnaireDto plainQuestionnaireDto = new PlainQuestionnaireDto();
-        Questionnaire questionnaire1 = preconisationGlobale.getQuestionnaire();
-        plainQuestionnaireDto.setIdQuestionnaire(questionnaire1.getIdQuestionnaire());
-        plainQuestionnaireDto.setThematique(questionnaire1.getThematique());
-        preconisationGlobaleDto.setQuestionnaire(plainQuestionnaireDto);
         preconisationGlobaleDto.setContenu(preconisationGlobale.getContenu());
         return preconisationGlobaleDto;
     }

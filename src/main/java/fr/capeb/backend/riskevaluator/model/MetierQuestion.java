@@ -1,6 +1,8 @@
 package fr.capeb.backend.riskevaluator.model;
 
 import fr.capeb.backend.riskevaluator.model.dto.MetierQuestionDto;
+import fr.capeb.backend.riskevaluator.model.dto.PlainMetierDto;
+import fr.capeb.backend.riskevaluator.model.dto.PlainQuestionDto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -30,8 +32,18 @@ public class MetierQuestion {
 
     public static MetierQuestion from(MetierQuestionDto metierQuestionDto){
         MetierQuestion metierQuestion = new MetierQuestion();
-        metierQuestion.setMetier(metierQuestionDto.getMetier());
-        metierQuestion.setQuestion(metierQuestionDto.getQuestion());
+        PlainMetierDto plainMetierDto = metierQuestionDto.getMetier();
+        Metier metier1 = new Metier();
+        metier1.setNomMetier(plainMetierDto.getNomMetier());
+        metier1.setIdMetier(plainMetierDto.getIdMetier());
+        metierQuestion.setMetier(metier1);
+        Question question1 = new Question();
+        PlainQuestionDto plainQuestionDto = metierQuestionDto.getQuestionDto();
+        question1.setLibelleQuestion(plainQuestionDto.getLibelleQuestion());
+        question1.setTypeQuestion(plainQuestionDto.getTypeQuestion());
+        question1.setIdQuestion(plainQuestionDto.getIdQuestion());
+        question1.setScoreMaxPossibleQuestion(plainQuestionDto.getScoreMaxPossibleQuestion());
+        metierQuestion.setQuestion(question1);
         metierQuestion.setKey(metierQuestionDto.getKey());
         return metierQuestion;
     }

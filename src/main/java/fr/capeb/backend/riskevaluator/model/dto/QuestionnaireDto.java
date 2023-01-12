@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -20,15 +21,34 @@ public class QuestionnaireDto {
 
     private Integer idQuestionnaire;
     private String thematique;
-    private Set<CategorieQuestion> categorieQuestions = new HashSet<>();
-    private Set<PreconisationGlobale> preconisationGlobales = new HashSet<>();
+    private Date date;
+    private Set<PlainCategorieQuestionDto> categorieQuestions = new HashSet<>();
+    private Set<PlainPreconisationGlobaleDto> preconisationGlobales = new HashSet<>();
 
     public static QuestionnaireDto from(Questionnaire questionnaire){
         QuestionnaireDto questionnaireDto = new QuestionnaireDto();
         questionnaireDto.setIdQuestionnaire(questionnaire.getIdQuestionnaire());
         questionnaireDto.setThematique(questionnaire.getThematique());
-        questionnaireDto.setCategorieQuestions(questionnaire.getCategorieQuestions());
-        questionnaireDto.setPreconisationGlobales(questionnaire.getPreconisationGlobales());
+        Set<PlainCategorieQuestionDto> plainCategorieQuestionDto = new HashSet<>();
+        Set<CategorieQuestion> categorieQuestion = questionnaire.getCategorieQuestions();
+        categorieQuestion.forEach(categorieQuestion1 -> {
+            PlainCategorieQuestionDto plainCategorieQuestionDto1 = new PlainCategorieQuestionDto();
+            plainCategorieQuestionDto1.setLibelle(categorieQuestion1.getLibelle());
+            plainCategorieQuestionDto1.setIdCategorie(categorieQuestion1.getIdCategorie());
+            plainCategorieQuestionDto.add(plainCategorieQuestionDto1);
+        });
+        questionnaireDto.setCategorieQuestions(plainCategorieQuestionDto);
+
+        Set<PlainPreconisationGlobaleDto> plainPreconisationGlobaleDtos = new HashSet<>();
+        Set<PreconisationGlobale> preconisationGlobale = questionnaire.getPreconisationGlobales();
+        preconisationGlobale.forEach(preconisationGlobale1 -> {
+            PlainPreconisationGlobaleDto plainPreconisationGlobaleDto = new PlainPreconisationGlobaleDto();
+            plainPreconisationGlobaleDto.setIdPreconisationG(preconisationGlobale1.getIdPreconisationG());
+            plainPreconisationGlobaleDto.setViewIfPourcentageScoreLessThan(preconisationGlobale1.getViewIfPourcentageScoreLessThan());
+            plainPreconisationGlobaleDto.setContenu(preconisationGlobale1.getContenu());
+            plainPreconisationGlobaleDtos.add(plainPreconisationGlobaleDto);
+        });
+        questionnaireDto.setPreconisationGlobales(plainPreconisationGlobaleDtos);
         return questionnaireDto;
     }
 

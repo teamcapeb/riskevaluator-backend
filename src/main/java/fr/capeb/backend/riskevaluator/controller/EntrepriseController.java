@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/entreprises")
 public class EntrepriseController {
 
@@ -33,7 +34,7 @@ public class EntrepriseController {
     public ResponseEntity<List<EntrepriseDto>> getEntreprises(){
         List<Entreprise> entreprises = entrepriseService.getEntreprises();
         List<EntrepriseDto> entreprisesDto = entreprises.stream().map(EntrepriseDto::from).collect(Collectors.toList());
-        return new ResponseEntity<>(entreprisesDto, HttpStatus.OK);
+        return ResponseEntity.ok(entreprisesDto);
     }
 
     @GetMapping(value = "{id}")

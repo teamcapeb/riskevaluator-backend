@@ -19,13 +19,23 @@ import javax.persistence.*;
 public class MetierQuestionDto {
 
     private MetierQuestionPK key = new MetierQuestionPK();
-    private Question question;
-    private Metier metier;
+    private PlainQuestionDto questionDto;
+    private PlainMetierDto metier;
 
     public static MetierQuestionDto from(MetierQuestion metierQuestion){
         MetierQuestionDto metierQuestionDto = new MetierQuestionDto();
-        metierQuestionDto.setMetier(metierQuestion.getMetier());
-        metierQuestionDto.setQuestion(metierQuestion.getQuestion());
+        PlainMetierDto plainMetierDto = new PlainMetierDto();
+        Metier metier1 = metierQuestion.getMetier();
+        plainMetierDto.setIdMetier(metier1.getIdMetier());
+        plainMetierDto.setNomMetier(metier1.getNomMetier());
+        metierQuestionDto.setMetier(plainMetierDto);
+        PlainQuestionDto plainQuestionDto = new PlainQuestionDto();
+        Question question = metierQuestion.getQuestion();
+        plainQuestionDto.setIdQuestion(question.getIdQuestion());
+        plainQuestionDto.setLibelleQuestion(question.getLibelleQuestion());
+        plainQuestionDto.setTypeQuestion(question.getTypeQuestion());
+        plainQuestionDto.setScoreMaxPossibleQuestion(question.getScoreMaxPossibleQuestion());
+        metierQuestionDto.setQuestionDto(plainQuestionDto);
         metierQuestionDto.setKey(metierQuestion.getKey());
         return metierQuestionDto;
     }

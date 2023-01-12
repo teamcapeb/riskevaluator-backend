@@ -15,27 +15,17 @@ import java.util.Set;
 @Getter
 @Setter
 @NoArgsConstructor
-public class EntrepriseDto {
+public class PlainEntrepriseDto {
     public Long noSiret;
     public String nomEntreprise;
     public Integer effectifEntreprise;
     public Integer anneeDeCreation;
-    private Set<PlainEvaluationDto> evaluations=new HashSet<>();
 
-    public static EntrepriseDto from(Entreprise entrepriseEntity){
-        EntrepriseDto entrepriseDto = new EntrepriseDto();
+    public static PlainEntrepriseDto from(Entreprise entrepriseEntity){
+        PlainEntrepriseDto entrepriseDto = new PlainEntrepriseDto();
         entrepriseDto.setNomEntreprise(entrepriseEntity.getNomEntreprise());
         entrepriseDto.setEffectifEntreprise(entrepriseEntity.getEffectifEntreprise());
         entrepriseDto.setNoSiret(entrepriseEntity.getNoSiret());
-        Set<PlainEvaluationDto> plainEvaluationDto = new HashSet<PlainEvaluationDto>();
-        Set<Evaluation> evaluation = entrepriseEntity.getEvaluations();
-        evaluation.forEach(evaluation1 -> {
-            PlainEvaluationDto plainEvaluationDto1 = new PlainEvaluationDto();
-            plainEvaluationDto1.setIdEvaluation(evaluation1.getIdEvaluation());
-            plainEvaluationDto1.setScoreGeneraleEvaluation(evaluation1.getScoreGeneraleEvaluation());
-            plainEvaluationDto.add(plainEvaluationDto1);
-        });
-        entrepriseDto.setEvaluations(plainEvaluationDto);
         entrepriseDto.setAnneeDeCreation(entrepriseEntity.getAnneeDeCreation());
         return entrepriseDto;
     }
