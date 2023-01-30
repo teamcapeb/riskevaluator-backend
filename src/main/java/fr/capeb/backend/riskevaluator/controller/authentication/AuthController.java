@@ -32,7 +32,7 @@
  import fr.capeb.backend.riskevaluator.service.serviceimpl.UserDetailsImpl;
 
  @RestController
- @RequestMapping("/api/auth")
+ @RequestMapping("/auth")
  public class AuthController {
  	@Autowired
  	AuthenticationManager authenticationManager;
