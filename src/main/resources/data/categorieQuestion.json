@@ -1,137 +1,137 @@
 [
-    {
-      "id_categorie": 34,
-      "libelle": "Avantages propos�s",
-      "id_questionnaire": 34
-    },
-    {
-      "id_categorie": 36,
-      "libelle": "R�seaux sociaux",
-      "id_questionnaire": 34
-    },
-    {
-      "id_categorie": 37,
-      "libelle": "Site internet",
-      "id_questionnaire": 34
-    },
-    {
-      "id_categorie": 38,
-      "libelle": "Recrutement",
-      "id_questionnaire": 34
-    },
-    {
-      "id_categorie": 39,
-      "libelle": "Evolutions / Perspectives",
-      "id_questionnaire": 34
-    },
-    {
-      "id_categorie": 35,
-      "libelle": "Valeur",
-      "id_questionnaire": 34
-    },
-    {
-      "id_categorie": 41,
-      "libelle": "DUERP",
-      "id_questionnaire": 36
-    },
-    {
-      "id_categorie": 42,
-      "libelle": "AMIANTE",
-      "id_questionnaire": 36
-    },
-    {
-      "id_categorie": 43,
-      "libelle": "ORGANISATION DU CHANTIER",
-      "id_questionnaire": 36
-    },
-    {
-      "id_categorie": 44,
-      "libelle": "CHUTES EN HAUTEUR",
-      "id_questionnaire": 36
-    },
-    {
-      "id_categorie": 46,
-      "libelle": "MANUTENTION",
-      "id_questionnaire": 36
-    },
-    {
-      "id_categorie": 47,
-      "libelle": "BRUIT",
-      "id_questionnaire": 36
-    },
-    {
-      "id_categorie": 48,
-      "libelle": "SECURITE",
-      "id_questionnaire": 36
-    },
-    {
-      "id_categorie": 49,
-      "libelle": "POUSSIERE",
-      "id_questionnaire": 36
-    },
-    {
-      "id_categorie": 50,
-      "libelle": "PROTECTION",
-      "id_questionnaire": 36
-    },
-    {
-      "id_categorie": 51,
-      "libelle": "�L�CTRICIT�",
-      "id_questionnaire": 36
-    },
-    {
-      "id_categorie": 52,
-      "libelle": "ENGINS",
-      "id_questionnaire": 36
-    },
-    {
-      "id_categorie": 53,
-      "libelle": "FORMATION",
-      "id_questionnaire": 36
-    },
-    {
-      "id_categorie": 54,
-      "libelle": "PRODUITS CHIMIQUES",
-      "id_questionnaire": 36
-    },
-    {
-      "id_categorie": 55,
-      "libelle": "CLIMAT",
-      "id_questionnaire": 36
-    },
-    {
-      "id_categorie": 56,
-      "libelle": "SECOURISME",
-      "id_questionnaire": 36
-    },
-    {
-      "id_categorie": 57,
-      "libelle": "VIBRATIONS",
-      "id_questionnaire": 36
-    },
-    {
-      "id_categorie": 58,
-      "libelle": "SANT�",
-      "id_questionnaire": 36
-    },
-    {
-      "id_categorie": 60,
-      "libelle": "Developpement back",
-      "id_questionnaire": 38
-    },
-    {
-      "id_categorie": 61,
-      "libelle": "D�veloppement front",
-      "id_questionnaire": 38
-    },
-    {
-      "id_categorie": 62,
-      "libelle": "Base de donn�e",
-      "id_questionnaire": 38
-    },
-    {
-      "id_categorie": 64,
-      "libelle": "Gestion de projet",
-      "id_questionnaire": 38
-    }
-   ]
+  {
+    "id_categorie": 34,
+    "libelle": "Avantages propos\u00e9s",
+    "id_questionnaire": 34
+  },
+  {
+    "id_categorie": 36,
+    "libelle": "R\u00e9seaux sociaux",
+    "id_questionnaire": 34
+  },
+  {
+    "id_categorie": 37,
+    "libelle": "Site internet",
+    "id_questionnaire": 34
+  },
+  {
+    "id_categorie": 38,
+    "libelle": "Recrutement",
+    "id_questionnaire": 34
+  },
+  {
+    "id_categorie": 39,
+    "libelle": "Evolutions / Perspectives",
+    "id_questionnaire": 34
+  },
+  {
+    "id_categorie": 35,
+    "libelle": "Valeur",
+    "id_questionnaire": 34
+  },
+  {
+    "id_categorie": 41,
+    "libelle": "DUERP",
+    "id_questionnaire": 36
+  },
+  {
+    "id_categorie": 42,
+    "libelle": "AMIANTE",
+    "id_questionnaire": 36
+  },
+  {
+    "id_categorie": 43,
+    "libelle": "ORGANISATION DU CHANTIER",
+    "id_questionnaire": 36
+  },
+  {
+    "id_categorie": 44,
+    "libelle": "CHUTES EN HAUTEUR",
+    "id_questionnaire": 36
+  },
+  {
+    "id_categorie": 46,
+    "libelle": "MANUTENTION",
+    "id_questionnaire": 36
+  },
+  {
+    "id_categorie": 47,
+    "libelle": "BRUIT",
+    "id_questionnaire": 36
+  },
+  {
+    "id_categorie": 48,
+    "libelle": "SECURITE",
+    "id_questionnaire": 36
+  },
+  {
+    "id_categorie": 49,
+    "libelle": "POUSSIERE",
+    "id_questionnaire": 36
+  },
+  {
+    "id_categorie": 50,
+    "libelle": "PROTECTION",
+    "id_questionnaire": 36
+  },
+  {
+    "id_categorie": 51,
+    "libelle": "\u00e9L\u00e9CTRICIT\u00e9",
+    "id_questionnaire": 36
+  },
+  {
+    "id_categorie": 52,
+    "libelle": "ENGINS",
+    "id_questionnaire": 36
+  },
+  {
+    "id_categorie": 53,
+    "libelle": "FORMATION",
+    "id_questionnaire": 36
+  },
+  {
+    "id_categorie": 54,
+    "libelle": "PRODUITS CHIMIQUES",
+    "id_questionnaire": 36
+  },
+  {
+    "id_categorie": 55,
+    "libelle": "CLIMAT",
+    "id_questionnaire": 36
+  },
+  {
+    "id_categorie": 56,
+    "libelle": "SECOURISME",
+    "id_questionnaire": 36
+  },
+  {
+    "id_categorie": 57,
+    "libelle": "VIBRATIONS",
+    "id_questionnaire": 36
+  },
+  {
+    "id_categorie": 58,
+    "libelle": "SANT\u00e9",
+    "id_questionnaire": 36
+  },
+  {
+    "id_categorie": 60,
+    "libelle": "Developpement back",
+    "id_questionnaire": 38
+  },
+  {
+    "id_categorie": 61,
+    "libelle": "D\u00e9veloppement front",
+    "id_questionnaire": 38
+  },
+  {
+    "id_categorie": 62,
+    "libelle": "Base de donn\u00e9e",
+    "id_questionnaire": 38
+  },
+  {
+    "id_categorie": 64,
+    "libelle": "Gestion de projet",
+    "id_questionnaire": 38
+  }
+]

@@ -1,54 +1,54 @@
 [
-    {
-      "id_metier": 23,
-      "nom_metier": "Ma�on"
-    },
-    {
-      "id_metier": 27,
-      "nom_metier": "Electricien"
-    },
-    {
-      "id_metier": 28,
-      "nom_metier": "Peintre en b�timent"
-    },
-    {
-      "id_metier": 29,
-      "nom_metier": "Tailleur de pierre"
-    },
-    {
-      "id_metier": 30,
-      "nom_metier": "Menuisier"
-    },
-    {
-      "id_metier": 31,
-      "nom_metier": "Charpentier"
-    },
-    {
-      "id_metier": 32,
-      "nom_metier": "Plombier"
-    },
-    {
-      "id_metier": 33,
-      "nom_metier": "Plaquiste / Pl�trier"
-    },
-    {
-      "id_metier": 34,
-      "nom_metier": "Chauffagiste"
-    },
-    {
-      "id_metier": 35,
-      "nom_metier": "Carreleur"
-    },
-    {
-      "id_metier": 36,
-      "nom_metier": "Couvreur Zingueur"
-    },
-    {
-      "id_metier": 25,
-      "nom_metier": "Serrurier / m�tallier"
-    },
-    {
-      "id_metier": 37,
-      "nom_metier": "Chef de projet DEV"
-    }
-   ]
+  {
+    "id_metier": 23,
+    "nom_metier": "Ma\u00e7on"
+  },
+  {
+    "id_metier": 27,
+    "nom_metier": "Electricien"
+  },
+  {
+    "id_metier": 28,
+    "nom_metier": "Peintre en b\u00e2timent"
+  },
+  {
+    "id_metier": 29,
+    "nom_metier": "Tailleur de pierre"
+  },
+  {
+    "id_metier": 30,
+    "nom_metier": "Menuisier"
+  },
+  {
+    "id_metier": 31,
+    "nom_metier": "Charpentier"
+  },
+  {
+    "id_metier": 32,
+    "nom_metier": "Plombier"
+  },
+  {
+    "id_metier": 33,
+    "nom_metier": "Plaquiste / Pl\u00e2trier"
+  },
+  {
+    "id_metier": 34,
+    "nom_metier": "Chauffagiste"
+  },
+  {
+    "id_metier": 35,
+    "nom_metier": "Carreleur"
+  },
+  {
+    "id_metier": 36,
+    "nom_metier": "Couvreur Zingueur"
+  },
+  {
+    "id_metier": 25,
+    "nom_metier": "Serrurier / m\u00e9tallier"
+  },
+  {
+    "id_metier": 37,
+    "nom_metier": "Chef de projet DEV"
+  }
+]
