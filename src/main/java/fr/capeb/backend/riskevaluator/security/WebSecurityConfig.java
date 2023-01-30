@@ -56,8 +56,8 @@ package fr.capeb.backend.riskevaluator.security;
  				"/swagger-ui/**",
  				"/api-docs/**",
  				"/swagger-ui.html",
- 				"/api/auth/**",
- 				"/api/**"
+ 				"/auth/**",
+ 				"/**"
  		};
 
  		http.cors().and().csrf().disable()
