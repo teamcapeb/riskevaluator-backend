@@ -33,7 +33,7 @@
  import fr.capeb.backend.riskevaluator.service.serviceimpl.UserDetailsImpl;
 
  @RestController
- @CrossOrigin(origins = "* a")
+ @CrossOrigin(origins = "*")
  @RequestMapping("/auth")
  public class AuthController {
  	@Autowired
