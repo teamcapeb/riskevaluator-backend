@@ -1,0 +1,1706 @@
+  [
+    {
+      "id_reponse": 101,
+      "contenu": "Prime",
+      "nb_points": 1,
+      "id_question": 53
+    },
+    {
+      "id_reponse": 102,
+      "contenu": "Heures suppl�mentaires",
+      "nb_points": 1,
+      "id_question": 53
+    },
+    {
+      "id_reponse": 103,
+      "contenu": "Avantages en nature (Tickets Restaurants, voiture de fonction�)",
+      "nb_points": 1,
+      "id_question": 53
+    },
+    {
+      "id_reponse": 104,
+      "contenu": "Participation aux frais de transport",
+      "nb_points": 1,
+      "id_question": 53
+    },
+    {
+      "id_reponse": 105,
+      "contenu": "Promotions",
+      "nb_points": 1,
+      "id_question": 53
+    },
+    {
+      "id_reponse": 106,
+      "contenu": "CSE",
+      "nb_points": 1,
+      "id_question": 53
+    },
+    {
+      "id_reponse": 107,
+      "contenu": "Autres",
+      "nb_points": 1,
+      "id_question": 53
+    },
+    {
+      "id_reponse": 108,
+      "contenu": "Aucun",
+      "nb_points": 0,
+      "id_question": 53
+    },
+    {
+      "id_reponse": 109,
+      "contenu": "Flexibilit� du temps de travail",
+      "nb_points": 1,
+      "id_question": 54
+    },
+    {
+      "id_reponse": 110,
+      "contenu": "Participation aux repas",
+      "nb_points": 1,
+      "id_question": 54
+    },
+    {
+      "id_reponse": 111,
+      "contenu": "Ch�ques vacances",
+      "nb_points": 1,
+      "id_question": 54
+    },
+    {
+      "id_reponse": 112,
+      "contenu": "Ch�ques cadeaux",
+      "nb_points": 1,
+      "id_question": 54
+    },
+    {
+      "id_reponse": 113,
+      "contenu": "Autres",
+      "nb_points": 1,
+      "id_question": 54
+    },
+    {
+      "id_reponse": 114,
+      "contenu": "Aucun",
+      "nb_points": 0,
+      "id_question": 54
+    },
+    {
+      "id_reponse": 115,
+      "contenu": "Salles de pause",
+      "nb_points": 1,
+      "id_question": 55
+    },
+    {
+      "id_reponse": 116,
+      "contenu": "R�unions r�guli�res",
+      "nb_points": 1,
+      "id_question": 55
+    },
+    {
+      "id_reponse": 117,
+      "contenu": "F�ter les �v�nements li�s aux salari�s ou � l�entreprise",
+      "nb_points": 1,
+      "id_question": 55
+    },
+    {
+      "id_reponse": 118,
+      "contenu": "Enqu�te aupr�s des salari�s",
+      "nb_points": 1,
+      "id_question": 55
+    },
+    {
+      "id_reponse": 119,
+      "contenu": "Autres",
+      "nb_points": 1,
+      "id_question": 55
+    },
+    {
+      "id_reponse": 120,
+      "contenu": "Aucun",
+      "nb_points": 0,
+      "id_question": 55
+    },
+    {
+      "id_reponse": 121,
+      "contenu": "Tenue de travail",
+      "nb_points": 1,
+      "id_question": 56
+    },
+    {
+      "id_reponse": 122,
+      "contenu": "V�hicules",
+      "nb_points": 1,
+      "id_question": 56
+    },
+    {
+      "id_reponse": 123,
+      "contenu": "Sur les chantiers (banderoles)",
+      "nb_points": 1,
+      "id_question": 56
+    },
+    {
+      "id_reponse": 124,
+      "contenu": "Autres",
+      "nb_points": 1,
+      "id_question": 56
+    },
+    {
+      "id_reponse": 125,
+      "contenu": "Aucun",
+      "nb_points": 0,
+      "id_question": 56
+    },
+    {
+      "id_reponse": 126,
+      "contenu": "Fournisseurs locaux",
+      "nb_points": 1,
+      "id_question": 57
+    },
+    {
+      "id_reponse": 127,
+      "contenu": "Fournisseurs d��nergies renouvelables",
+      "nb_points": 1,
+      "id_question": 57
+    },
+    {
+      "id_reponse": 128,
+      "contenu": "Recyclage des d�chets",
+      "nb_points": 1,
+      "id_question": 57
+    },
+    {
+      "id_reponse": 129,
+      "contenu": "Flexibilit� des horaires de travail",
+      "nb_points": 1,
+      "id_question": 57
+    },
+    {
+      "id_reponse": 130,
+      "contenu": "Embauche des personnes en situation de handicap",
+      "nb_points": 1,
+      "id_question": 57
+    },
+    {
+      "id_reponse": 131,
+      "contenu": "Promotion de l��galit� des salaires homme/femme",
+      "nb_points": 1,
+      "id_question": 57
+    },
+    {
+      "id_reponse": 132,
+      "contenu": "Promotion de la diversit�",
+      "nb_points": 1,
+      "id_question": 57
+    },
+    {
+      "id_reponse": 133,
+      "contenu": "Autres",
+      "nb_points": 1,
+      "id_question": 57
+    },
+    {
+      "id_reponse": 134,
+      "contenu": "Aucun",
+      "nb_points": 0,
+      "id_question": 57
+    },
+    {
+      "id_reponse": 135,
+      "contenu": "Instagram",
+      "nb_points": 2,
+      "id_question": 58
+    },
+    {
+      "id_reponse": 136,
+      "contenu": "Facebook",
+      "nb_points": 2,
+      "id_question": 58
+    },
+    {
+      "id_reponse": 137,
+      "contenu": "Snapchat",
+      "nb_points": 1,
+      "id_question": 58
+    },
+    {
+      "id_reponse": 138,
+      "contenu": "LinkedIn",
+      "nb_points": 2,
+      "id_question": 58
+    },
+    {
+      "id_reponse": 139,
+      "contenu": "Twitter",
+      "nb_points": 1,
+      "id_question": 58
+    },
+    {
+      "id_reponse": 140,
+      "contenu": "Viadeo",
+      "nb_points": 2,
+      "id_question": 58
+    },
+    {
+      "id_reponse": 141,
+      "contenu": "Autres",
+      "nb_points": 1,
+      "id_question": 58
+    },
+    {
+      "id_reponse": 142,
+      "contenu": "Aucun",
+      "nb_points": 0,
+      "id_question": 58
+    },
+    {
+      "id_reponse": 143,
+      "contenu": ">1 fois par semaine",
+      "nb_points": 2,
+      "id_question": 59
+    },
+    {
+      "id_reponse": 144,
+      "contenu": ">1 fois par mois",
+      "nb_points": 1,
+      "id_question": 59
+    },
+    {
+      "id_reponse": 145,
+      "contenu": "< 1 fois par mois",
+      "nb_points": 0,
+      "id_question": 59
+    },
+    {
+      "id_reponse": 146,
+      "contenu": "Pas concern�",
+      "nb_points": 2,
+      "id_question": 59
+    },
+    {
+      "id_reponse": 147,
+      "contenu": "Oui",
+      "nb_points": 1,
+      "id_question": 60
+    },
+    {
+      "id_reponse": 148,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 60
+    },
+    {
+      "id_reponse": 149,
+      "contenu": "Pas concern�",
+      "nb_points": 1,
+      "id_question": 60
+    },
+    {
+      "id_reponse": 150,
+      "contenu": "Oui",
+      "nb_points": 1,
+      "id_question": 61
+    },
+    {
+      "id_reponse": 151,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 61
+    },
+    {
+      "id_reponse": 152,
+      "contenu": "Pas concern�",
+      "nb_points": 1,
+      "id_question": 61
+    },
+    {
+      "id_reponse": 153,
+      "contenu": "Oui",
+      "nb_points": 1,
+      "id_question": 62
+    },
+    {
+      "id_reponse": 154,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 62
+    },
+    {
+      "id_reponse": 155,
+      "contenu": "Oui",
+      "nb_points": 1,
+      "id_question": 63
+    },
+    {
+      "id_reponse": 156,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 63
+    },
+    {
+      "id_reponse": 157,
+      "contenu": "Pas concern�",
+      "nb_points": 0,
+      "id_question": 63
+    },
+    {
+      "id_reponse": 158,
+      "contenu": "Primes",
+      "nb_points": 1,
+      "id_question": 64
+    },
+    {
+      "id_reponse": 159,
+      "contenu": "Promotions",
+      "nb_points": 1,
+      "id_question": 64
+    },
+    {
+      "id_reponse": 160,
+      "contenu": "Bonus",
+      "nb_points": 1,
+      "id_question": 64
+    },
+    {
+      "id_reponse": 161,
+      "contenu": "Cong�s parentales",
+      "nb_points": 1,
+      "id_question": 64
+    },
+    {
+      "id_reponse": 162,
+      "contenu": "Cong� maternit�",
+      "nb_points": 1,
+      "id_question": 64
+    },
+    {
+      "id_reponse": 163,
+      "contenu": "Valeurs de l�entreprise",
+      "nb_points": 1,
+      "id_question": 64
+    },
+    {
+      "id_reponse": 164,
+      "contenu": "Autres",
+      "nb_points": 1,
+      "id_question": 64
+    },
+    {
+      "id_reponse": 165,
+      "contenu": "Aucun",
+      "nb_points": 0,
+      "id_question": 64
+    },
+    {
+      "id_reponse": 166,
+      "contenu": "Oui",
+      "nb_points": 2,
+      "id_question": 65
+    },
+    {
+      "id_reponse": 167,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 65
+    },
+    {
+      "id_reponse": 168,
+      "contenu": "Pas concern�",
+      "nb_points": 2,
+      "id_question": 65
+    },
+    {
+      "id_reponse": 169,
+      "contenu": "Possibilit�s d��volution de carri�re?",
+      "nb_points": 1,
+      "id_question": 66
+    },
+    {
+      "id_reponse": 170,
+      "contenu": "Possibilit�s de formation",
+      "nb_points": 1,
+      "id_question": 66
+    },
+    {
+      "id_reponse": 171,
+      "contenu": "Possibilit� d�individualiser son salaire selon sa performance",
+      "nb_points": 1,
+      "id_question": 66
+    },
+    {
+      "id_reponse": 172,
+      "contenu": "Autres",
+      "nb_points": 1,
+      "id_question": 66
+    },
+    {
+      "id_reponse": 173,
+      "contenu": "Aucun",
+      "nb_points": 0,
+      "id_question": 66
+    },
+    {
+      "id_reponse": 174,
+      "contenu": "Charte graphique",
+      "nb_points": 1,
+      "id_question": 67
+    },
+    {
+      "id_reponse": 175,
+      "contenu": "Barre de recherche",
+      "nb_points": 1,
+      "id_question": 67
+    },
+    {
+      "id_reponse": 176,
+      "contenu": "Classement des informations sous forme de rubriques pour naviguer facilement",
+      "nb_points": 1,
+      "id_question": 67
+    },
+    {
+      "id_reponse": 177,
+      "contenu": "Un espace d�di� au recrutement",
+      "nb_points": 1,
+      "id_question": 67
+    },
+    {
+      "id_reponse": 178,
+      "contenu": "Photos des locaux",
+      "nb_points": 1,
+      "id_question": 67
+    },
+    {
+      "id_reponse": 179,
+      "contenu": "Photos du personnel",
+      "nb_points": 1,
+      "id_question": 67
+    },
+    {
+      "id_reponse": 180,
+      "contenu": "Aucun",
+      "nb_points": 0,
+      "id_question": 67
+    },
+    {
+      "id_reponse": 181,
+      "contenu": "Formulaire de contact",
+      "nb_points": 1,
+      "id_question": 68
+    },
+    {
+      "id_reponse": 182,
+      "contenu": "Adresse e-mail",
+      "nb_points": 1,
+      "id_question": 68
+    },
+    {
+      "id_reponse": 183,
+      "contenu": "T�l�phone",
+      "nb_points": 1,
+      "id_question": 68
+    },
+    {
+      "id_reponse": 184,
+      "contenu": "Adresse postale",
+      "nb_points": 1,
+      "id_question": 68
+    },
+    {
+      "id_reponse": 185,
+      "contenu": "R�seaux sociaux",
+      "nb_points": 1,
+      "id_question": 68
+    },
+    {
+      "id_reponse": 186,
+      "contenu": "Aucun",
+      "nb_points": 0,
+      "id_question": 68
+    },
+    {
+      "id_reponse": 187,
+      "contenu": "Cooptation",
+      "nb_points": 1,
+      "id_question": 69
+    },
+    {
+      "id_reponse": 188,
+      "contenu": "Presse",
+      "nb_points": 1,
+      "id_question": 69
+    },
+    {
+      "id_reponse": 189,
+      "contenu": "P�le Emploi",
+      "nb_points": 1,
+      "id_question": 69
+    },
+    {
+      "id_reponse": 190,
+      "contenu": "Job board (Indeed, wizbee..)",
+      "nb_points": 1,
+      "id_question": 69
+    },
+    {
+      "id_reponse": 191,
+      "contenu": "Interventions (lyc�e / �coles)",
+      "nb_points": 1,
+      "id_question": 69
+    },
+    {
+      "id_reponse": 192,
+      "contenu": "Bouche � oreilles",
+      "nb_points": 1,
+      "id_question": 69
+    },
+    {
+      "id_reponse": 193,
+      "contenu": "R�seau personnel du dirigeant",
+      "nb_points": 1,
+      "id_question": 69
+    },
+    {
+      "id_reponse": 194,
+      "contenu": "Candidatures spontan�es",
+      "nb_points": 1,
+      "id_question": 69
+    },
+    {
+      "id_reponse": 195,
+      "contenu": "R�seaux sociaux professionnels",
+      "nb_points": 1,
+      "id_question": 69
+    },
+    {
+      "id_reponse": 196,
+      "contenu": "Autres",
+      "nb_points": 1,
+      "id_question": 69
+    },
+    {
+      "id_reponse": 197,
+      "contenu": "Aucun",
+      "nb_points": 0,
+      "id_question": 69
+    },
+    {
+      "id_reponse": 198,
+      "contenu": "Des offres d�emploi",
+      "nb_points": 1,
+      "id_question": 70
+    },
+    {
+      "id_reponse": 199,
+      "contenu": "Possibilit� de candidater de mani�re spontan�e",
+      "nb_points": 1,
+      "id_question": 70
+    },
+    {
+      "id_reponse": 200,
+      "contenu": "Possibilit� de r�pondre directement � une offre d�emploi pr�cise",
+      "nb_points": 1,
+      "id_question": 70
+    },
+    {
+      "id_reponse": 201,
+      "contenu": "Aucun",
+      "nb_points": 0,
+      "id_question": 70
+    },
+    {
+      "id_reponse": 202,
+      "contenu": "Oui",
+      "nb_points": 1,
+      "id_question": 71
+    },
+    {
+      "id_reponse": 203,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 71
+    },
+    {
+      "id_reponse": 204,
+      "contenu": "Pas concern�",
+      "nb_points": 1,
+      "id_question": 71
+    },
+    {
+      "id_reponse": 205,
+      "contenu": "Entretiens professionnels",
+      "nb_points": 1,
+      "id_question": 72
+    },
+    {
+      "id_reponse": 206,
+      "contenu": "Entretiens d��valuation",
+      "nb_points": 1,
+      "id_question": 72
+    },
+    {
+      "id_reponse": 207,
+      "contenu": "Aucun",
+      "nb_points": 0,
+      "id_question": 72
+    },
+    {
+      "id_reponse": 208,
+      "contenu": "Formation au cas par cas",
+      "nb_points": 1,
+      "id_question": 73
+    },
+    {
+      "id_reponse": 209,
+      "contenu": "Plan annuel de formation (plan de d�veloppement des comp�tences)",
+      "nb_points": 1,
+      "id_question": 73
+    },
+    {
+      "id_reponse": 210,
+      "contenu": "Autres",
+      "nb_points": 1,
+      "id_question": 73
+    },
+    {
+      "id_reponse": 211,
+      "contenu": "Aucun",
+      "nb_points": 0,
+      "id_question": 73
+    },
+    {
+      "id_reponse": 214,
+      "contenu": "Oui",
+      "nb_points": 8,
+      "id_question": 75
+    },
+    {
+      "id_reponse": 215,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 75
+    },
+    {
+      "id_reponse": 216,
+      "contenu": "Oui",
+      "nb_points": 8,
+      "id_question": 76
+    },
+    {
+      "id_reponse": 217,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 76
+    },
+    {
+      "id_reponse": 218,
+      "contenu": "Oui",
+      "nb_points": 8,
+      "id_question": 77
+    },
+    {
+      "id_reponse": 219,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 77
+    },
+    {
+      "id_reponse": 220,
+      "contenu": "Oui",
+      "nb_points": 8,
+      "id_question": 78
+    },
+    {
+      "id_reponse": 221,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 78
+    },
+    {
+      "id_reponse": 222,
+      "contenu": "Parfois",
+      "nb_points": 4,
+      "id_question": 78
+    },
+    {
+      "id_reponse": 223,
+      "contenu": "Pas concern�",
+      "nb_points": 8,
+      "id_question": 78
+    },
+    {
+      "id_reponse": 224,
+      "contenu": "Oui",
+      "nb_points": 8,
+      "id_question": 79
+    },
+    {
+      "id_reponse": 225,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 79
+    },
+    {
+      "id_reponse": 226,
+      "contenu": "Pas concern�",
+      "nb_points": 8,
+      "id_question": 79
+    },
+    {
+      "id_reponse": 227,
+      "contenu": "Oui",
+      "nb_points": 7,
+      "id_question": 80
+    },
+    {
+      "id_reponse": 228,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 80
+    },
+    {
+      "id_reponse": 229,
+      "contenu": "Preque tous",
+      "nb_points": 3,
+      "id_question": 80
+    },
+    {
+      "id_reponse": 230,
+      "contenu": "Pas concern�",
+      "nb_points": 7,
+      "id_question": 80
+    },
+    {
+      "id_reponse": 231,
+      "contenu": "Oui",
+      "nb_points": 7,
+      "id_question": 81
+    },
+    {
+      "id_reponse": 232,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 81
+    },
+    {
+      "id_reponse": 233,
+      "contenu": "Pas concern�",
+      "nb_points": 7,
+      "id_question": 81
+    },
+    {
+      "id_reponse": 234,
+      "contenu": "Oui",
+      "nb_points": 4,
+      "id_question": 82
+    },
+    {
+      "id_reponse": 235,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 82
+    },
+    {
+      "id_reponse": 236,
+      "contenu": "Pas concern�",
+      "nb_points": 4,
+      "id_question": 82
+    },
+    {
+      "id_reponse": 237,
+      "contenu": "Oui",
+      "nb_points": 7,
+      "id_question": 83
+    },
+    {
+      "id_reponse": 238,
+      "contenu": "Pas concern�",
+      "nb_points": 7,
+      "id_question": 83
+    },
+    {
+      "id_reponse": 239,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 83
+    },
+    {
+      "id_reponse": 240,
+      "contenu": "Oui",
+      "nb_points": 7,
+      "id_question": 84
+    },
+    {
+      "id_reponse": 241,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 84
+    },
+    {
+      "id_reponse": 242,
+      "contenu": "Pas concern�",
+      "nb_points": 7,
+      "id_question": 84
+    },
+    {
+      "id_reponse": 243,
+      "contenu": "Oui",
+      "nb_points": 7,
+      "id_question": 85
+    },
+    {
+      "id_reponse": 244,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 85
+    },
+    {
+      "id_reponse": 245,
+      "contenu": "Pas concern�",
+      "nb_points": 7,
+      "id_question": 85
+    },
+    {
+      "id_reponse": 246,
+      "contenu": "Oui",
+      "nb_points": 8,
+      "id_question": 86
+    },
+    {
+      "id_reponse": 247,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 86
+    },
+    {
+      "id_reponse": 248,
+      "contenu": "Pas concern�",
+      "nb_points": 8,
+      "id_question": 86
+    },
+    {
+      "id_reponse": 250,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 87
+    },
+    {
+      "id_reponse": 251,
+      "contenu": "Pas concern�",
+      "nb_points": 6,
+      "id_question": 87
+    },
+    {
+      "id_reponse": 252,
+      "contenu": "Oui",
+      "nb_points": 6,
+      "id_question": 88
+    },
+    {
+      "id_reponse": 253,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 88
+    },
+    {
+      "id_reponse": 254,
+      "contenu": "Pas concern�",
+      "nb_points": 6,
+      "id_question": 88
+    },
+    {
+      "id_reponse": 255,
+      "contenu": "Certains",
+      "nb_points": 3,
+      "id_question": 88
+    },
+    {
+      "id_reponse": 256,
+      "contenu": "Oui",
+      "nb_points": 3,
+      "id_question": 89
+    },
+    {
+      "id_reponse": 257,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 89
+    },
+    {
+      "id_reponse": 258,
+      "contenu": "Pas concern�",
+      "nb_points": 3,
+      "id_question": 89
+    },
+    {
+      "id_reponse": 259,
+      "contenu": "Oui",
+      "nb_points": 6,
+      "id_question": 90
+    },
+    {
+      "id_reponse": 260,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 90
+    },
+    {
+      "id_reponse": 261,
+      "contenu": "Pas concern�",
+      "nb_points": 6,
+      "id_question": 90
+    },
+    {
+      "id_reponse": 262,
+      "contenu": "Oui",
+      "nb_points": 6,
+      "id_question": 91
+    },
+    {
+      "id_reponse": 263,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 91
+    },
+    {
+      "id_reponse": 264,
+      "contenu": "Pas concern�",
+      "nb_points": 6,
+      "id_question": 91
+    },
+    {
+      "id_reponse": 265,
+      "contenu": "Oui",
+      "nb_points": 5,
+      "id_question": 92
+    },
+    {
+      "id_reponse": 266,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 92
+    },
+    {
+      "id_reponse": 267,
+      "contenu": "Pas concern�",
+      "nb_points": 5,
+      "id_question": 92
+    },
+    {
+      "id_reponse": 268,
+      "contenu": "Oui",
+      "nb_points": 5,
+      "id_question": 93
+    },
+    {
+      "id_reponse": 269,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 93
+    },
+    {
+      "id_reponse": 270,
+      "contenu": "Pas concern�",
+      "nb_points": 5,
+      "id_question": 93
+    },
+    {
+      "id_reponse": 271,
+      "contenu": "Oui",
+      "nb_points": 5,
+      "id_question": 94
+    },
+    {
+      "id_reponse": 272,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 94
+    },
+    {
+      "id_reponse": 273,
+      "contenu": "Pas concern�",
+      "nb_points": 5,
+      "id_question": 94
+    },
+    {
+      "id_reponse": 274,
+      "contenu": "Oui",
+      "nb_points": 3,
+      "id_question": 95
+    },
+    {
+      "id_reponse": 275,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 95
+    },
+    {
+      "id_reponse": 276,
+      "contenu": "Pas concern�",
+      "nb_points": 3,
+      "id_question": 95
+    },
+    {
+      "id_reponse": 277,
+      "contenu": "Oui",
+      "nb_points": 6,
+      "id_question": 96
+    },
+    {
+      "id_reponse": 278,
+      "contenu": "Parfois",
+      "nb_points": 3,
+      "id_question": 96
+    },
+    {
+      "id_reponse": 279,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 96
+    },
+    {
+      "id_reponse": 280,
+      "contenu": "Pas concern�",
+      "nb_points": 6,
+      "id_question": 96
+    },
+    {
+      "id_reponse": 282,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 97
+    },
+    {
+      "id_reponse": 283,
+      "contenu": "Pas concern�",
+      "nb_points": 5,
+      "id_question": 97
+    },
+    {
+      "id_reponse": 284,
+      "contenu": "Parfois",
+      "nb_points": 3,
+      "id_question": 97
+    },
+    {
+      "id_reponse": 285,
+      "contenu": "Oui",
+      "nb_points": 4,
+      "id_question": 98
+    },
+    {
+      "id_reponse": 286,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 98
+    },
+    {
+      "id_reponse": 287,
+      "contenu": "Pas concern�",
+      "nb_points": 4,
+      "id_question": 98
+    },
+    {
+      "id_reponse": 288,
+      "contenu": "Oui",
+      "nb_points": 7,
+      "id_question": 99
+    },
+    {
+      "id_reponse": 289,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 99
+    },
+    {
+      "id_reponse": 290,
+      "contenu": "Pas concern�",
+      "nb_points": 7,
+      "id_question": 99
+    },
+    {
+      "id_reponse": 291,
+      "contenu": "Oui",
+      "nb_points": 3,
+      "id_question": 100
+    },
+    {
+      "id_reponse": 292,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 100
+    },
+    {
+      "id_reponse": 293,
+      "contenu": "Pas concern�",
+      "nb_points": 3,
+      "id_question": 100
+    },
+    {
+      "id_reponse": 294,
+      "contenu": "Gants Adaptes",
+      "nb_points": 2,
+      "id_question": 101
+    },
+    {
+      "id_reponse": 295,
+      "contenu": "Casque",
+      "nb_points": 2,
+      "id_question": 101
+    },
+    {
+      "id_reponse": 296,
+      "contenu": "Chaussures de securit�",
+      "nb_points": 2,
+      "id_question": 101
+    },
+    {
+      "id_reponse": 297,
+      "contenu": "Lunettes",
+      "nb_points": 2,
+      "id_question": 101
+    },
+    {
+      "id_reponse": 298,
+      "contenu": "Masques",
+      "nb_points": 2,
+      "id_question": 101
+    },
+    {
+      "id_reponse": 301,
+      "contenu": "Oui",
+      "nb_points": 4,
+      "id_question": 102
+    },
+    {
+      "id_reponse": 302,
+      "contenu": "Pas concern�",
+      "nb_points": 4,
+      "id_question": 102
+    },
+    {
+      "id_reponse": 303,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 102
+    },
+    {
+      "id_reponse": 304,
+      "contenu": "Oui",
+      "nb_points": 7,
+      "id_question": 103
+    },
+    {
+      "id_reponse": 305,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 103
+    },
+    {
+      "id_reponse": 306,
+      "contenu": "Pas concern�",
+      "nb_points": 7,
+      "id_question": 103
+    },
+    {
+      "id_reponse": 307,
+      "contenu": "Oui",
+      "nb_points": 7,
+      "id_question": 104
+    },
+    {
+      "id_reponse": 308,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 104
+    },
+    {
+      "id_reponse": 309,
+      "contenu": "Pas concern�",
+      "nb_points": 7,
+      "id_question": 104
+    },
+    {
+      "id_reponse": 310,
+      "contenu": "Oui",
+      "nb_points": 7,
+      "id_question": 105
+    },
+    {
+      "id_reponse": 311,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 105
+    },
+    {
+      "id_reponse": 312,
+      "contenu": "Certains",
+      "nb_points": 3,
+      "id_question": 105
+    },
+    {
+      "id_reponse": 313,
+      "contenu": "Pas concern�",
+      "nb_points": 7,
+      "id_question": 105
+    },
+    {
+      "id_reponse": 314,
+      "contenu": "Oui",
+      "nb_points": 7,
+      "id_question": 106
+    },
+    {
+      "id_reponse": 315,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 106
+    },
+    {
+      "id_reponse": 316,
+      "contenu": "Pas concern�",
+      "nb_points": 7,
+      "id_question": 106
+    },
+    {
+      "id_reponse": 317,
+      "contenu": "Oui",
+      "nb_points": 8,
+      "id_question": 107
+    },
+    {
+      "id_reponse": 318,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 107
+    },
+    {
+      "id_reponse": 319,
+      "contenu": "Pas concern�",
+      "nb_points": 8,
+      "id_question": 107
+    },
+    {
+      "id_reponse": 320,
+      "contenu": "Oui",
+      "nb_points": 6,
+      "id_question": 108
+    },
+    {
+      "id_reponse": 321,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 108
+    },
+    {
+      "id_reponse": 322,
+      "contenu": "Pas concern�",
+      "nb_points": 6,
+      "id_question": 108
+    },
+    {
+      "id_reponse": 323,
+      "contenu": "Oui",
+      "nb_points": 4,
+      "id_question": 109
+    },
+    {
+      "id_reponse": 324,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 109
+    },
+    {
+      "id_reponse": 325,
+      "contenu": "Pas concern�",
+      "nb_points": 4,
+      "id_question": 109
+    },
+    {
+      "id_reponse": 326,
+      "contenu": "Oui",
+      "nb_points": 7,
+      "id_question": 110
+    },
+    {
+      "id_reponse": 327,
+      "contenu": "Certains",
+      "nb_points": 3,
+      "id_question": 110
+    },
+    {
+      "id_reponse": 328,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 110
+    },
+    {
+      "id_reponse": 329,
+      "contenu": "Pas concern�",
+      "nb_points": 7,
+      "id_question": 110
+    },
+    {
+      "id_reponse": 330,
+      "contenu": "Aucun",
+      "nb_points": 0,
+      "id_question": 111
+    },
+    {
+      "id_reponse": 331,
+      "contenu": "Secourisme du travail",
+      "nb_points": 2,
+      "id_question": 111
+    },
+    {
+      "id_reponse": 332,
+      "contenu": "Posture prap",
+      "nb_points": 2,
+      "id_question": 111
+    },
+    {
+      "id_reponse": 333,
+      "contenu": "Oui",
+      "nb_points": 6,
+      "id_question": 112
+    },
+    {
+      "id_reponse": 334,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 112
+    },
+    {
+      "id_reponse": 335,
+      "contenu": "Pas concern�",
+      "nb_points": 6,
+      "id_question": 112
+    },
+    {
+      "id_reponse": 336,
+      "contenu": "Oui",
+      "nb_points": 6,
+      "id_question": 113
+    },
+    {
+      "id_reponse": 337,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 113
+    },
+    {
+      "id_reponse": 338,
+      "contenu": "Pas concern�",
+      "nb_points": 6,
+      "id_question": 113
+    },
+    {
+      "id_reponse": 339,
+      "contenu": "Oui",
+      "nb_points": 5,
+      "id_question": 114
+    },
+    {
+      "id_reponse": 340,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 114
+    },
+    {
+      "id_reponse": 341,
+      "contenu": "Pas concern�",
+      "nb_points": 5,
+      "id_question": 114
+    },
+    {
+      "id_reponse": 342,
+      "contenu": "Oui",
+      "nb_points": 4,
+      "id_question": 115
+    },
+    {
+      "id_reponse": 343,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 115
+    },
+    {
+      "id_reponse": 344,
+      "contenu": "Pas concern�",
+      "nb_points": 4,
+      "id_question": 115
+    },
+    {
+      "id_reponse": 345,
+      "contenu": "Oui",
+      "nb_points": 5,
+      "id_question": 116
+    },
+    {
+      "id_reponse": 346,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 116
+    },
+    {
+      "id_reponse": 347,
+      "contenu": "Pas concern�",
+      "nb_points": 5,
+      "id_question": 116
+    },
+    {
+      "id_reponse": 348,
+      "contenu": "Oui",
+      "nb_points": 3,
+      "id_question": 117
+    },
+    {
+      "id_reponse": 349,
+      "contenu": "Parfois",
+      "nb_points": 1,
+      "id_question": 117
+    },
+    {
+      "id_reponse": 350,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 117
+    },
+    {
+      "id_reponse": 351,
+      "contenu": "Pas concern�",
+      "nb_points": 3,
+      "id_question": 117
+    },
+    {
+      "id_reponse": 352,
+      "contenu": "Oui",
+      "nb_points": 3,
+      "id_question": 118
+    },
+    {
+      "id_reponse": 353,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 118
+    },
+    {
+      "id_reponse": 354,
+      "contenu": "Parfois",
+      "nb_points": 1,
+      "id_question": 118
+    },
+    {
+      "id_reponse": 355,
+      "contenu": "Pas concern�",
+      "nb_points": 3,
+      "id_question": 118
+    },
+    {
+      "id_reponse": 356,
+      "contenu": "Oui",
+      "nb_points": 5,
+      "id_question": 119
+    },
+    {
+      "id_reponse": 357,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 119
+    },
+    {
+      "id_reponse": 358,
+      "contenu": "Pas concern�",
+      "nb_points": 5,
+      "id_question": 119
+    },
+    {
+      "id_reponse": 359,
+      "contenu": "Certain",
+      "nb_points": 2,
+      "id_question": 119
+    },
+    {
+      "id_reponse": 360,
+      "contenu": "Oui",
+      "nb_points": 4,
+      "id_question": 120
+    },
+    {
+      "id_reponse": 361,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 120
+    },
+    {
+      "id_reponse": 362,
+      "contenu": "Pas concern�",
+      "nb_points": 4,
+      "id_question": 120
+    },
+    {
+      "id_reponse": 363,
+      "contenu": "Oui",
+      "nb_points": 4,
+      "id_question": 121
+    },
+    {
+      "id_reponse": 364,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 121
+    },
+    {
+      "id_reponse": 365,
+      "contenu": "Pas concern�",
+      "nb_points": 4,
+      "id_question": 121
+    },
+    {
+      "id_reponse": 366,
+      "contenu": "Oui",
+      "nb_points": 3,
+      "id_question": 122
+    },
+    {
+      "id_reponse": 367,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 122
+    },
+    {
+      "id_reponse": 368,
+      "contenu": "Pas concern�",
+      "nb_points": 3,
+      "id_question": 122
+    },
+    {
+      "id_reponse": 369,
+      "contenu": "Oui",
+      "nb_points": 4,
+      "id_question": 123
+    },
+    {
+      "id_reponse": 370,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 123
+    },
+    {
+      "id_reponse": 371,
+      "contenu": "Pas concern�",
+      "nb_points": 4,
+      "id_question": 123
+    },
+    {
+      "id_reponse": 249,
+      "contenu": "Oui",
+      "nb_points": 6,
+      "id_question": 87
+    },
+    {
+      "id_reponse": 281,
+      "contenu": "Oui",
+      "nb_points": 5,
+      "id_question": 97
+    },
+    {
+      "id_reponse": 374,
+      "contenu": "Oui",
+      "nb_points": 5,
+      "id_question": 128
+    },
+    {
+      "id_reponse": 375,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 128
+    },
+    {
+      "id_reponse": 376,
+      "contenu": "Oui",
+      "nb_points": 5,
+      "id_question": 129
+    },
+    {
+      "id_reponse": 377,
+      "contenu": "non",
+      "nb_points": 0,
+      "id_question": 129
+    },
+    {
+      "id_reponse": 378,
+      "contenu": "Oui",
+      "nb_points": 5,
+      "id_question": 130
+    },
+    {
+      "id_reponse": 379,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 130
+    },
+    {
+      "id_reponse": 380,
+      "contenu": "Oui",
+      "nb_points": 10,
+      "id_question": 131
+    },
+    {
+      "id_reponse": 381,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 131
+    },
+    {
+      "id_reponse": 382,
+      "contenu": "Oui",
+      "nb_points": 5,
+      "id_question": 132
+    },
+    {
+      "id_reponse": 383,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 132
+    },
+    {
+      "id_reponse": 384,
+      "contenu": "Oui",
+      "nb_points": 5,
+      "id_question": 133
+    },
+    {
+      "id_reponse": 385,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 133
+    },
+    {
+      "id_reponse": 392,
+      "contenu": "Non",
+      "nb_points": 0,
+      "id_question": 136
+    },
+    {
+      "id_reponse": 391,
+      "contenu": "Oui",
+      "nb_points": -5,
+      "id_question": 136
+    },
+    {
+      "id_reponse": 393,
+      "contenu": "Travailler plus",
+      "nb_points": 3,
+      "id_question": 137
+    },
+    {
+      "id_reponse": 394,
+      "contenu": "Faire des reunions tous les jours",
+      "nb_points": 2,
+      "id_question": 137
+    },
+    {
+      "id_reponse": 395,
+      "contenu": "V�rifier l��tat d�avancement des tache 2x par jour",
+      "nb_points": 2,
+      "id_question": 137
+    }
+   ]

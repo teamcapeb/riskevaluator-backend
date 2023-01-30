@@ -1,35 +1,61 @@
 package fr.capeb.backend.riskevaluator;
 
-import fr.capeb.backend.riskevaluator.model.*;
-import fr.capeb.backend.riskevaluator.model.enumeration.QuestionType;
-import fr.capeb.backend.riskevaluator.repository.*;
-import fr.capeb.backend.riskevaluator.service.*;
-import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import java.io.IOException;
+import java.util.HashSet;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.core.io.ClassPathResource;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.util.HashSet;
-import java.util.Scanner;
-import java.util.Set;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import fr.capeb.backend.riskevaluator.model.CategorieQuestion;
+import fr.capeb.backend.riskevaluator.model.Entreprise;
+import fr.capeb.backend.riskevaluator.model.Evaluation;
+import fr.capeb.backend.riskevaluator.model.Metier;
+import fr.capeb.backend.riskevaluator.model.PreconisationCategorie;
+import fr.capeb.backend.riskevaluator.model.PreconisationGlobale;
+import fr.capeb.backend.riskevaluator.model.Question;
+import fr.capeb.backend.riskevaluator.model.Questionnaire;
+import fr.capeb.backend.riskevaluator.model.Reponse;
+import fr.capeb.backend.riskevaluator.model.ScoreCategory;
+import fr.capeb.backend.riskevaluator.model.enumeration.QuestionType;
+import fr.capeb.backend.riskevaluator.repository.CategorieQuestionRepository;
+import fr.capeb.backend.riskevaluator.repository.EntrepriseRepository;
+import fr.capeb.backend.riskevaluator.repository.EvaluationRepository;
+import fr.capeb.backend.riskevaluator.repository.MetierRepository;
+import fr.capeb.backend.riskevaluator.repository.PreconisationCategorieRepository;
+import fr.capeb.backend.riskevaluator.repository.PreconisationGlobaleRepository;
+import fr.capeb.backend.riskevaluator.repository.QuestionRepository;
+import fr.capeb.backend.riskevaluator.repository.QuestionnaireRepository;
+import fr.capeb.backend.riskevaluator.repository.ReponseRepository;
+import fr.capeb.backend.riskevaluator.repository.ScoreCategorieRepository;
+import fr.capeb.backend.riskevaluator.service.CategorieQuestionService;
+import fr.capeb.backend.riskevaluator.service.EntrepriseService;
+import fr.capeb.backend.riskevaluator.service.EvaluationService;
+import fr.capeb.backend.riskevaluator.service.MetierService;
+import fr.capeb.backend.riskevaluator.service.PreconisationCategorieService;
+import fr.capeb.backend.riskevaluator.service.PreconisationGlobaleService;
+import fr.capeb.backend.riskevaluator.service.QuestionService;
+import fr.capeb.backend.riskevaluator.service.QuestionnaireService;
+import fr.capeb.backend.riskevaluator.service.ReponseService;
+import fr.capeb.backend.riskevaluator.service.ScoreCategorieService;
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 
 @SpringBootApplication
 @OpenAPIDefinition
 public class RiskevaluatorApplication {
-
-	public static void main(String[] args) throws FileNotFoundException {
+	
+	public static void main(String[] args) throws IOException {
 		ConfigurableApplicationContext configurableApplicationContext = SpringApplication.run(RiskevaluatorApplication.class, args);
-
-		String EntreprisePath = "C:\\Users\\eddy-\\Desktop\\Cours\\capeb\\riskevaluator-backend-master\\src\\main\\java\\fr\\capeb\\backend\\riskevaluator\\jsonData\\entreprise.json";
-		String EntrepriseJson = new Scanner(new File(EntreprisePath)).useDelimiter("\\Z").next();
-		JSONArray EntrepriseArray = new JSONArray(EntrepriseJson);
+		ObjectMapper mapper = new ObjectMapper();
+		
+		ClassPathResource entrepriseJson = new ClassPathResource("data/entreprise.json");
+		String entreprisePath = mapper.readTree(entrepriseJson.getInputStream()).toString();
+		JSONArray EntrepriseArray = new JSONArray(entreprisePath);
+		
 		EntrepriseRepository entrepriseRepository = configurableApplicationContext.getBean(EntrepriseRepository.class);
 		EntrepriseService entrepriseService = new EntrepriseService(entrepriseRepository);
 		for (Object ent : EntrepriseArray) {
@@ -41,10 +67,11 @@ public class RiskevaluatorApplication {
 			entreprise.setNomEntreprise(entJson.getString("nom_entreprise"));
 			entrepriseRepository.save(entreprise);
 		}
-
-		String QuestionnairePath = "C:\\Users\\eddy-\\Desktop\\Cours\\capeb\\riskevaluator-backend-master\\src\\main\\java\\fr\\capeb\\backend\\riskevaluator\\jsonData\\questionnaire.json";
-		String questionnaireJson = new Scanner(new File(QuestionnairePath)).useDelimiter("\\Z").next();
-		JSONArray questionnaireArray = new JSONArray(questionnaireJson);
+		
+		ClassPathResource questionnaireJson = new ClassPathResource("data/questionnaire.json");
+		String questionnairePath = mapper.readTree(questionnaireJson.getInputStream()).toString();
+		JSONArray questionnaireArray = new JSONArray(questionnairePath);
+		
 		QuestionnaireRepository questionnaireRepository = configurableApplicationContext.getBean(QuestionnaireRepository.class);
 		QuestionnaireService questionnaireService = new QuestionnaireService(questionnaireRepository);
 		for (Object question : questionnaireArray) {
@@ -55,11 +82,11 @@ public class RiskevaluatorApplication {
 			questionnaire.setCategorieQuestions(new HashSet<CategorieQuestion>());
 			questionnaireRepository.save(questionnaire);
 		}
-
-
-		String CategorieQuestionPath = "C:\\Users\\eddy-\\Desktop\\Cours\\capeb\\riskevaluator-backend-master\\src\\main\\java\\fr\\capeb\\backend\\riskevaluator\\jsonData\\categorieQuestion.json";
-		String categorieQuestionJson = new Scanner(new File(CategorieQuestionPath)).useDelimiter("\\Z").next();
-		JSONArray categorieQuestionArray = new JSONArray(categorieQuestionJson);
+		
+		ClassPathResource categorieQuestionJson = new ClassPathResource("data/categorieQuestion.json");
+		String categorieQuestionPath = mapper.readTree(categorieQuestionJson.getInputStream()).toString();
+		JSONArray categorieQuestionArray = new JSONArray(categorieQuestionPath);
+		
 		CategorieQuestionRepository categorieQuestionRepository = configurableApplicationContext.getBean(CategorieQuestionRepository.class);
 		CategorieQuestionService categorieQuestionService = new CategorieQuestionService(categorieQuestionRepository);
 		for (Object cg : categorieQuestionArray) {
@@ -72,10 +99,11 @@ public class RiskevaluatorApplication {
 			categorieQuestion.setQuestionnaire(questionnaire);
 			categorieQuestionRepository.save(categorieQuestion);
 		}
-
-		String EvaluationPath = "C:\\Users\\eddy-\\Desktop\\Cours\\capeb\\riskevaluator-backend-master\\src\\main\\java\\fr\\capeb\\backend\\riskevaluator\\jsonData\\evaluation.json";
-		String evaluationJson = new Scanner(new File(EvaluationPath)).useDelimiter("\\Z").next();
-		JSONArray evaluationArray = new JSONArray(evaluationJson);
+		
+		ClassPathResource evaluationJson = new ClassPathResource("data/evaluation.json");
+		String evaluationPath = mapper.readTree(evaluationJson.getInputStream()).toString();
+		JSONArray evaluationArray = new JSONArray(evaluationPath);
+		
 		EvaluationRepository evaluationRepository = configurableApplicationContext.getBean(EvaluationRepository.class);
 		EvaluationService evaluationService = new EvaluationService(evaluationRepository);
 		for (Object eval : evaluationArray) {
@@ -86,10 +114,11 @@ public class RiskevaluatorApplication {
 			evaluation.setEntreprise(entrepriseService.getEntreprise(evalJson.getLong("nosiret")));
 			evaluationRepository.save(evaluation);
 		}
-
-		String MetierPath = "C:\\Users\\eddy-\\Desktop\\Cours\\capeb\\riskevaluator-backend-master\\src\\main\\java\\fr\\capeb\\backend\\riskevaluator\\jsonData\\metier.json";
-		String metierJson = new Scanner(new File(MetierPath)).useDelimiter("\\Z").next();
-		JSONArray metierArray = new JSONArray(metierJson);
+		
+		ClassPathResource metierJson = new ClassPathResource("data/metier.json");
+		String metierPath = mapper.readTree(metierJson.getInputStream()).toString();
+		JSONArray metierArray = new JSONArray(metierPath);
+		
 		MetierRepository metierRepository = configurableApplicationContext.getBean(MetierRepository.class);
 		MetierService metierService = new MetierService(metierRepository);
 		for (Object met : metierArray) {
@@ -99,10 +128,11 @@ public class RiskevaluatorApplication {
 			metier.setNomMetier(metJson.getString("nom_metier"));
 			metierRepository.save(metier);
 		}
-
-		String QuestionPath = "C:\\Users\\eddy-\\Desktop\\Cours\\capeb\\riskevaluator-backend-master\\src\\main\\java\\fr\\capeb\\backend\\riskevaluator\\jsonData\\question.json";
-		String questionJson = new Scanner(new File(QuestionPath)).useDelimiter("\\Z").next();
-		JSONArray questionArray = new JSONArray(questionJson);
+		
+		ClassPathResource questionJson = new ClassPathResource("data/question.json");
+		String questionPath = mapper.readTree(questionJson.getInputStream()).toString();
+		JSONArray questionArray = new JSONArray(questionPath);
+		
 		QuestionRepository questionRepository = configurableApplicationContext.getBean(QuestionRepository.class);
 		QuestionService questionService = new QuestionService(questionRepository);
 		for (Object quest : questionArray) {
@@ -111,20 +141,22 @@ public class RiskevaluatorApplication {
 			question.setIdQuestion(questJson.getInt("id_question"));
 			question.setLibelleQuestion(questJson.getString("libelle_question"));
 			question.setScoreMaxPossibleQuestion(questJson.getInt("score_max_possible"));
-
-			if(questJson.getString("q_type") == "QUESTION_CHOIX_MULTIPLE"){
+			
+			if (questJson.getString("q_type") == "QUESTION_CHOIX_MULTIPLE") {
 				question.setTypeQuestion(QuestionType.QUESTION_CHOIX_MULTIPLE);
-			}else{
+			} else {
 				question.setTypeQuestion(QuestionType.QUESTION_CHOIX_UNIQUE);
 			}
 			question.setCategorieQuestion(categorieQuestionService.getCategorieQuestion(questJson.getInt("id_categorie")));
 			questionRepository.save(question);
 		}
-
-		String PreconisationCategoriePath = "C:\\Users\\eddy-\\Desktop\\Cours\\capeb\\riskevaluator-backend-master\\src\\main\\java\\fr\\capeb\\backend\\riskevaluator\\jsonData\\preconisationCategorie.json";
-		String preconisationCategorieJson = new Scanner(new File(PreconisationCategoriePath)).useDelimiter("\\Z").next();
-		JSONArray preconisationCategorieArray = new JSONArray(preconisationCategorieJson);
-		PreconisationCategorieRepository preconisationCategorieRepository = configurableApplicationContext.getBean(PreconisationCategorieRepository.class);
+		
+		ClassPathResource preconisationCategorieJson = new ClassPathResource("data/preconisationCategorie.json");
+		String preconisationCategoriePath = mapper.readTree(preconisationCategorieJson.getInputStream()).toString();
+		JSONArray preconisationCategorieArray = new JSONArray(preconisationCategoriePath);
+		
+		PreconisationCategorieRepository preconisationCategorieRepository = configurableApplicationContext.getBean(
+				PreconisationCategorieRepository.class);
 		PreconisationCategorieService preconisationCategorieService = new PreconisationCategorieService(preconisationCategorieRepository);
 		for (Object preco : preconisationCategorieArray) {
 			JSONObject precoJson = (JSONObject) preco;
@@ -135,10 +167,11 @@ public class RiskevaluatorApplication {
 			preconisationCategorie.setViewIfPourcentageScoreLessThan(precoJson.getInt("viewifpourcentagescorelessthan"));
 			preconisationCategorieRepository.save(preconisationCategorie);
 		}
-
-		String PreconisationGlobalPath = "C:\\Users\\eddy-\\Desktop\\Cours\\capeb\\riskevaluator-backend-master\\src\\main\\java\\fr\\capeb\\backend\\riskevaluator\\jsonData\\preconisationGlobal.json";
-		String preconisationGlobalJson = new Scanner(new File(PreconisationGlobalPath)).useDelimiter("\\Z").next();
-		JSONArray preconisationGlobalArray = new JSONArray(preconisationGlobalJson);
+		
+		ClassPathResource preconisationGlobalJson = new ClassPathResource("data/preconisationGlobal.json");
+		String preconisationGlobalPath = mapper.readTree(preconisationGlobalJson.getInputStream()).toString();
+		JSONArray preconisationGlobalArray = new JSONArray(preconisationGlobalPath);
+		
 		PreconisationGlobaleRepository preconisationGlobalRepository = configurableApplicationContext.getBean(PreconisationGlobaleRepository.class);
 		PreconisationGlobaleService preconisationGlobalService = new PreconisationGlobaleService(preconisationGlobalRepository);
 		for (Object preco : preconisationGlobalArray) {
@@ -150,11 +183,11 @@ public class RiskevaluatorApplication {
 			preconisationGlobal.setViewIfPourcentageScoreLessThan(precoJson.getInt("viewifpourcentagescorelessthan"));
 			preconisationGlobalRepository.save(preconisationGlobal);
 		}
-
-
-		String ReponsePath = "C:\\Users\\eddy-\\Desktop\\Cours\\capeb\\riskevaluator-backend-master\\src\\main\\java\\fr\\capeb\\backend\\riskevaluator\\jsonData\\reponse.json";
-		String reponseJson = new Scanner(new File(ReponsePath)).useDelimiter("\\Z").next();
-		JSONArray reponseArray = new JSONArray(reponseJson);
+		
+		ClassPathResource reponseJson = new ClassPathResource("data/reponse.json");
+		String reponsePath = mapper.readTree(reponseJson.getInputStream()).toString();
+		JSONArray reponseArray = new JSONArray(reponsePath);
+		
 		ReponseRepository reponseRepository = configurableApplicationContext.getBean(ReponseRepository.class);
 		ReponseService reponseService = new ReponseService(reponseRepository);
 		for (Object met : reponseArray) {
@@ -166,11 +199,11 @@ public class RiskevaluatorApplication {
 			reponse.setQuestion(questionService.getQuestion(metJson.getInt("id_question")));
 			reponseRepository.save(reponse);
 		}
-
-
-		String ScoreCategoriePath = "C:\\Users\\eddy-\\Desktop\\Cours\\capeb\\riskevaluator-backend-master\\src\\main\\java\\fr\\capeb\\backend\\riskevaluator\\jsonData\\scoreCategory.json";
-		String scoreCategorieJson = new Scanner(new File(ScoreCategoriePath)).useDelimiter("\\Z").next();
-		JSONArray scoreCategorieArray = new JSONArray(scoreCategorieJson);
+		
+		ClassPathResource scoreCategoryJson = new ClassPathResource("data/scoreCategory.json");
+		String scoreCategoryPath = mapper.readTree(scoreCategoryJson.getInputStream()).toString();
+		JSONArray scoreCategorieArray = new JSONArray(scoreCategoryPath);
+		
 		ScoreCategorieRepository scoreCategorieRepository = configurableApplicationContext.getBean(ScoreCategorieRepository.class);
 		ScoreCategorieService scoreCategorieService = new ScoreCategorieService(scoreCategorieRepository);
 		for (Object met : scoreCategorieArray) {
@@ -182,10 +215,8 @@ public class RiskevaluatorApplication {
 			scoreCategorie.setNbPoints(metJson.getInt("nb_points"));
 			scoreCategorieRepository.save(scoreCategorie);
 		}
-
-
-
+		
 	}
-
+	
 }
 

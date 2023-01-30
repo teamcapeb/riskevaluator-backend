@@ -1,0 +1,14 @@
+[
+    {
+      "id": 1,
+      "email": "admin@gmail.com",
+      "password": "$2a$10$KcViyhMlEtAFvMV0WW1j1u0BenDwfhHxlFvjjmtOB.bU3/epG56f.",
+      "username": "admin"
+    },
+    {
+      "id": 2,
+      "email": "lauriesaintpierre@capeb-isere.fr",
+      "password": "$2a$10$BY6OQ4ugp8u1sfUKvMOjJ.8WBLqI3dmrU7YIyYjl4nTZm1tq4BnAK",
+      "username": "lauriesaintpierre"
+    }
+   ]

@@ -1,0 +1,260 @@
+[
+    {
+      "id_preconisation": 28,
+      "contenu": "32% des �tudiants fran�ais pensent que des salaires ainsi que des bonus concurrentiels sont des crit�res d�terminants dans le choix d�un employeur (Assets, 2017).",
+      "viewifpourcentagescorelessthan": 60,
+      "id_categorie": 34
+    },
+    {
+      "id_preconisation": 27,
+      "contenu": "Vous pouvez mettre en place plus d�avantages �conomiques (promotions, avantages en nature �) ou sociaux (ch�ques vacances / cadeaux �) pour attirer de nouveaux talents ou fid�liser vos salari�s. ",
+      "viewifpourcentagescorelessthan": 60,
+      "id_categorie": 34
+    },
+    {
+      "id_preconisation": 46,
+      "contenu": "Il semble que vous ne proposez pas beaucoup d�avantages � vos salari�s. ",
+      "viewifpourcentagescorelessthan": 40,
+      "id_categorie": 34
+    },
+    {
+      "id_preconisation": 78,
+      "contenu": "La formation pr�vention des risque amiante \"\"sous-section 4\"\" est une formation obligatoire pour les entreprises dont les salari�s sont expos�s au risque d'inhalation de fibre d'amiante dans leur activit� (ou en prise de d�cision) n'ayant pas pour finalit� le d�samiantage.",
+      "viewifpourcentagescorelessthan": 70,
+      "id_categorie": 42
+    },
+    {
+      "id_preconisation": 47,
+      "contenu": "Vous pouvez am�liorer l�ambiance de travail gr�ce � une meilleure communication interne (r�unions r�guli�res, �v�nements festifs�) et externe (int�gration, am�lioration de la charte graphique). ",
+      "viewifpourcentagescorelessthan": 60,
+      "id_categorie": 35
+    },
+    {
+      "id_preconisation": 51,
+      "contenu": "Il est important pour les jeunes employ�s de s�identifier � l�entreprise gr�ce � des valeurs communes. ",
+      "viewifpourcentagescorelessthan": 70,
+      "id_categorie": 35
+    },
+    {
+      "id_preconisation": 49,
+      "contenu": "Aujourd�hui,79% des jeunes dipl�m�s estiment que travailler pour une organisation fortement engag�e est plus important que d��tre tr�s bien r�mun�r� (Assets, 2017).",
+      "viewifpourcentagescorelessthan": 80,
+      "id_categorie": 35
+    },
+    {
+      "id_preconisation": 52,
+      "contenu": "Il est important d��tre pr�sent sur au moins un r�seau social (Instagram, Facebook�) mais surtout d��tre r�guli�rement actif.",
+      "viewifpourcentagescorelessthan": 30,
+      "id_categorie": 36
+    },
+    {
+      "id_preconisation": 53,
+      "contenu": "les r�seaux sociaux  sont consult�s par un grand nombre de jeunes pouvant repr�senter de potentiels nouveaux talents.",
+      "viewifpourcentagescorelessthan": 101,
+      "id_categorie": 36
+    },
+    {
+      "id_preconisation": 54,
+      "contenu": "63% des candidats utilisent les r�seaux sociaux pour postuler (BDM, 2016).",
+      "viewifpourcentagescorelessthan": 101,
+      "id_categorie": 36
+    },
+    {
+      "id_preconisation": 55,
+      "contenu": "Vous pouvez, pour vous am�liorer, publier plus r�guli�rement sur vos r�seaux ou �tre pr�sent sur de nouveaux r�seaux (linkedIn, instagram �) afin de toucher une nouvelle cible. ",
+      "viewifpourcentagescorelessthan": 60,
+      "id_categorie": 36
+    },
+    {
+      "id_preconisation": 58,
+      "contenu": "Vous pouvez pr�senter votre entreprise, mettre en avant vos avantages ou des t�moignages de vos salari�s.",
+      "viewifpourcentagescorelessthan": 40,
+      "id_categorie": 37
+    },
+    {
+      "id_preconisation": 59,
+      "contenu": "Votre site doit �tre organis� (diff�rentes rubriques, une charte graphique�) et ainsi faciliter l�embauche (prise de contact avec l�entreprise, d�p�t de candidature volontaire, r�ponse � une offre d�emploi).",
+      "viewifpourcentagescorelessthan": 50,
+      "id_categorie": 37
+    },
+    {
+      "id_preconisation": 62,
+      "contenu": "Aujourd�hui, 96% des candidats utilisent les sites internet des entreprises pour postuler (Hellowork, 2019-2020).",
+      "viewifpourcentagescorelessthan": 101,
+      "id_categorie": 37
+    },
+    {
+      "id_preconisation": 57,
+      "contenu": "Il est utile de cr�er un site internet r�guli�rement actualis�.",
+      "viewifpourcentagescorelessthan": 20,
+      "id_categorie": 37
+    },
+    {
+      "id_preconisation": 63,
+      "contenu": "Le site internet est essentiel au d�veloppement de l�entreprise et � son processus de recrutement.",
+      "viewifpourcentagescorelessthan": 101,
+      "id_categorie": 37
+    },
+    {
+      "id_preconisation": 64,
+      "contenu": "La diffusion de vos offres d�emploi reste limit�e.",
+      "viewifpourcentagescorelessthan": 30,
+      "id_categorie": 38
+    },
+    {
+      "id_preconisation": 65,
+      "contenu": " Il est pr�f�rable de diversifier vos m�thodes de diffusions dans l�optique de toucher un maximum de candidats ou talents potentiels. ",
+      "viewifpourcentagescorelessthan": 40,
+      "id_categorie": 38
+    },
+    {
+      "id_preconisation": 68,
+      "contenu": "Pour 1 recrutement, 3 canaux en moyenne sont utilis�s (DARES, 2018). En tant que TPE ou PME, les moyens de diffusion plus personnels sont essentiels comme la cooptation.",
+      "viewifpourcentagescorelessthan": 101,
+      "id_categorie": 38
+    },
+    {
+      "id_preconisation": 69,
+      "contenu": "Ne n�gligez pas le r�seau personnel comme la cooptation. ",
+      "viewifpourcentagescorelessthan": 60,
+      "id_categorie": 38
+    },
+    {
+      "id_preconisation": 70,
+      "contenu": "Il est n�cessaire de mettre en place des dispositifs simples pour candidater directement via votre site internet. ",
+      "viewifpourcentagescorelessthan": 60,
+      "id_categorie": 38
+    },
+    {
+      "id_preconisation": 71,
+      "contenu": "Il est important  de pouvoir postuler spontan�ment ou r�pondre � une offre d�emploi directement via votre site internet. En effet, les candidatures spontan�es sont utilis�es dans 68% des cas (Dares, 2018).",
+      "viewifpourcentagescorelessthan": 90,
+      "id_categorie": 38
+    },
+    {
+      "id_preconisation": 72,
+      "contenu": "Il est important pour vos salari�s de conna�tre leurs perspectives d��volutions et d�avoir un retour sur leur travail. ",
+      "viewifpourcentagescorelessthan": 70,
+      "id_categorie": 39
+    },
+    {
+      "id_preconisation": 73,
+      "contenu": "Pensez � mettre en place des entretiens professionnels et d��valuations.",
+      "viewifpourcentagescorelessthan": 70,
+      "id_categorie": 39
+    },
+    {
+      "id_preconisation": 74,
+      "contenu": "Ne n�gligez pas la formation, elle est importante dans le processus de fid�lisation de vos salari�s.",
+      "viewifpourcentagescorelessthan": 50,
+      "id_categorie": 39
+    },
+    {
+      "id_preconisation": 75,
+      "contenu": "41% des travailleurs ont d�clar� que le manque de possibilit� d��volutions de carri�re est la principale raison de quitter une entreprise (Stepstone, 2012)",
+      "viewifpourcentagescorelessthan": 70,
+      "id_categorie": 39
+    },
+    {
+      "id_preconisation": 56,
+      "contenu": " Il faut entretenir en permanence les r�seaux sociaux.",
+      "viewifpourcentagescorelessthan": 70,
+      "id_categorie": 36
+    },
+    {
+      "id_preconisation": 48,
+      "contenu": "Avez-vous pens� � mettre en place des mesures en faveur de la  RSE ? (plan �conomie d��nergie, de r�duction des d�chets, fournisseur d��nergies renouvelables...)  ",
+      "viewifpourcentagescorelessthan": 60,
+      "id_categorie": 35
+    },
+    {
+      "id_preconisation": 50,
+      "contenu": "Des am�liorations sont envisageables : \n - charte graphique\n - Salles de pause \n - R�unions r�guli�res \n - F�ter les �v�nements li�s aux salari�s ou � l�entreprise \n - Enqu�te aupr�s des salari�s \n - Fournisseurs locaux \n - Fournisseurs d��nergies renouvelables \n - Recyclage des d�chets \n - Flexibilit� des horaires de travail \n - Embauche des personnes en situation de handicap \n - Promotion de l��galit� des salaires homme/femme \n - Promotion de la diversit� ",
+      "viewifpourcentagescorelessthan": 50,
+      "id_categorie": 35
+    },
+    {
+      "id_preconisation": 76,
+      "contenu": "Le DUERP est obligatoire. Il doit �tre � la disposition des salari�s et mis � jour chaque ann�e. ",
+      "viewifpourcentagescorelessthan": 70,
+      "id_categorie": 41
+    },
+    {
+      "id_preconisation": 77,
+      "contenu": "En 2019, l�amiante �tait � l�origine d�environ 3 000 maladies professionnelles et de 1 800 cancers. Si les moyens de protection concernant ce risque ne sont pas respect�s, vous risquez un an d�emprisonnement et 75 000 � d�amende pour mise en danger de la vie d�autrui.",
+      "viewifpourcentagescorelessthan": 70,
+      "id_categorie": 42
+    },
+    {
+      "id_preconisation": 79,
+      "contenu": "L�organisation du chantier est tr�s importante, elle vous permettra d��viter le port de charges inutiles et donc de r�duire les risques physiques li�es � la manutention manuelle qui repr�sente 48% des accidents du travail. Cela �vitera aussi d'�ventuelles chutes li�es � des outils d�pos�s al�atoirement sur le lieu de travail.",
+      "viewifpourcentagescorelessthan": 100,
+      "id_categorie": 43
+    },
+    {
+      "id_preconisation": 80,
+      "contenu": "En 2018, les chutes en hauteur repr�sentaient plus de 70 000 accidents du travail. Il est donc pr�f�rable d�investir dans des protections collectives et individuelles.\nDe plus, selon l�article R4323-69 du Code du travail,  il est obligatoire que le montage, d�montage et les v�rifications soient effectu�s par des personnes form�es.",
+      "viewifpourcentagescorelessthan": 70,
+      "id_categorie": 44
+    },
+    {
+      "id_preconisation": 81,
+      "contenu": "Les chutes de hauteur repr�sentent la troisi�me cause d�accidents du travail, informer et former les salari�s est plus que n�cessaire pour limiter les accidents.",
+      "viewifpourcentagescorelessthan": 101,
+      "id_categorie": 44
+    },
+    {
+      "id_preconisation": 82,
+      "contenu": "La manutention est la premi�re cause des maladies professionnelles dans le secteur du BTP. Gr�ce � des moyens de levage ou d'aide � la manutention, les troubles musculo-squelletiques sont limit�s. En effet, porter r�guli�rement des charges lourdes peut affecter les muscles, les tendons ou encore les nerfs. En 2015, les troubles musculo-squelletiques ont repr�sent� plus de 87 % des maladies professionnelles ayant entra�n� un arr�t de travail ou une r�paration financi�re en raison de s�quelles.",
+      "viewifpourcentagescorelessthan": 70,
+      "id_categorie": 46
+    },
+    {
+      "id_preconisation": 83,
+      "contenu": "Le port de protections anti-bruit est obligatoire dans 2 cas :\n- Si dans une journ�e de 8h, le salari� est expos� � un bruit d'au moins 80 d�cibels quotidiennement.\n- Si le salari� est expos� � un bruit sup�rieur � 85 d�cibels.",
+      "viewifpourcentagescorelessthan": 70,
+      "id_categorie": 47
+    },
+    {
+      "id_preconisation": 84,
+      "contenu": "Le code du travail rend obligatoire la pr�sence d'un coordonnateur SPS d�s lors que plusieurs entreprises ou  travailleurs ind�pendants sont appel�s � intervenir dans des op�rations de b�timent ou de g�nie civil. La Fiche de Donn�es de S�curit� (FDS) est obligatoire pour les substances et m�langes consid�r�s comme dangereux pour la sant� humaine et pour l�environnement.",
+      "viewifpourcentagescorelessthan": 70,
+      "id_categorie": 48
+    },
+    {
+      "id_preconisation": 85,
+      "contenu": "Il est obligatoire de mettre � disposition des salari�s des EPI (�quipements de Protection Individuelle). De plus, il faut informer les salari�s sur l�obligation de port effectif de ces �quipements.\nDans le cas contraire, si un accident du travail a lieu alors que les EPI ne sont pas port�s, votre responsabilit� civile et p�nale pourra �tre engag�e et vous risquez une amende pouvant aller jusqu'� 3 750 � et/ou l'emprisonnement.",
+      "viewifpourcentagescorelessthan": 70,
+      "id_categorie": 50
+    },
+    {
+      "id_preconisation": 86,
+      "contenu": "Selon l�article 221-6 du Code P�nal, le fait de ne pas disposer d�une habilitation �lectrique est passible de 15 245 � d�amende et d�une peine d�emprisonnement d�un an.  \nEn France, le risque �lectrique repr�sente plus de 30% des incendies et plus de 10 morts par an. L�habilitation �lectrique pour non �lectricien est obligatoire, en cas d�accident du travail la responsabilit� civile ou p�nale de l�employeur pourra �tre engag�e. L�employeur s�expose aux versements de dommages et int�r�ts et � une amende.",
+      "viewifpourcentagescorelessthan": 70,
+      "id_categorie": 51
+    },
+    {
+      "id_preconisation": 87,
+      "contenu": "Le dispositif CACES (Certificat d'Aptitude � la Conduite En S�curit�) a �t� con�u pour �valuer les connaissances et savoir-faire des conducteurs pour la conduite en s�curit�. Elle reste obligatoire pour la conduite des �quipements de travail servant au levage et doit �tre renouvel� tous les 5 ans.\n\nLa mise en place de dispositifs collectifs (l'organisation du travail, l'entretien de l'appareil et son installation sur le site du chantier) et individuels (gants, harnais de s�curit� en cas d'absence de protection collective contre les chutes en hauteur, port de chaussures de s�curit� avec semelle antid�rapante et bout acier et casque de chantier) peuvent limiter ce risque.",
+      "viewifpourcentagescorelessthan": 60,
+      "id_categorie": 52
+    },
+    {
+      "id_preconisation": 88,
+      "contenu": "Pr�s de 30%, des maladies professionnelles reconnues en Europe seraient d�origine chimique. Le fait d��viter d�utiliser des produits chimiques permet de limiter les risques\nencourus par vos salari�s.",
+      "viewifpourcentagescorelessthan": 70,
+      "id_categorie": 54
+    },
+    {
+      "id_preconisation": 89,
+      "contenu": "La formation SST (Sauveteur Secouriste du Travail) est obligatoire. Elle permet aux salari�s de porter les premiers secours � toutes victimes d�accident du travail.",
+      "viewifpourcentagescorelessthan": 70,
+      "id_categorie": 56
+    },
+    {
+      "id_preconisation": 92,
+      "contenu": "Il faut respecter les geste barri�re .",
+      "viewifpourcentagescorelessthan": 100,
+      "id_categorie": 64
+    }
+   ]
