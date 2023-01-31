@@ -1,6 +1,7 @@
 package fr.capeb.backend.riskevaluator.model;
 
 
+import fr.capeb.backend.riskevaluator.model.dto.CategorieQuestionDto;
 import fr.capeb.backend.riskevaluator.model.dto.PlainCategorieQuestionDto;
 import fr.capeb.backend.riskevaluator.model.dto.PlainEvaluationDto;
 import fr.capeb.backend.riskevaluator.model.dto.ScoreCategoryDto;
@@ -42,10 +43,33 @@ public class ScoreCategory {
 
     public static ScoreCategory from(ScoreCategoryDto scoreCategoryDto){
         ScoreCategory scoreCategory = new ScoreCategory();
-        PlainCategorieQuestionDto plainCategorieQuestionDto = scoreCategoryDto.getCategorieQuestion();
+        CategorieQuestionDto categorieQuestionDto = scoreCategoryDto.getCategorieQuestion();
         CategorieQuestion categorieQuestion = new CategorieQuestion();
-        categorieQuestion.setLibelle(plainCategorieQuestionDto.getLibelle());
-        categorieQuestion.setIdCategorie(plainCategorieQuestionDto.getIdCategorie());
+        categorieQuestion.setLibelle(categorieQuestionDto.getLibelle());
+        categorieQuestion.setIdCategorie(categorieQuestionDto.getIdCategorie());
+        Set<PreconisationCategorie> preconisationsCategorie= new HashSet<>();
+        categorieQuestionDto.getPreconisationsCategorie().forEach(plainPreconisationCategorieDto -> {
+            PreconisationCategorie preconisationCategorie = new PreconisationCategorie();
+            preconisationCategorie.setContenu(plainPreconisationCategorieDto.getContenu());
+            preconisationCategorie.setIdPreconisation(plainPreconisationCategorieDto.getIdPreconisation());
+            preconisationCategorie.setViewIfPourcentageScoreLessThan(plainPreconisationCategorieDto.getViewIfPourcentageScoreLessThan());
+            preconisationsCategorie.add(preconisationCategorie)   ;
+        });
+        categorieQuestion.setPreconisationsCategorie(preconisationsCategorie);
+        Questionnaire questionnaire = new Questionnaire();
+        questionnaire.setIdQuestionnaire(categorieQuestionDto.getQuestionnaire().getIdQuestionnaire());
+        questionnaire.setThematique(categorieQuestionDto.getQuestionnaire().getThematique());
+        questionnaire.setDate(categorieQuestionDto.getQuestionnaire().getDate());
+        categorieQuestion.setQuestionnaire(questionnaire);
+
+        Set<ScoreCategory> scoreEvaluations=new HashSet<>();
+        categorieQuestionDto.getScoreEvaluations().forEach(plainScoreCategoryDto -> {
+            ScoreCategory scoreCategory1 = new ScoreCategory();
+            scoreCategory1.setNbPoints(plainScoreCategoryDto.getNbPoints());
+            scoreCategory1.setKey(plainScoreCategoryDto.getKey());
+            scoreEvaluations.add(scoreCategory1);
+        });
+        categorieQuestion.setScoreEvaluations(scoreEvaluations);
         scoreCategory.setCategorieQuestion(categorieQuestion);
         scoreCategory.setKey(scoreCategoryDto.getKey());
         scoreCategory.setNbPoints(scoreCategoryDto.getNbPoints());

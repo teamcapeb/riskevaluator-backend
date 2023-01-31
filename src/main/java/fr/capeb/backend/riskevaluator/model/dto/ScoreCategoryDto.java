@@ -18,16 +18,26 @@ import java.util.Set;
 public class ScoreCategoryDto {
     private ScoreCategoryPK key = new ScoreCategoryPK();
     private PlainEvaluationDto evaluation;
-    private PlainCategorieQuestionDto categorieQuestion;
+    private CategorieQuestionDto categorieQuestion;
     private Integer nbPoints;
 
     public static ScoreCategoryDto from(ScoreCategory scoreCategory){
         ScoreCategoryDto scoreCategoryDto = new ScoreCategoryDto();
         CategorieQuestion categorieQuestion1 = scoreCategory.getCategorieQuestion();
-        PlainCategorieQuestionDto plainCategorieQuestionDto1 = new PlainCategorieQuestionDto();
-        plainCategorieQuestionDto1.setLibelle(categorieQuestion1.getLibelle());
-        plainCategorieQuestionDto1.setIdCategorie(categorieQuestion1.getIdCategorie());
-        scoreCategoryDto.setCategorieQuestion(plainCategorieQuestionDto1);
+        CategorieQuestionDto categorieQuestionDto1 = new CategorieQuestionDto();
+        categorieQuestionDto1.setLibelle(categorieQuestion1.getLibelle());
+
+        Set<PlainPreconisationCategorieDto> preconisationsCategorie= new HashSet<>();
+        scoreCategory.getCategorieQuestion().getPreconisationsCategorie().forEach((preconisationCategorie -> {
+            PlainPreconisationCategorieDto plainPreconisationCategorieDto = new PlainPreconisationCategorieDto();
+            plainPreconisationCategorieDto.setIdPreconisation(preconisationCategorie.getIdPreconisation());
+            plainPreconisationCategorieDto.setContenu(preconisationCategorie.getContenu());
+            plainPreconisationCategorieDto.setViewIfPourcentageScoreLessThan(preconisationCategorie.getViewIfPourcentageScoreLessThan());
+            preconisationsCategorie.add(plainPreconisationCategorieDto);
+        }));
+        categorieQuestionDto1.setPreconisationsCategorie(preconisationsCategorie);
+
+        scoreCategoryDto.setCategorieQuestion(categorieQuestionDto1);
         scoreCategoryDto.setKey(scoreCategory.getKey());
         scoreCategoryDto.setNbPoints(scoreCategory.getNbPoints());
         PlainEvaluationDto plainEvaluationDto = new PlainEvaluationDto();

@@ -1,9 +1,9 @@
 package fr.capeb.backend.riskevaluator.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import fr.capeb.backend.riskevaluator.model.dto.EvaluationDto;
+import fr.capeb.backend.riskevaluator.model.dto.PlainCategorieQuestionDto;
 import fr.capeb.backend.riskevaluator.model.dto.PlainEntrepriseDto;
-import fr.capeb.backend.riskevaluator.model.dto.PlainScoreCategoryDto;
+import fr.capeb.backend.riskevaluator.model.dto.ScoreCategoryDto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -49,10 +49,15 @@ public class Evaluation {
         evaluationEntity.setEntreprise(entreprise1);
         evaluationEntity.setScoreGeneraleEvaluation(evaluationDto.getScoreGeneraleEvaluation());
         Set<ScoreCategory> scoreCategories1 = new HashSet<>();
-        Set<PlainScoreCategoryDto> scoreCategoryDtos = evaluationDto.getScoreCategories();
+        Set<ScoreCategoryDto> scoreCategoryDtos = evaluationDto.getScoreCategories();
+
         scoreCategoryDtos.forEach(plainScoreCategoryDto -> {
             ScoreCategory scoreCategory = new ScoreCategory();
             scoreCategory.setKey(plainScoreCategoryDto.getKey());
+            CategorieQuestion categorieQuestion = new CategorieQuestion();
+            categorieQuestion.setIdCategorie(scoreCategory.getCategorieQuestion().getIdCategorie());
+            categorieQuestion.setLibelle(scoreCategory.getCategorieQuestion().getLibelle());
+            scoreCategory.setCategorieQuestion(categorieQuestion);
             scoreCategory.setNbPoints(plainScoreCategoryDto.getNbPoints());
             scoreCategories1.add(scoreCategory);
         });

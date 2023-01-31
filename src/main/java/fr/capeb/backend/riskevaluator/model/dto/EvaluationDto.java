@@ -1,5 +1,8 @@
 package fr.capeb.backend.riskevaluator.model.dto;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import fr.capeb.backend.riskevaluator.model.Compte;
 import fr.capeb.backend.riskevaluator.model.Entreprise;
 import fr.capeb.backend.riskevaluator.model.Evaluation;
@@ -9,22 +12,23 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
-
 @Data
 @Getter
 @Setter
 @NoArgsConstructor
 public class EvaluationDto {
-    private Integer idEvaluation;
-    private Integer scoreGeneraleEvaluation;
-    private Compte compte;
-    private PlainEntrepriseDto entreprise;
-    private Set<PlainScoreCategoryDto> scoreCategories=new HashSet<>();
 
-    public static EvaluationDto from(Evaluation evaluationEntity){
+    private Integer idEvaluation;
+
+    private Integer scoreGeneraleEvaluation;
+
+    private Compte compte;
+
+    private PlainEntrepriseDto entreprise;
+
+    private Set<ScoreCategoryDto> scoreCategories = new HashSet<>();
+
+    public static EvaluationDto from(Evaluation evaluationEntity) {
         EvaluationDto evaluationDto = new EvaluationDto();
         evaluationDto.setIdEvaluation(evaluationEntity.getIdEvaluation());
         evaluationDto.setCompte(evaluationEntity.getCompte());
@@ -36,17 +40,37 @@ public class EvaluationDto {
         plainEntrepriseDto.setAnneeDeCreation(entreprise1.getAnneeDeCreation());
         evaluationDto.setEntreprise(plainEntrepriseDto);
         evaluationDto.setScoreGeneraleEvaluation(evaluationEntity.getScoreGeneraleEvaluation());
-        Set<PlainScoreCategoryDto> scoreCategoryDtos = new HashSet<>();
+        Set<ScoreCategoryDto> scoreCategoryDtos = new HashSet<>();
         Set<ScoreCategory> scoreCategories1 = evaluationEntity.getScoreCategories();
         scoreCategories1.forEach(scoreCategory -> {
-            PlainScoreCategoryDto plainScoreCategoryDto = new PlainScoreCategoryDto();
-            plainScoreCategoryDto.setNbPoints(scoreCategory.getNbPoints());
-            plainScoreCategoryDto.setKey(scoreCategory.getKey());
-            scoreCategoryDtos.add(plainScoreCategoryDto);
+            ScoreCategoryDto scoreCategoryDto = new ScoreCategoryDto();
+            scoreCategoryDto.setNbPoints(scoreCategory.getNbPoints());
+            scoreCategoryDto.setKey(scoreCategory.getKey());
+
+            CategorieQuestionDto categorieQuestionDto = new CategorieQuestionDto();
+            categorieQuestionDto.setIdCategorie(scoreCategory.getKey().getIdCategorie());
+            categorieQuestionDto.setLibelle(scoreCategory.getCategorieQuestion().getLibelle());
+
+            Set<PlainPreconisationCategorieDto> preconisationsCategorie= new HashSet<>();
+            scoreCategory.getCategorieQuestion().getPreconisationsCategorie().forEach(preconisationCategorie -> {
+                PlainPreconisationCategorieDto plainPreconisationCategorieDto = new PlainPreconisationCategorieDto();
+                plainPreconisationCategorieDto.setIdPreconisation(preconisationCategorie.getIdPreconisation());
+                plainPreconisationCategorieDto.setContenu(preconisationCategorie.getContenu());
+                plainPreconisationCategorieDto.setViewIfPourcentageScoreLessThan(preconisationCategorie.getViewIfPourcentageScoreLessThan());
+                preconisationsCategorie.add(plainPreconisationCategorieDto);
+            });
+
+            categorieQuestionDto.setPreconisationsCategorie(preconisationsCategorie);
+            scoreCategoryDto.setCategorieQuestion(categorieQuestionDto);
+
+            PlainEvaluationDto plainEvaluationDto = new PlainEvaluationDto();
+            plainEvaluationDto.setIdEvaluation(scoreCategory.getEvaluation().getIdEvaluation());
+            plainEvaluationDto.setScoreGeneraleEvaluation(scoreCategory.getEvaluation().getScoreGeneraleEvaluation());
+            scoreCategoryDto.setEvaluation(plainEvaluationDto);
+            scoreCategoryDtos.add(scoreCategoryDto);
         });
         evaluationDto.setScoreCategories(scoreCategoryDtos);
         return evaluationDto;
     }
-
 
 }
