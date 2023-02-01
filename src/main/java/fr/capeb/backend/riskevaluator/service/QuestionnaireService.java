@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
@@ -41,6 +42,10 @@ public class QuestionnaireService {
         return questionnaire;
     }
 
+    public List<Questionnaire> byMetierIds(Set<Integer> metierId ) {
+        return questionnaireRepository.getQuestionnaireByMetiersIds(metierId);
+    }
+    
     @Transactional
     public Questionnaire editQuestionnaire(Integer id, Questionnaire questionnaire){
         Questionnaire questionnaireToEdit = getQuestionnaire(id);

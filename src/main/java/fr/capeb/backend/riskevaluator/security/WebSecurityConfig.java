@@ -59,7 +59,9 @@ package fr.capeb.backend.riskevaluator.security;
  				"/auth/**",
  				"/**"
  		};
-
+	  
+		http.headers().frameOptions().sameOrigin();
+		
  		http.cors().and().csrf().disable()
  			.exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and()
  			.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
