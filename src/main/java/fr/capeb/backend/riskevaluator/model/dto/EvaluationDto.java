@@ -24,6 +24,8 @@ public class EvaluationDto {
 
     private Compte compte;
 
+    private String date;
+
     private PlainEntrepriseDto entreprise;
 
     private Set<ScoreCategoryDto> scoreCategories = new HashSet<>();
@@ -39,6 +41,7 @@ public class EvaluationDto {
         plainEntrepriseDto.setEffectifEntreprise(entreprise1.getEffectifEntreprise());
         plainEntrepriseDto.setAnneeDeCreation(entreprise1.getAnneeDeCreation());
         evaluationDto.setEntreprise(plainEntrepriseDto);
+        evaluationDto.setDate(evaluationEntity.getDate());
         evaluationDto.setScoreGeneraleEvaluation(evaluationEntity.getScoreGeneraleEvaluation());
         Set<ScoreCategoryDto> scoreCategoryDtos = new HashSet<>();
         Set<ScoreCategory> scoreCategories1 = evaluationEntity.getScoreCategories();

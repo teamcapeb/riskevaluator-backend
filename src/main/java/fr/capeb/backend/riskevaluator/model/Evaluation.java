@@ -34,6 +34,8 @@ public class Evaluation {
     @JoinColumn(name="nosiret", nullable=false)
     private Entreprise entreprise;
 
+    private String date;
+
     @OneToMany(mappedBy = "evaluation",cascade = CascadeType.ALL)
     private Set<ScoreCategory> scoreCategories=new HashSet<>();
 
@@ -43,6 +45,7 @@ public class Evaluation {
         Entreprise entreprise1 = new Entreprise();
         PlainEntrepriseDto entrepriseDto = evaluationDto.getEntreprise();
         entreprise1.setNoSiret(entrepriseDto.getNoSiret());
+        evaluationEntity.setDate(evaluationDto.getDate());
         entreprise1.setNomEntreprise(entrepriseDto.getNomEntreprise());
         entreprise1.setAnneeDeCreation(entrepriseDto.getAnneeDeCreation());
         entreprise1.setEffectifEntreprise(entrepriseDto.getEffectifEntreprise());
