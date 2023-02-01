@@ -35,6 +35,7 @@ public class QuestionnaireDto {
             PlainCategorieQuestionDto plainCategorieQuestionDto1 = new PlainCategorieQuestionDto();
             plainCategorieQuestionDto1.setLibelle(categorieQuestion1.getLibelle());
             plainCategorieQuestionDto1.setIdCategorie(categorieQuestion1.getIdCategorie());
+      //      categorieQuestion1.getQuestions();
             plainCategorieQuestionDto.add(plainCategorieQuestionDto1);
         });
         questionnaireDto.setCategorieQuestions(plainCategorieQuestionDto);

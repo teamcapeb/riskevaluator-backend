@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Data
@@ -17,10 +18,7 @@ import java.util.Set;
 public class PlainCategorieQuestionDto {
     public Integer idCategorie;
     public String libelle;
-
-
-
-
+    
     public static PlainCategorieQuestionDto from(CategorieQuestion categorieQuestion){
         PlainCategorieQuestionDto categorieQuestionDto = new PlainCategorieQuestionDto();
         categorieQuestionDto.setIdCategorie(categorieQuestion.getIdCategorie());

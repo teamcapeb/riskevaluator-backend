@@ -11,7 +11,9 @@ import java.util.List;
 
 @Repository
 public interface MetierRepository extends JpaRepository<Metier, Integer> {
-
+	
+	Metier findTopByOrderByIdMetierDesc();
+	
     //@Query("select distinct metierQuestion.metier from  MetierQuestionEntity metierQuestion where metierQuestion.question.categorieQuestion.questionnaire.idQuestionnaire = :aQuestionnaireId order by metierQuestion.metier.nomMetier")
     //List<Metier> getMetiersByQuestionnaireId(@Param("aQuestionnaireId") Integer aQuestionnaireId);
 }
