@@ -67,8 +67,12 @@ public class QuestionnaireController {
 	}
 	
 	@GetMapping("/bymetierids")
-	public ResponseEntity<?> getQuestionnairesByMetierId(@RequestParam Set<Integer> metierId) {
-		var res = questionnaireService.byMetierIds(metierId);
+	public ResponseEntity<List<QuestionnaireDto>> getQuestionnairesByMetierId(@RequestParam Set<Integer> metierId) {
+		List<Questionnaire> questionnaires = questionnaireService.byMetierIds(metierId);
+		
+		List<QuestionnaireDto> res = questionnaires.stream()
+				.map(QuestionnaireDto::from)
+				.collect(Collectors.toList());
 		
 		return new ResponseEntity<>(res, HttpStatus.OK);
 	}

@@ -16,7 +16,7 @@ import java.util.*;
 public class Metier {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_metier")
     private Integer idMetier;
 

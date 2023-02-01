@@ -1,5 +1,6 @@
 package fr.capeb.backend.riskevaluator.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import fr.capeb.backend.riskevaluator.model.dto.MetierQuestionDto;
 import fr.capeb.backend.riskevaluator.model.dto.PlainMetierDto;
 import fr.capeb.backend.riskevaluator.model.dto.PlainQuestionDto;
@@ -22,12 +23,14 @@ public class MetierQuestion {
     @MapsId(value = "questionId")
     @ManyToOne
     @JoinColumn(name = "id_question", referencedColumnName = "id_question")
+    @JsonIgnore
     private Question question;
 
 
     @MapsId(value = "metierId")
     @ManyToOne
     @JoinColumn(name = "id_metier", referencedColumnName = "id_metier")
+    @JsonIgnore
     private Metier metier;
 
     public static MetierQuestion from(MetierQuestionDto metierQuestionDto){

@@ -15,6 +15,8 @@ import fr.capeb.backend.riskevaluator.model.CategorieQuestion;
 import fr.capeb.backend.riskevaluator.model.Entreprise;
 import fr.capeb.backend.riskevaluator.model.Evaluation;
 import fr.capeb.backend.riskevaluator.model.Metier;
+import fr.capeb.backend.riskevaluator.model.MetierQuestion;
+import fr.capeb.backend.riskevaluator.model.MetierQuestionPK;
 import fr.capeb.backend.riskevaluator.model.PreconisationCategorie;
 import fr.capeb.backend.riskevaluator.model.PreconisationGlobale;
 import fr.capeb.backend.riskevaluator.model.Question;
@@ -25,6 +27,7 @@ import fr.capeb.backend.riskevaluator.model.enumeration.QuestionType;
 import fr.capeb.backend.riskevaluator.repository.CategorieQuestionRepository;
 import fr.capeb.backend.riskevaluator.repository.EntrepriseRepository;
 import fr.capeb.backend.riskevaluator.repository.EvaluationRepository;
+import fr.capeb.backend.riskevaluator.repository.MetierQuestionRepository;
 import fr.capeb.backend.riskevaluator.repository.MetierRepository;
 import fr.capeb.backend.riskevaluator.repository.PreconisationCategorieRepository;
 import fr.capeb.backend.riskevaluator.repository.PreconisationGlobaleRepository;
@@ -199,7 +202,30 @@ public class RiskevaluatorApplication {
 			reponse.setQuestion(questionService.getQuestion(metJson.getInt("id_question")));
 			reponseRepository.save(reponse);
 		}
-
+		
+		ClassPathResource metierQuestionJson = new ClassPathResource("data/metier_question.json");
+		String metierQuestionPath = mapper.readTree(metierQuestionJson.getInputStream()).toString();
+		JSONArray metierQuestionArray = new JSONArray(metierQuestionPath);
+		
+		MetierQuestionRepository metierQuestionRepository = configurableApplicationContext.getBean(MetierQuestionRepository.class);
+		for (Object metierQuestion : metierQuestionArray) {
+			JSONObject mqJson = (JSONObject) metierQuestion;
+			MetierQuestion mq = new MetierQuestion();
+			MetierQuestionPK metierQuestionPK= new MetierQuestionPK();
+			metierQuestionPK.setMetierId(mqJson.getInt("id_metier"));
+			metierQuestionPK.setQuestionId(mqJson.getInt("id_question"));
+			
+			Metier metier = metierRepository.findById(mqJson.getInt("id_metier")).get();
+			mq.setMetier(metier);
+			
+			Question question = questionRepository.findById(mqJson.getInt("id_question")).get();
+			
+			mq.setQuestion(question);
+			
+			metierQuestionRepository.save(mq);
+		}
+		
+		
 		ClassPathResource scoreCategoryJson = new ClassPathResource("data/scoreCategory.json");
 		String scoreCategoryPath = mapper.readTree(scoreCategoryJson.getInputStream()).toString();
 		JSONArray scoreCategorieArray = new JSONArray(scoreCategoryPath);
