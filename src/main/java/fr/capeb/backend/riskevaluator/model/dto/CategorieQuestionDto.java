@@ -35,6 +35,15 @@ public class CategorieQuestionDto {
             plainQuestionDto.setIdQuestion(question.getIdQuestion());
             plainQuestionDto.setScoreMaxPossibleQuestion(question.getScoreMaxPossibleQuestion());
             plainQuestionDto.setTypeQuestion(question.getTypeQuestion());
+            Set<PlainReponseDto> reponses1 = new HashSet<>();
+            question.getReponses().forEach(reponse -> {
+                PlainReponseDto plainReponseDto = new PlainReponseDto();
+                plainReponseDto.setNbPoints(reponse.getNbPoints());
+                plainReponseDto.setContenu(reponse.getContenu());
+                plainReponseDto.setIdReponse(reponse.getIdReponse());
+                reponses1.add(plainReponseDto);
+            });
+            plainQuestionDto.setReponses(reponses1);
             plainQuestionDtos.add(plainQuestionDto);
         });
         categorieQuestionDto.setQuestions(plainQuestionDtos);
@@ -48,6 +57,8 @@ public class CategorieQuestionDto {
             plainPreconisationsCategorieDto.setViewIfPourcentageScoreLessThan(preconisationsCategorie.getViewIfPourcentageScoreLessThan());
             plainPreconisationsCategorieDtos.add(plainPreconisationsCategorieDto);
         });
+
+
         categorieQuestionDto.setPreconisationsCategorie(plainPreconisationsCategorieDtos);
         categorieQuestionDto.setLibelle(categorieQuestion.getLibelle());
         PlainQuestionnaireDto plainQuestionnaireDtos = new PlainQuestionnaireDto();

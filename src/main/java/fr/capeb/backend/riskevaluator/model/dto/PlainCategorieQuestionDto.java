@@ -32,6 +32,15 @@ public class PlainCategorieQuestionDto {
             plainQuestionDto.setIdQuestion(question.getIdQuestion());
             plainQuestionDto.setScoreMaxPossibleQuestion(question.getScoreMaxPossibleQuestion());
             plainQuestionDto.setLibelleQuestion(question.getLibelleQuestion());
+            Set<PlainReponseDto> reponses1 = new HashSet<>();
+            question.getReponses().forEach(reponse -> {
+                PlainReponseDto plainReponseDto = new PlainReponseDto();
+                plainReponseDto.setNbPoints(reponse.getNbPoints());
+                plainReponseDto.setContenu(reponse.getContenu());
+                plainReponseDto.setIdReponse(reponse.getIdReponse());
+                reponses1.add(plainReponseDto);
+            });
+            plainQuestionDto.setReponses(reponses1);
             plainQuestionDtos.add(plainQuestionDto);
         });
         categorieQuestionDto.setQuestions(plainQuestionDtos);
