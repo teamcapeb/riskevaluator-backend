@@ -46,6 +46,9 @@ public class Evaluation {
         entreprise1.setNomEntreprise(entrepriseDto.getNomEntreprise());
         entreprise1.setAnneeDeCreation(entrepriseDto.getAnneeDeCreation());
         entreprise1.setEffectifEntreprise(entrepriseDto.getEffectifEntreprise());
+
+
+
         evaluationEntity.setEntreprise(entreprise1);
         evaluationEntity.setScoreGeneraleEvaluation(evaluationDto.getScoreGeneraleEvaluation());
         Set<ScoreCategory> scoreCategories1 = new HashSet<>();
@@ -57,6 +60,7 @@ public class Evaluation {
             CategorieQuestion categorieQuestion = new CategorieQuestion();
             categorieQuestion.setIdCategorie(scoreCategory.getCategorieQuestion().getIdCategorie());
             categorieQuestion.setLibelle(scoreCategory.getCategorieQuestion().getLibelle());
+            categorieQuestion.setQuestionnaire(scoreCategory.getCategorieQuestion().getQuestionnaire());
             scoreCategory.setCategorieQuestion(categorieQuestion);
             scoreCategory.setNbPoints(plainScoreCategoryDto.getNbPoints());
             scoreCategories1.add(scoreCategory);

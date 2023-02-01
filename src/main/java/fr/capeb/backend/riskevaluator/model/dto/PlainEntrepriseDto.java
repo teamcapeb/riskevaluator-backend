@@ -20,6 +20,7 @@ public class PlainEntrepriseDto {
     public String nomEntreprise;
     public Integer effectifEntreprise;
     public Integer anneeDeCreation;
+    private Set<PlainMetierDto> metiers  = new HashSet<>();
 
     public static PlainEntrepriseDto from(Entreprise entrepriseEntity){
         PlainEntrepriseDto entrepriseDto = new PlainEntrepriseDto();
@@ -27,6 +28,17 @@ public class PlainEntrepriseDto {
         entrepriseDto.setEffectifEntreprise(entrepriseEntity.getEffectifEntreprise());
         entrepriseDto.setNoSiret(entrepriseEntity.getNoSiret());
         entrepriseDto.setAnneeDeCreation(entrepriseEntity.getAnneeDeCreation());
+
+        Set<PlainMetierDto> plainMetiers  = new HashSet<>();
+        entrepriseEntity.getMetiers().forEach(metier -> {
+            PlainMetierDto plainMetierDto = new PlainMetierDto();
+            plainMetierDto.setNomMetier(metier.getNomMetier());
+            plainMetierDto.setIdMetier(metier.getIdMetier());
+            plainMetiers.add(plainMetierDto);
+        });
+
+
+        entrepriseDto.setMetiers(plainMetiers);
         return entrepriseDto;
     }
 

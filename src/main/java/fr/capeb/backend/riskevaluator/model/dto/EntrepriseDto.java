@@ -21,6 +21,7 @@ public class EntrepriseDto {
     public Integer effectifEntreprise;
     public Integer anneeDeCreation;
     private Set<PlainEvaluationDto> evaluations=new HashSet<>();
+    private Set<PlainMetierDto> metiers  = new HashSet<>();
 
     public static EntrepriseDto from(Entreprise entrepriseEntity){
         EntrepriseDto entrepriseDto = new EntrepriseDto();
@@ -35,6 +36,17 @@ public class EntrepriseDto {
             plainEvaluationDto1.setScoreGeneraleEvaluation(evaluation1.getScoreGeneraleEvaluation());
             plainEvaluationDto.add(plainEvaluationDto1);
         });
+
+        Set<PlainMetierDto> plainMetiers  = new HashSet<>();
+        entrepriseEntity.getMetiers().forEach(metier -> {
+            PlainMetierDto plainMetierDto = new PlainMetierDto();
+            plainMetierDto.setNomMetier(metier.getNomMetier());
+            plainMetierDto.setIdMetier(metier.getIdMetier());
+            plainMetiers.add(plainMetierDto);
+        });
+
+
+        entrepriseDto.setMetiers(plainMetiers);
         entrepriseDto.setEvaluations(plainEvaluationDto);
         entrepriseDto.setAnneeDeCreation(entrepriseEntity.getAnneeDeCreation());
         return entrepriseDto;

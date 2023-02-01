@@ -40,6 +40,10 @@ public class Entreprise {
     @OneToMany(mappedBy = "entreprise",cascade = CascadeType.ALL)
     private Set<Evaluation> evaluations=new HashSet<>();
 
+    @OneToMany(mappedBy = "idMetier",cascade = CascadeType.ALL)
+    private Set<Metier> metiers=new HashSet<>();
+
+
 
     public static Entreprise from(EntrepriseDto entrepriseDto){
         Entreprise entreprise = new Entreprise();
@@ -54,6 +58,14 @@ public class Entreprise {
                     evaluations1.add(evaluation);
         });
 
+        Set<Metier> metiers1=new HashSet<>();
+        entrepriseDto.getMetiers().forEach(plainMetierDto -> {
+            Metier metier = new Metier();
+            metier.setNomMetier(plainMetierDto.getNomMetier());
+            metier.setNomMetier(plainMetierDto.getNomMetier());
+            metiers1.add(metier);
+        });
+        entreprise.setMetiers(metiers1);
         entreprise.setEvaluations(evaluations1);
         entreprise.setAnneeDeCreation(entrepriseDto.getAnneeDeCreation());
         return entreprise;

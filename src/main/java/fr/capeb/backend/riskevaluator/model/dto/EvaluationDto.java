@@ -50,6 +50,11 @@ public class EvaluationDto {
             CategorieQuestionDto categorieQuestionDto = new CategorieQuestionDto();
             categorieQuestionDto.setIdCategorie(scoreCategory.getKey().getIdCategorie());
             categorieQuestionDto.setLibelle(scoreCategory.getCategorieQuestion().getLibelle());
+            PlainQuestionnaireDto plainQuestionnaireDto = new PlainQuestionnaireDto();
+            plainQuestionnaireDto.setThematique(scoreCategory.getCategorieQuestion().getQuestionnaire().getThematique());
+            plainQuestionnaireDto.setIdQuestionnaire(scoreCategory.getCategorieQuestion().getQuestionnaire().getIdQuestionnaire());
+            plainQuestionnaireDto.setDate(scoreCategory.getCategorieQuestion().getQuestionnaire().getDate());
+            categorieQuestionDto.setQuestionnaire(plainQuestionnaireDto);
 
             Set<PlainPreconisationCategorieDto> preconisationsCategorie= new HashSet<>();
             scoreCategory.getCategorieQuestion().getPreconisationsCategorie().forEach(preconisationCategorie -> {
