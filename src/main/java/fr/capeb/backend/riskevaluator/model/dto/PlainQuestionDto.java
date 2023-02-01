@@ -25,6 +25,7 @@ public class PlainQuestionDto {
     private QuestionType typeQuestion;
     private Integer scoreMaxPossibleQuestion;
     private String libelleQuestion;
+    private Set<PlainReponseDto> reponses = new HashSet<>();
 
     public static PlainQuestionDto from(Question question){
         PlainQuestionDto questionDto = new PlainQuestionDto();
@@ -32,6 +33,16 @@ public class PlainQuestionDto {
         questionDto.setLibelleQuestion(question.getLibelleQuestion());
         questionDto.setScoreMaxPossibleQuestion(question.getScoreMaxPossibleQuestion());
         questionDto.setTypeQuestion(question.getTypeQuestion());
+        Set<Reponse> reponses = question.getReponses();
+        Set<PlainReponseDto> reponseDtos = new HashSet<>();
+        reponses.forEach(reponse -> {
+            PlainReponseDto plainReponseDto = new PlainReponseDto();
+            plainReponseDto.setContenu(reponse.getContenu());
+            plainReponseDto.setIdReponse(reponse.getIdReponse());
+            plainReponseDto.setNbPoints(reponse.getNbPoints());
+            reponseDtos.add(plainReponseDto);
+        });
+        questionDto.setReponses(reponseDtos);
         return questionDto;
     }
 }

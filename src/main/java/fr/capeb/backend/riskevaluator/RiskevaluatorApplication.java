@@ -241,6 +241,8 @@ public class RiskevaluatorApplication {
 			scoreCategorie.setNbPoints(metJson.getInt("nb_points"));
 			scoreCategorieRepository.save(scoreCategorie);
 		}
+
+
 	}
 }
 
