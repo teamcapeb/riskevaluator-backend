@@ -35,6 +35,16 @@ public class QuestionnaireDto {
             PlainCategorieQuestionDto plainCategorieQuestionDto1 = new PlainCategorieQuestionDto();
             plainCategorieQuestionDto1.setLibelle(categorieQuestion1.getLibelle());
             plainCategorieQuestionDto1.setIdCategorie(categorieQuestion1.getIdCategorie());
+            Set<PlainQuestionDto> plainQuestionDtos = new HashSet<>();
+            categorieQuestion1.getQuestions().forEach(question -> {
+                PlainQuestionDto plainQuestionDto = new PlainQuestionDto();
+                plainQuestionDto.setTypeQuestion(question.getTypeQuestion());
+                plainQuestionDto.setIdQuestion(question.getIdQuestion());
+                plainQuestionDto.setScoreMaxPossibleQuestion(question.getScoreMaxPossibleQuestion());
+                plainQuestionDto.setLibelleQuestion(question.getLibelleQuestion());
+                plainQuestionDtos.add(plainQuestionDto);
+            });
+            plainCategorieQuestionDto1.setQuestions(plainQuestionDtos);
             plainCategorieQuestionDto.add(plainCategorieQuestionDto1);
         });
         questionnaireDto.setCategorieQuestions(plainCategorieQuestionDto);

@@ -3,6 +3,7 @@ package fr.capeb.backend.riskevaluator.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import fr.capeb.backend.riskevaluator.model.dto.PlainCategorieQuestionDto;
 import fr.capeb.backend.riskevaluator.model.dto.PlainPreconisationGlobaleDto;
+import fr.capeb.backend.riskevaluator.model.dto.PlainQuestionDto;
 import fr.capeb.backend.riskevaluator.model.dto.QuestionnaireDto;
 import lombok.*;
 
@@ -42,10 +43,23 @@ public class Questionnaire {
         questionnaire.setThematique(questionnaireDto.getThematique());
         Set<PlainCategorieQuestionDto> plainCategorieQuestionDto =questionnaireDto.getCategorieQuestions();
         Set<CategorieQuestion> categorieQuestion = new HashSet<>();
+
+
+
         plainCategorieQuestionDto.forEach(categorieQuestionDto1 -> {
             CategorieQuestion categorieQuestion2 = new CategorieQuestion();
             categorieQuestion2.setLibelle(categorieQuestionDto1.getLibelle());
             categorieQuestion2.setIdCategorie(categorieQuestionDto1.getIdCategorie());
+            Set<Question> questions1 = new HashSet<>();
+            categorieQuestionDto1.getQuestions().forEach(question -> {
+                Question question1 = new Question();
+                question1.setTypeQuestion(question.getTypeQuestion());
+                question1.setIdQuestion(question.getIdQuestion());
+                question1.setScoreMaxPossibleQuestion(question.getScoreMaxPossibleQuestion());
+                question1.setLibelleQuestion(question.getLibelleQuestion());
+                questions1.add(question1);
+            });
+            categorieQuestion2.setQuestions(questions1);
             categorieQuestion.add(categorieQuestion2);
         });
         questionnaire.setCategorieQuestions(categorieQuestion);

@@ -17,7 +17,7 @@ import java.util.Set;
 public class PlainCategorieQuestionDto {
     public Integer idCategorie;
     public String libelle;
-
+    public Set<PlainQuestionDto> questions = new HashSet<>();
 
 
 
@@ -25,6 +25,16 @@ public class PlainCategorieQuestionDto {
         PlainCategorieQuestionDto categorieQuestionDto = new PlainCategorieQuestionDto();
         categorieQuestionDto.setIdCategorie(categorieQuestion.getIdCategorie());
         categorieQuestionDto.setLibelle(categorieQuestion.getLibelle());
+        Set<PlainQuestionDto> plainQuestionDtos = new HashSet<>();
+        categorieQuestion.getQuestions().forEach(question -> {
+            PlainQuestionDto plainQuestionDto = new PlainQuestionDto();
+            plainQuestionDto.setTypeQuestion(question.getTypeQuestion());
+            plainQuestionDto.setIdQuestion(question.getIdQuestion());
+            plainQuestionDto.setScoreMaxPossibleQuestion(question.getScoreMaxPossibleQuestion());
+            plainQuestionDto.setLibelleQuestion(question.getLibelleQuestion());
+            plainQuestionDtos.add(plainQuestionDto);
+        });
+        categorieQuestionDto.setQuestions(plainQuestionDtos);
         return categorieQuestionDto;
     }
 }
