@@ -46,9 +46,11 @@ import fr.capeb.backend.riskevaluator.service.QuestionnaireService;
 import fr.capeb.backend.riskevaluator.service.ReponseService;
 import fr.capeb.backend.riskevaluator.service.ScoreCategorieService;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import lombok.RequiredArgsConstructor;
 
 @SpringBootApplication
 @OpenAPIDefinition
+@RequiredArgsConstructor
 public class RiskevaluatorApplication {
 
 	public static void main(String[] args) throws IOException {
@@ -76,7 +78,10 @@ public class RiskevaluatorApplication {
 		JSONArray questionnaireArray = new JSONArray(questionnairePath);
 
 		QuestionnaireRepository questionnaireRepository = configurableApplicationContext.getBean(QuestionnaireRepository.class);
-		QuestionnaireService questionnaireService = new QuestionnaireService(questionnaireRepository);
+		QuestionRepository questionRepository = configurableApplicationContext.getBean(QuestionRepository.class);
+		
+		
+		QuestionnaireService questionnaireService = new QuestionnaireService(questionnaireRepository, questionRepository);
 		for (Object question : questionnaireArray) {
 			JSONObject questionJson = (JSONObject) question;
 			Questionnaire questionnaire = new Questionnaire();
@@ -136,7 +141,6 @@ public class RiskevaluatorApplication {
 		String questionPath = mapper.readTree(questionJson.getInputStream()).toString();
 		JSONArray questionArray = new JSONArray(questionPath);
 
-		QuestionRepository questionRepository = configurableApplicationContext.getBean(QuestionRepository.class);
 		QuestionService questionService = new QuestionService(questionRepository);
 		for (Object quest : questionArray) {
 			JSONObject questJson = (JSONObject) quest;

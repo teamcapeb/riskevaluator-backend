@@ -15,13 +15,14 @@ import java.util.Set;
 
 @Repository
 public interface QuestionRepository extends JpaRepository<Question, Integer> {
-    //@Query("select distinct categorieQuestion " +
-    // "from  MetierQuestionEntity metierQuestion " +
-    //  "join CategorieQuestionEntity categorieQuestion " +
-    //    "on metierQuestion.question.categorieQuestion.idCategorie=categorieQuestion.idCategorie " +
-    //     "where metierQuestion.question.categorieQuestion.questionnaire.idQuestionnaire = (:aQuestionnaireId) " +
-    //     "and metierQuestion.metier.idMetier in (:metierIds) " +
-    //    "order by categorieQuestion.libelle")
-    //List<CategorieQuestion> getCategorieQuestionsByQuestionnaireIdAndMetiers(@Param("aQuestionnaireId") Integer aQuestionnaireId, @Param("metierIds") Set<Integer> metierIds);
+    @Query("select distinct categorieQuestion " +
+     "from  MetierQuestion metierQuestion " +
+      "join CategorieQuestion categorieQuestion " +
+        "on metierQuestion.question.categorieQuestion.idCategorie=categorieQuestion.idCategorie " +
+         "where metierQuestion.question.categorieQuestion.questionnaire.idQuestionnaire = (:aQuestionnaireId) " +
+         "and metierQuestion.metier.idMetier in (:metierIds) " +
+        "order by categorieQuestion.libelle")
+    List<CategorieQuestion> getCategorieQuestionsByQuestionnaireIdAndMetiers(@Param("aQuestionnaireId") Integer aQuestionnaireId,
+			@Param("metierIds") Set<Integer> metierIds);
 
 }

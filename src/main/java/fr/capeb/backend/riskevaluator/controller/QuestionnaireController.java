@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import fr.capeb.backend.riskevaluator.model.Questionnaire;
+import fr.capeb.backend.riskevaluator.model.dto.CategorieQuestionDto;
 import fr.capeb.backend.riskevaluator.model.dto.QuestionnaireDto;
 import fr.capeb.backend.riskevaluator.service.QuestionnaireService;
 
@@ -77,4 +78,10 @@ public class QuestionnaireController {
 		return new ResponseEntity<>(res, HttpStatus.OK);
 	}
 	
+	@GetMapping("/{id}/questions")
+	ResponseEntity<List<CategorieQuestionDto>> getQuestionsByQuestionnaireAndMetierIds(
+			@PathVariable Integer id,
+			@RequestParam Set<Integer> metierId) {
+		return questionnaireService.getQuestionsByQuestionnaireAndMetierIds(id, metierId);
+	}
 }
