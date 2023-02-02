@@ -22,7 +22,12 @@ public class EvaluationService {
         this.evaluationRepository = evaluationRepository;
     }
 
-    public Evaluation addEvaluation(Evaluation evaluation){
+    public Evaluation addEvaluation(Evaluation evaluation) {
+        Integer newId = evaluationRepository.findTopByOrderByIdEvaluationDesc().getIdEvaluation() + 1;
+        evaluation.setIdEvaluation(newId);
+        evaluation.getScoreCategories().forEach((scoreCategory -> {
+            scoreCategory.getEvaluation().setIdEvaluation(newId);
+        }));
         return evaluationRepository.save(evaluation);
     }
 

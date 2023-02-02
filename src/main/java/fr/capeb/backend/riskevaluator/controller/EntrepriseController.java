@@ -37,6 +37,12 @@ public class EntrepriseController {
         return ResponseEntity.ok(entreprisesDto);
     }
 
+
+    @GetMapping("/{id}/exists")
+    public boolean exists(@PathVariable String id) {
+        return entrepriseService.exists( Long.parseLong(id));
+    }
+
     @GetMapping(value = "{id}")
     public ResponseEntity<EntrepriseDto> getEntreprise(@PathVariable final Long id){
         Entreprise entreprise = entrepriseService.getEntreprise(id);

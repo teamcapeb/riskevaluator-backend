@@ -58,7 +58,6 @@ public class EvaluationDto {
             plainQuestionnaireDto.setIdQuestionnaire(scoreCategory.getCategorieQuestion().getQuestionnaire().getIdQuestionnaire());
             plainQuestionnaireDto.setDate(scoreCategory.getCategorieQuestion().getQuestionnaire().getDate());
             categorieQuestionDto.setQuestionnaire(plainQuestionnaireDto);
-
             Set<PlainPreconisationCategorieDto> preconisationsCategorie= new HashSet<>();
             scoreCategory.getCategorieQuestion().getPreconisationsCategorie().forEach(preconisationCategorie -> {
                 PlainPreconisationCategorieDto plainPreconisationCategorieDto = new PlainPreconisationCategorieDto();
@@ -72,9 +71,10 @@ public class EvaluationDto {
             scoreCategoryDto.setCategorieQuestion(categorieQuestionDto);
 
             PlainEvaluationDto plainEvaluationDto = new PlainEvaluationDto();
-            plainEvaluationDto.setIdEvaluation(scoreCategory.getEvaluation().getIdEvaluation());
-            plainEvaluationDto.setScoreGeneraleEvaluation(scoreCategory.getEvaluation().getScoreGeneraleEvaluation());
+            plainEvaluationDto.setIdEvaluation(evaluationEntity.getIdEvaluation());
+            plainEvaluationDto.setScoreGeneraleEvaluation(evaluationEntity.getScoreGeneraleEvaluation());
             scoreCategoryDto.setEvaluation(plainEvaluationDto);
+
             scoreCategoryDtos.add(scoreCategoryDto);
         });
         evaluationDto.setScoreCategories(scoreCategoryDtos);

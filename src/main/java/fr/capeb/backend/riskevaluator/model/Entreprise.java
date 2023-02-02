@@ -48,6 +48,7 @@ public class Entreprise {
     public static Entreprise from(EntrepriseDto entrepriseDto){
         Entreprise entreprise = new Entreprise();
         entreprise.setNomEntreprise(entrepriseDto.getNomEntreprise());
+        entreprise.setNoSiret(entrepriseDto.getNoSiret());
         entreprise.setEffectifEntreprise(entrepriseDto.getEffectifEntreprise());
         Set<PlainEvaluationDto> plainEvaluationDtos = entrepriseDto.getEvaluations();
         Set<Evaluation> evaluations1 = new HashSet<>();

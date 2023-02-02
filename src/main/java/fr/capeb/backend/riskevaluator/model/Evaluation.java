@@ -1,9 +1,6 @@
 package fr.capeb.backend.riskevaluator.model;
 
-import fr.capeb.backend.riskevaluator.model.dto.EvaluationDto;
-import fr.capeb.backend.riskevaluator.model.dto.PlainCategorieQuestionDto;
-import fr.capeb.backend.riskevaluator.model.dto.PlainEntrepriseDto;
-import fr.capeb.backend.riskevaluator.model.dto.ScoreCategoryDto;
+import fr.capeb.backend.riskevaluator.model.dto.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -21,6 +18,7 @@ public class Evaluation {
 
     @Id
     @Column(name = "id_evaluation")
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idEvaluation;
 
     @Column(name = "score_generale")
@@ -41,6 +39,7 @@ public class Evaluation {
 
     public static Evaluation from(EvaluationDto evaluationDto){
         Evaluation evaluationEntity = new Evaluation();
+        evaluationEntity.setIdEvaluation(evaluationDto.getIdEvaluation());
         evaluationEntity.setCompte(evaluationDto.getCompte());
         Entreprise entreprise1 = new Entreprise();
         PlainEntrepriseDto entrepriseDto = evaluationDto.getEntreprise();
@@ -61,10 +60,48 @@ public class Evaluation {
             ScoreCategory scoreCategory = new ScoreCategory();
             scoreCategory.setKey(plainScoreCategoryDto.getKey());
             CategorieQuestion categorieQuestion = new CategorieQuestion();
-            categorieQuestion.setIdCategorie(scoreCategory.getCategorieQuestion().getIdCategorie());
-            categorieQuestion.setLibelle(scoreCategory.getCategorieQuestion().getLibelle());
-            categorieQuestion.setQuestionnaire(scoreCategory.getCategorieQuestion().getQuestionnaire());
+           categorieQuestion.setIdCategorie(plainScoreCategoryDto.getCategorieQuestion().getIdCategorie());
+            categorieQuestion.setLibelle(plainScoreCategoryDto.getCategorieQuestion().getLibelle());
+
+            Questionnaire questionnaire = new Questionnaire();
+            questionnaire.setIdQuestionnaire(plainScoreCategoryDto.getCategorieQuestion().getQuestionnaire().getIdQuestionnaire());
+            questionnaire.setThematique(plainScoreCategoryDto.getCategorieQuestion().getQuestionnaire().getThematique());
+            questionnaire.setDate(plainScoreCategoryDto.getCategorieQuestion().getQuestionnaire().getDate());
+
+
+            categorieQuestion.setQuestionnaire(questionnaire);
+            Set<Question> questions = new HashSet<>();
+            plainScoreCategoryDto.getCategorieQuestion().getQuestions().forEach((plainQuestionDto -> {
+                Question question = new Question();
+                question.setIdQuestion(plainQuestionDto.getIdQuestion());
+                question.setLibelleQuestion(plainQuestionDto.getLibelleQuestion());
+                question.setTypeQuestion(plainQuestionDto.getTypeQuestion());
+                question.setScoreMaxPossibleQuestion(plainQuestionDto.getScoreMaxPossibleQuestion());
+                Set<Reponse> reponses = new HashSet<>();
+                plainQuestionDto.getReponses().forEach(plainReponseDto -> {
+                    Reponse reponse = new Reponse();
+                    reponse.setIdReponse(plainReponseDto.getIdReponse());
+                    reponse.setContenu(plainReponseDto.getContenu());
+                    reponse.setNbPoints(plainReponseDto.getNbPoints());
+                    reponses.add(reponse);
+                });
+
+                question.setReponses(reponses);
+                questions.add(question);
+
+
+
+            }));
+
+            categorieQuestion.setQuestions(questions);
             scoreCategory.setCategorieQuestion(categorieQuestion);
+
+            Evaluation evaluation = new Evaluation();
+            evaluation.setIdEvaluation(evaluationDto.getIdEvaluation());
+            evaluation.setDate(evaluationDto.getDate());
+            evaluation.setScoreGeneraleEvaluation(evaluationDto.getScoreGeneraleEvaluation());
+
+            scoreCategory.setEvaluation(evaluation);
             scoreCategory.setNbPoints(plainScoreCategoryDto.getNbPoints());
             scoreCategories1.add(scoreCategory);
         });

@@ -23,7 +23,7 @@ public class MetierService {
     }
 
     public Metier addMetier(Metier metier){
-        metier.setIdMetier(metierRepository.findTopByOrderByIdMetierDesc().getIdMetier());
+        metier.setIdMetier(metierRepository.findTopByOrderByIdMetierDesc().getIdMetier()+1);
         return metierRepository.save(metier);
     }
 

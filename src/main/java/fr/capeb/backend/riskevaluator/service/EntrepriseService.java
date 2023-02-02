@@ -40,6 +40,10 @@ public class EntrepriseService {
         return entreprise;
     }
 
+    public boolean exists(Long siret) {
+        return entrepriseRepository.existsById(siret);
+    }
+
     @Transactional
     public Entreprise editEntreprise(Long id, Entreprise entreprise){
         Entreprise entrepriseToEdit = getEntreprise(id);

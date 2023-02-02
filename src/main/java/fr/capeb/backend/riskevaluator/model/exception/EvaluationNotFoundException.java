@@ -5,6 +5,6 @@ import java.text.MessageFormat;
 public class EvaluationNotFoundException extends RuntimeException {
 
     public EvaluationNotFoundException(final Integer id){
-        super(MessageFormat.format("Could not find question with id: {0}", id));
+        super(MessageFormat.format("Could not find evaluation with id: {0}", id));
     }
 }
