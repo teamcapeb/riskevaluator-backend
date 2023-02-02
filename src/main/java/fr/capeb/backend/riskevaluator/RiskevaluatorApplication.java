@@ -68,7 +68,7 @@ public class RiskevaluatorApplication {
 			Entreprise entreprise = new Entreprise();
 			entreprise.setNoSiret(entJson.getLong("nosiret"));
 			entreprise.setAnneeDeCreation(entJson.getInt("anneedecreation"));
-			entreprise.setEffectifEntreprise(entJson.getInt("effectif"));
+			entreprise.setEffectif(entJson.getInt("effectif"));
 			entreprise.setNomEntreprise(entJson.getString("nom_entreprise"));
 			entrepriseRepository.save(entreprise);
 		}

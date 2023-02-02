@@ -24,7 +24,7 @@ public class EntrepriseController {
         this.entrepriseService = entrepriseService;
     }
 
-    @PostMapping
+    @PostMapping("/")
     public ResponseEntity<EntrepriseDto> addEntreprise(@RequestBody final EntrepriseDto entrepriseDto){
         Entreprise entreprise = entrepriseService.addEntreprise(Entreprise.from(entrepriseDto));
         return new ResponseEntity<>(EntrepriseDto.from(entreprise), HttpStatus.OK);

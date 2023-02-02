@@ -47,7 +47,7 @@ public class Evaluation {
         evaluationEntity.setDate(evaluationDto.getDate());
         entreprise1.setNomEntreprise(entrepriseDto.getNomEntreprise());
         entreprise1.setAnneeDeCreation(entrepriseDto.getAnneeDeCreation());
-        entreprise1.setEffectifEntreprise(entrepriseDto.getEffectifEntreprise());
+        entreprise1.setEffectif(entrepriseDto.getEffectifEntreprise());
 
 
 

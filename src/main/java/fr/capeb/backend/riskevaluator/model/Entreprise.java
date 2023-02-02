@@ -1,7 +1,6 @@
 package fr.capeb.backend.riskevaluator.model;
 
 import fr.capeb.backend.riskevaluator.model.dto.EntrepriseDto;
-import fr.capeb.backend.riskevaluator.model.dto.EvaluationDto;
 import fr.capeb.backend.riskevaluator.model.dto.PlainEvaluationDto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -31,7 +30,7 @@ public class Entreprise {
 
     @Basic
     @Column(name = "effectif")
-    public Integer effectifEntreprise;
+    public Integer effectif;
 
     @Basic
     @Column(name = "anneedecreation")
@@ -49,7 +48,8 @@ public class Entreprise {
         Entreprise entreprise = new Entreprise();
         entreprise.setNomEntreprise(entrepriseDto.getNomEntreprise());
         entreprise.setNoSiret(entrepriseDto.getNoSiret());
-        entreprise.setEffectifEntreprise(entrepriseDto.getEffectifEntreprise());
+        entreprise.setEffectif(entrepriseDto.getEffectif());
+        entreprise.setAnneeDeCreation(entrepriseDto.getAnneeDeCreation());
         Set<PlainEvaluationDto> plainEvaluationDtos = entrepriseDto.getEvaluations();
         Set<Evaluation> evaluations1 = new HashSet<>();
         plainEvaluationDtos.forEach(plainEvaluationDto -> {
@@ -68,7 +68,6 @@ public class Entreprise {
         });
         entreprise.setMetiers(metiers1);
         entreprise.setEvaluations(evaluations1);
-        entreprise.setAnneeDeCreation(entrepriseDto.getAnneeDeCreation());
         return entreprise;
     }
 
