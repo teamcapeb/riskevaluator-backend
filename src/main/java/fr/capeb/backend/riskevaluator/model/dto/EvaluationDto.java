@@ -30,6 +30,9 @@ public class EvaluationDto {
 
     private Set<ScoreCategoryDto> scoreCategories = new HashSet<>();
 
+    private Set<PlainMetierDto> metiers  = new HashSet<>();
+
+
     public static EvaluationDto from(Evaluation evaluationEntity) {
         EvaluationDto evaluationDto = new EvaluationDto();
         evaluationDto.setIdEvaluation(evaluationEntity.getIdEvaluation());
@@ -77,6 +80,17 @@ public class EvaluationDto {
 
             scoreCategoryDtos.add(scoreCategoryDto);
         });
+
+        Set<PlainMetierDto> plainMetiers  = new HashSet<>();
+        evaluationEntity.getMetiers().forEach(metier -> {
+            PlainMetierDto plainMetierDto = new PlainMetierDto();
+            plainMetierDto.setNomMetier(metier.getNomMetier());
+            plainMetierDto.setIdMetier(metier.getIdMetier());
+            plainMetiers.add(plainMetierDto);
+        });
+
+
+        evaluationDto.setMetiers(plainMetiers);
         evaluationDto.setScoreCategories(scoreCategoryDtos);
         return evaluationDto;
     }

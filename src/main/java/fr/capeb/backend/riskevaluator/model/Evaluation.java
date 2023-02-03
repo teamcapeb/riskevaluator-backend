@@ -37,6 +37,10 @@ public class Evaluation {
     @OneToMany(mappedBy = "evaluation",cascade = CascadeType.ALL)
     private Set<ScoreCategory> scoreCategories=new HashSet<>();
 
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "evaluation_id")
+    private Set<Metier> metiers = new HashSet<>();
+
     public static Evaluation from(EvaluationDto evaluationDto){
         Evaluation evaluationEntity = new Evaluation();
         evaluationEntity.setIdEvaluation(evaluationDto.getIdEvaluation());
@@ -106,6 +110,16 @@ public class Evaluation {
             scoreCategories1.add(scoreCategory);
         });
         evaluationEntity.setScoreCategories(scoreCategories1);
+
+        Set<Metier> metiers1=new HashSet<>();
+        entrepriseDto.getMetiers().forEach(plainMetierDto -> {
+            Metier metier = new Metier();
+            metier.setIdMetier(plainMetierDto.getIdMetier());
+            metier.setNomMetier(plainMetierDto.getNomMetier());
+            metiers1.add(metier);
+        });
+        evaluationEntity.setMetiers(metiers1);
+
         return evaluationEntity;
     }
 
