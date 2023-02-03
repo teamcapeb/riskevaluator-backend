@@ -1,7 +1,6 @@
 package fr.capeb.backend.riskevaluator.service;
 
 import fr.capeb.backend.riskevaluator.model.Entreprise;
-import fr.capeb.backend.riskevaluator.model.dto.EntrepriseDto;
 import fr.capeb.backend.riskevaluator.model.exception.EntrepriseNotFoundException;
 import fr.capeb.backend.riskevaluator.repository.EntrepriseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,8 +9,7 @@ import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
+
 @Service
 public class EntrepriseService {
     private final EntrepriseRepository entrepriseRepository;
@@ -48,10 +46,10 @@ public class EntrepriseService {
     public Entreprise editEntreprise(Long id, Entreprise entreprise){
         Entreprise entrepriseToEdit = getEntreprise(id);
         entrepriseToEdit.setNomEntreprise(entreprise.getNomEntreprise());
-        entrepriseToEdit.setEffectifEntreprise(entreprise.getEffectifEntreprise());
+        entrepriseToEdit.setEffectif(entreprise.getEffectif());
         entrepriseToEdit.setEvaluations(entreprise.getEvaluations());
         entrepriseToEdit.setAnneeDeCreation(entreprise.getAnneeDeCreation());
-        return entrepriseToEdit;
+        return entrepriseRepository.save(entrepriseToEdit);
     }
 
 }

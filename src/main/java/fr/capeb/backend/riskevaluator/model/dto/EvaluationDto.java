@@ -38,7 +38,7 @@ public class EvaluationDto {
         Entreprise entreprise1 = evaluationEntity.getEntreprise();
         plainEntrepriseDto.setNomEntreprise(entreprise1.getNomEntreprise());
         plainEntrepriseDto.setNoSiret(entreprise1.getNoSiret());
-        plainEntrepriseDto.setEffectifEntreprise(entreprise1.getEffectifEntreprise());
+        plainEntrepriseDto.setEffectifEntreprise(entreprise1.getEffectif());
         plainEntrepriseDto.setAnneeDeCreation(entreprise1.getAnneeDeCreation());
         evaluationDto.setEntreprise(plainEntrepriseDto);
         evaluationDto.setDate(evaluationEntity.getDate());

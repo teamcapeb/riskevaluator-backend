@@ -7,7 +7,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -18,7 +17,7 @@ import java.util.Set;
 public class EntrepriseDto {
     public Long noSiret;
     public String nomEntreprise;
-    public Integer effectifEntreprise;
+    public Integer effectif;
     public Integer anneeDeCreation;
     private Set<PlainEvaluationDto> evaluations=new HashSet<>();
     private Set<PlainMetierDto> metiers  = new HashSet<>();
@@ -26,7 +25,7 @@ public class EntrepriseDto {
     public static EntrepriseDto from(Entreprise entrepriseEntity){
         EntrepriseDto entrepriseDto = new EntrepriseDto();
         entrepriseDto.setNomEntreprise(entrepriseEntity.getNomEntreprise());
-        entrepriseDto.setEffectifEntreprise(entrepriseEntity.getEffectifEntreprise());
+        entrepriseDto.setEffectif(entrepriseEntity.getEffectif());
         entrepriseDto.setNoSiret(entrepriseEntity.getNoSiret());
         Set<PlainEvaluationDto> plainEvaluationDto = new HashSet<PlainEvaluationDto>();
         Set<Evaluation> evaluation = entrepriseEntity.getEvaluations();

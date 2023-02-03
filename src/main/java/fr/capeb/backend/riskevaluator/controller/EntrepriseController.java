@@ -1,15 +1,19 @@
 package fr.capeb.backend.riskevaluator.controller;
 
 import fr.capeb.backend.riskevaluator.model.Entreprise;
+import fr.capeb.backend.riskevaluator.model.Metier;
 import fr.capeb.backend.riskevaluator.model.MetierQuestionPK;
 import fr.capeb.backend.riskevaluator.model.dto.EntrepriseDto;
 import fr.capeb.backend.riskevaluator.service.EntrepriseService;
+import fr.capeb.backend.riskevaluator.service.MetierService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @RestController
@@ -18,13 +22,15 @@ import java.util.stream.Collectors;
 public class EntrepriseController {
 
     private final EntrepriseService entrepriseService;
+    private final MetierService metierService;
 
     @Autowired
-    public EntrepriseController(EntrepriseService entrepriseService) {
+    public EntrepriseController(EntrepriseService entrepriseService,MetierService metierService) {
         this.entrepriseService = entrepriseService;
+        this.metierService = metierService;
     }
 
-    @PostMapping
+    @PostMapping("/")
     public ResponseEntity<EntrepriseDto> addEntreprise(@RequestBody final EntrepriseDto entrepriseDto){
         Entreprise entreprise = entrepriseService.addEntreprise(Entreprise.from(entrepriseDto));
         return new ResponseEntity<>(EntrepriseDto.from(entreprise), HttpStatus.OK);

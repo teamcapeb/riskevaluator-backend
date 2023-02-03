@@ -68,7 +68,7 @@ public class RiskevaluatorApplication {
 			Entreprise entreprise = new Entreprise();
 			entreprise.setNoSiret(entJson.getLong("nosiret"));
 			entreprise.setAnneeDeCreation(entJson.getInt("anneedecreation"));
-			entreprise.setEffectifEntreprise(entJson.getInt("effectif"));
+			entreprise.setEffectif(entJson.getInt("effectif"));
 			entreprise.setNomEntreprise(entJson.getString("nom_entreprise"));
 			entrepriseRepository.save(entreprise);
 		}
@@ -120,6 +120,11 @@ public class RiskevaluatorApplication {
 			evaluation.setIdEvaluation(evalJson.getInt("id_evaluation"));
 			evaluation.setScoreGeneraleEvaluation(evalJson.getInt("score_generale"));
 			evaluation.setEntreprise(entrepriseService.getEntreprise(evalJson.getLong("nosiret")));
+			if(evaluation.getIdEvaluation() == 23) {
+				evaluation.setDate("01/02/2020");
+			} else if(evaluation.getIdEvaluation() == 25) {
+				evaluation.setDate("01/05/2021");
+			}
 			evaluationRepository.save(evaluation);
 		}
 
