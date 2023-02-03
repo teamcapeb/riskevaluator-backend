@@ -28,8 +28,7 @@ public class EntrepriseService {
     }
 
     public Entreprise getEntreprise(Long id){
-        return entrepriseRepository.findById(id).orElseThrow(() ->
-                new EntrepriseNotFoundException(id));
+        return entrepriseRepository.findById(id).orElse(null);
     }
 
     public Entreprise deleteEntreprise(Long id){
@@ -49,6 +48,7 @@ public class EntrepriseService {
         entrepriseToEdit.setEffectif(entreprise.getEffectif());
         entrepriseToEdit.setEvaluations(entreprise.getEvaluations());
         entrepriseToEdit.setAnneeDeCreation(entreprise.getAnneeDeCreation());
+        entrepriseToEdit.setMetiers(entreprise.getMetiers());
         return entrepriseRepository.save(entrepriseToEdit);
     }
 

@@ -52,6 +52,7 @@ public class EvaluationService {
         evaluationToEdit.setCompte(evaluation.getCompte());
         evaluationToEdit.setEntreprise(evaluation.getEntreprise());
         evaluationToEdit.setScoreGeneraleEvaluation(evaluation.getScoreGeneraleEvaluation());
+        evaluationToEdit.setMetiers(evaluation.getMetiers());
         return evaluationToEdit;
     }
 

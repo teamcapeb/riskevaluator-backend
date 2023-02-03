@@ -39,7 +39,7 @@ public class Entreprise {
     @OneToMany(mappedBy = "entreprise",cascade = CascadeType.ALL)
     private Set<Evaluation> evaluations=new HashSet<>();
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "entreprise_id")
     private Set<Metier> metiers = new HashSet<>();
 
