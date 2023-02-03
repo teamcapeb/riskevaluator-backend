@@ -39,9 +39,9 @@ public class Entreprise {
     @OneToMany(mappedBy = "entreprise",cascade = CascadeType.ALL)
     private Set<Evaluation> evaluations=new HashSet<>();
 
-    @OneToMany(mappedBy = "idMetier",cascade = CascadeType.ALL)
-    private Set<Metier> metiers=new HashSet<>();
-
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "entreprise_id")
+    private Set<Metier> metiers = new HashSet<>();
 
 
     public static Entreprise from(EntrepriseDto entrepriseDto){
@@ -62,7 +62,7 @@ public class Entreprise {
         Set<Metier> metiers1=new HashSet<>();
         entrepriseDto.getMetiers().forEach(plainMetierDto -> {
             Metier metier = new Metier();
-            metier.setNomMetier(plainMetierDto.getNomMetier());
+            metier.setIdMetier(plainMetierDto.getIdMetier());
             metier.setNomMetier(plainMetierDto.getNomMetier());
             metiers1.add(metier);
         });
