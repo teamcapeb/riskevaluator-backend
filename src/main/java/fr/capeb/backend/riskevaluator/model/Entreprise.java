@@ -62,6 +62,7 @@ public class Entreprise {
         Set<Metier> metiers1=new HashSet<>();
         entrepriseDto.getMetiers().forEach(plainMetierDto -> {
             Metier metier = new Metier();
+            metier.setIdMetier(plainMetierDto.getIdMetier());
             metier.setNomMetier(plainMetierDto.getNomMetier());
             metier.setNomMetier(plainMetierDto.getNomMetier());
             metiers1.add(metier);
