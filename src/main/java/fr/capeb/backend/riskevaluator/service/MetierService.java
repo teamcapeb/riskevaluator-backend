@@ -47,7 +47,7 @@ public class MetierService {
         Metier metierToEdit = getMetier(id);
         metierToEdit.setNomMetier(metier.getNomMetier());
         metierToEdit.setQuestions(metier.getQuestions());
-        return metierToEdit;
+        return metierRepository.save(metierToEdit);
     }
 
 }

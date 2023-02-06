@@ -49,7 +49,7 @@ public class ScoreCategorieService {
         scoreCategoryToEdit.setKey(scoreCategory.getKey());
         scoreCategoryToEdit.setEvaluation(scoreCategory.getEvaluation());
         scoreCategoryToEdit.setNbPoints(scoreCategory.getNbPoints());
-        return scoreCategoryToEdit;
+        return scoreCategoryRepository.save(scoreCategoryToEdit);
     }
 
 }

@@ -1,16 +1,17 @@
 package fr.capeb.backend.riskevaluator.service;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.transaction.Transactional;
-
+import fr.capeb.backend.riskevaluator.model.Evaluation;
+import fr.capeb.backend.riskevaluator.model.dto.EvaluationDto;
+import fr.capeb.backend.riskevaluator.model.exception.EvaluationNotFoundException;
+import fr.capeb.backend.riskevaluator.repository.EvaluationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import fr.capeb.backend.riskevaluator.model.Evaluation;
-import fr.capeb.backend.riskevaluator.model.exception.EvaluationNotFoundException;
-import fr.capeb.backend.riskevaluator.repository.EvaluationRepository;
+import javax.transaction.Transactional;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 @Service
 public class EvaluationService {
@@ -51,8 +52,8 @@ public class EvaluationService {
         evaluationToEdit.setCompte(evaluation.getCompte());
         evaluationToEdit.setEntreprise(evaluation.getEntreprise());
         evaluationToEdit.setScoreGeneraleEvaluation(evaluation.getScoreGeneraleEvaluation());
-//        evaluationToEdit.setMetiers(evaluation.getMetiers());
-        return evaluationToEdit;
+        evaluationToEdit.setMetiers(evaluation.getMetiers());
+        return evaluationRepository.save(evaluationToEdit);
     }
 
 }

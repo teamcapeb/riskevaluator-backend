@@ -50,7 +50,7 @@ public class QuestionService {
         questionToEdit.setTypeQuestion(question.getTypeQuestion());
         questionToEdit.setMetiers(question.getMetiers());
         questionToEdit.setReponses(question.getReponses());
-        return questionToEdit;
+        return questionRepository.save(questionToEdit);
     }
 
 }

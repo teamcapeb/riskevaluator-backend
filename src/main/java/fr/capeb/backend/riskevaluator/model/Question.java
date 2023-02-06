@@ -37,7 +37,7 @@ public class Question implements Serializable {
     private String libelleQuestion;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="id_categorie", nullable=false)
+    @JoinColumn(name="id_categorie")
     private CategorieQuestion categorieQuestion;
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "question", cascade = CascadeType.ALL, orphanRemoval = true)

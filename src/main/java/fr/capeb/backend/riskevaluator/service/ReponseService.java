@@ -46,7 +46,7 @@ public class ReponseService {
         reponseToEdit.setContenu(reponse.getContenu());
         reponseToEdit.setQuestion(reponse.getQuestion());
         reponseToEdit.setNbPoints(reponse.getNbPoints());
-        return reponseToEdit;
+        return reponseRepository.save(reponseToEdit);
     }
 
 }
