@@ -52,6 +52,9 @@ public class EntrepriseController {
     @GetMapping(value = "{id}")
     public ResponseEntity<EntrepriseDto> getEntreprise(@PathVariable final Long id){
         Entreprise entreprise = entrepriseService.getEntreprise(id);
+        if(entreprise == null){
+            return null;
+        }
         return new ResponseEntity<>(EntrepriseDto.from(entreprise), HttpStatus.OK);
     }
 
