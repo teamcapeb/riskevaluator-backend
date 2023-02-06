@@ -30,7 +30,7 @@
      @Autowired
      public UserRepository userRepository;
 
-     @Value("${test.env.variable.port}")
+    /* @Value("${test.env.variable.port}")
      private String port;
      @Value("${test.env.variable.dbname}")
      private String dbName;
@@ -39,7 +39,7 @@
      @Value("${test.env.variable.pass}")
      private String pass;
      @Value("${test.env.variable.host}")
-     private String host;
+     private String host; */
 
 
      @Value("${spring.datasource.url}")
@@ -51,7 +51,7 @@
 
      @Override
      public void run(String...args) throws Exception {
-         log.info("START TEST ENV VARIBALES ==================================== \n");
+         /* log.info("START TEST ENV VARIBALES ==================================== \n");
          log.info("---"+host);
          log.info("---"+port);
          log.info("---"+dbName);
@@ -66,7 +66,11 @@
          log.info("---"+devUser);
          log.info("---"+devPass);
          log.info(" END DEV ENV VARIBALES ==================================== \n");
+         
+          */
 
+         log.info("Running...");
+         
          Status status = Status.builder().id((long) 1).ok("CAPEB ENV status OK").build();
          statusRepo.save(status);
 
