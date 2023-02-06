@@ -26,6 +26,9 @@ public class EvaluationService {
 	public Evaluation addEvaluation(Evaluation evaluation) {
 		Integer newId = evaluationRepository.findTopByOrderByIdEvaluationDesc().getIdEvaluation() + 1;
 		evaluation.setIdEvaluation(newId);
+		
+		evaluation.setMetiers(evaluation.getMetiers());
+		
 		evaluation.getScoreCategories().forEach((scoreCategory -> {
 			scoreCategory.getEvaluation().setIdEvaluation(newId);
 		}));

@@ -58,7 +58,7 @@ public class RiskevaluatorApplication {
 	
 	public static void main(String[] args) throws IOException {
 		ConfigurableApplicationContext configurableApplicationContext = SpringApplication.run(RiskevaluatorApplication.class, args);
-		/*ObjectMapper mapper = new ObjectMapper();
+		ObjectMapper mapper = new ObjectMapper();
 
 		ClassPathResource entrepriseJson = new ClassPathResource("data/entreprise.json");
 		String entreprisePath = mapper.readTree(entrepriseJson.getInputStream()).toString();
@@ -258,7 +258,7 @@ public class RiskevaluatorApplication {
 			scoreCategorie.setCategorieQuestion(categorieQuestionService.getCategorieQuestion(metJson.getInt("id_categorie")));
 			scoreCategorie.setNbPoints(metJson.getInt("nb_points"));
 			scoreCategorieRepository.save(scoreCategorie);
-		} */
+		}
 		
 	}
 }
