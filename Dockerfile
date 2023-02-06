@@ -1,4 +1,9 @@
+FROM maven:3.6.0-jdk-11-slim AS build
+COPY src /home/app/src
+COPY pom.xml /home/app
+RUN mvn -f /home/app/pom.xml clean package
+
 FROM openjdk:11
-ARG  JAR_FILE=target/*.jar
-COPY ./target/riskevaluator-backend-1.0.0-SNAPSHOT.jar app.jar
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+COPY --from=build /home/app/target/riskevaluator-backend.jar /usr/local/lib/riskevaluator-backend.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "/usr/local/lib/riskevaluator-backend.jar"]
