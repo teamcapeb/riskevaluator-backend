@@ -1,7 +1,5 @@
 package fr.capeb.backend.riskevaluator.exceptions.model;
 
+public class CreateOrUpdateException extends RuntimeException {
 
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.ResponseStatus;
-
-public class CreateOrUpdateException extends RuntimeException {}
+}

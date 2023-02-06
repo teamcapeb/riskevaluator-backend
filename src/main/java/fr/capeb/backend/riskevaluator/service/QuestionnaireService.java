@@ -10,7 +10,6 @@ import javax.transaction.Transactional;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import fr.capeb.backend.riskevaluator.model.Questionnaire;
 import fr.capeb.backend.riskevaluator.model.dto.CategorieQuestionDto;

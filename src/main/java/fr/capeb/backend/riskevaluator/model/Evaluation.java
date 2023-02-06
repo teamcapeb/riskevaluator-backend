@@ -1,15 +1,28 @@
 package fr.capeb.backend.riskevaluator.model;
 
-import fr.capeb.backend.riskevaluator.model.dto.*;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import fr.capeb.backend.riskevaluator.model.dto.EvaluationDto;
+import fr.capeb.backend.riskevaluator.model.dto.PlainEntrepriseDto;
+import fr.capeb.backend.riskevaluator.model.dto.PlainMetierDto;
+import fr.capeb.backend.riskevaluator.model.dto.ScoreCategoryDto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import javax.persistence.*;
-
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 
 @Entity
 @Getter
@@ -51,10 +64,6 @@ public class Evaluation {
 //    @JoinColumn(name = "evaluation_id")
 //    private Set<Metier> metiers = new HashSet<>();
 	
-	public void addMetier(Metier metier) {
-		metiers.add(metier);
-		metier.getEvaluations().add(this);
-	}
 	
 	public static Evaluation from(EvaluationDto evaluationDto) {
 		Evaluation evaluationEntity = new Evaluation();
@@ -70,6 +79,18 @@ public class Evaluation {
 		
 		evaluationEntity.setEntreprise(entreprise1);
 		evaluationEntity.setScoreGeneraleEvaluation(evaluationDto.getScoreGeneraleEvaluation());
+		
+		
+		Set<Metier> metiers1 = new HashSet<>();
+		evaluationDto.getMetiers().forEach(plainMetierDto -> {
+			Metier metier = new Metier();
+			metier.setIdMetier(plainMetierDto.getIdMetier());
+			metier.setNomMetier(plainMetierDto.getNomMetier());
+			metiers1.add(metier);
+		});
+		
+		evaluationEntity.setMetiers(metiers1);
+		
 		Set<ScoreCategory> scoreCategories1 = new HashSet<>();
 		Set<ScoreCategoryDto> scoreCategoryDtos = evaluationDto.getScoreCategories();
 		
@@ -114,21 +135,16 @@ public class Evaluation {
 			evaluation.setIdEvaluation(evaluationDto.getIdEvaluation());
 			evaluation.setDate(evaluationDto.getDate());
 			evaluation.setScoreGeneraleEvaluation(evaluationDto.getScoreGeneraleEvaluation());
+			var plainMetierDtos = evaluation.getMetiers().stream().map(PlainMetierDto::from)
+					.collect(Collectors.toSet());
+			
+			evaluationDto.setMetiers(plainMetierDtos);
 			
 			scoreCategory.setEvaluation(evaluation);
 			scoreCategory.setNbPoints(plainScoreCategoryDto.getNbPoints());
 			scoreCategories1.add(scoreCategory);
 		});
 		evaluationEntity.setScoreCategories(scoreCategories1);
-		
-		Set<Metier> metiers1 = new HashSet<>();
-		entrepriseDto.getMetiers().forEach(plainMetierDto -> {
-			Metier metier = new Metier();
-			metier.setIdMetier(plainMetierDto.getIdMetier());
-			metier.setNomMetier(plainMetierDto.getNomMetier());
-			metiers1.add(metier);
-		});
-//        evaluationEntity.setMetiers(metiers1);
 		
 		return evaluationEntity;
 	}
