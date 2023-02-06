@@ -38,6 +38,10 @@ public class Metier {
 	@ManyToMany(mappedBy = "metiers")
 	private Set<Evaluation> evaluations = new HashSet<>();
 	
+
+	@ManyToMany(mappedBy = "metiers")
+	private Set<Entreprise> entreprises = new HashSet<>();
+	
 	public static Metier from(MetierDto metierDto) {
 		Metier metier = new Metier();
 		metier.setIdMetier(metierDto.getIdMetier());

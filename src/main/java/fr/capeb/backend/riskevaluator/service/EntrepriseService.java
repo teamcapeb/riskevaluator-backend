@@ -22,6 +22,9 @@ public class EntrepriseService {
 	}
 	
 	public Entreprise addEntreprise(Entreprise entreprise) {
+		entreprise.getMetiers().forEach(metier -> {
+			metier.getEntreprises().add(entreprise);
+		});
 		return entrepriseRepository.save(entreprise);
 	}
 	

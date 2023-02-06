@@ -8,7 +8,8 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OrderBy;
 import javax.persistence.Table;
@@ -47,8 +48,8 @@ public class Entreprise {
 	@OneToMany(mappedBy = "entreprise", cascade = CascadeType.ALL)
 	private Set<Evaluation> evaluations = new HashSet<>();
 	
-	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn(name = "entreprise_id")
+	@ManyToMany
+	@JoinTable(name = "entreprises_metiers")
 	private Set<Metier> metiers = new HashSet<>();
 	
 	public static Entreprise from(EntrepriseDto entrepriseDto) {
@@ -56,6 +57,17 @@ public class Entreprise {
 		entreprise.setNomEntreprise(entrepriseDto.getNomEntreprise());
 		entreprise.setNoSiret(entrepriseDto.getNoSiret());
 		entreprise.setEffectif(entrepriseDto.getEffectif());
+		
+		Set<Metier> metiers = new HashSet<>();
+		entrepriseDto.getMetiers().forEach(plainMetierDto -> {
+			Metier metier = new Metier();
+			metier.setIdMetier(plainMetierDto.getIdMetier());
+			metier.setNomMetier(plainMetierDto.getNomMetier());
+			metiers.add(metier);
+		});
+		
+		entreprise.setMetiers(metiers);
+		
 		entreprise.setAnneeDeCreation(entrepriseDto.getAnneeDeCreation());
 		Set<PlainEvaluationDto> plainEvaluationDtos = entrepriseDto.getEvaluations();
 		Set<Evaluation> evaluations1 = new HashSet<>();
@@ -66,14 +78,6 @@ public class Entreprise {
 			evaluations1.add(evaluation);
 		});
 		
-		Set<Metier> metiers1 = new HashSet<>();
-		entrepriseDto.getMetiers().forEach(plainMetierDto -> {
-			Metier metier = new Metier();
-			metier.setIdMetier(plainMetierDto.getIdMetier());
-			metier.setNomMetier(plainMetierDto.getNomMetier());
-			metiers1.add(metier);
-		});
-		entreprise.setMetiers(metiers1);
 		entreprise.setEvaluations(evaluations1);
 		return entreprise;
 	}
