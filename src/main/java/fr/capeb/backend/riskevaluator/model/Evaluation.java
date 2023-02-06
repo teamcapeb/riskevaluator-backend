@@ -54,7 +54,7 @@ public class Evaluation {
 	
 	@ManyToMany
 	@JoinTable(
-			name = "metiers_evaluations",
+			name = "evaluations_metiers",
 			joinColumns = @JoinColumn(name = "evaluation_id"),
 			inverseJoinColumns = @JoinColumn(name = "metier_id")
 	)
