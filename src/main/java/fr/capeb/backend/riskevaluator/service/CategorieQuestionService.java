@@ -45,12 +45,13 @@ public class CategorieQuestionService {
     @Transactional
     public CategorieQuestion editCategorieQuestion(Integer id, CategorieQuestion categorieQuestion){
         CategorieQuestion categorieQuestionToEdit = getCategorieQuestion(id);
+        categorieQuestionToEdit.setIdCategorie(id);
         categorieQuestionToEdit.setQuestions(categorieQuestion.getQuestions());
         categorieQuestionToEdit.setPreconisationsCategorie(categorieQuestion.getPreconisationsCategorie());
         categorieQuestionToEdit.setLibelle(categorieQuestion.getLibelle());
         categorieQuestionToEdit.setQuestionnaire(categorieQuestion.getQuestionnaire());
         categorieQuestionToEdit.setScoreEvaluations(categorieQuestion.getScoreEvaluations());
-        return categorieQuestionToEdit;
+        return categorieQuestionRepository.save(categorieQuestionToEdit);
     }
 
 }

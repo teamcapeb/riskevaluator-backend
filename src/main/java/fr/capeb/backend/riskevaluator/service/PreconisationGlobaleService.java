@@ -47,7 +47,7 @@ public class PreconisationGlobaleService {
         preconisationGlobaleToEdit.setViewIfPourcentageScoreLessThan(preconisationGlobale.getViewIfPourcentageScoreLessThan());
         preconisationGlobaleToEdit.setQuestionnaire(preconisationGlobale.getQuestionnaire());
         preconisationGlobaleToEdit.setContenu(preconisationGlobale.getContenu());
-        return preconisationGlobaleToEdit;
+        return preconisationGlobaleRepository.save(preconisationGlobaleToEdit);
     }
 
 }

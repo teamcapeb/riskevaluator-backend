@@ -42,49 +42,58 @@ public class CategorieQuestion {
 
     public static CategorieQuestion from(CategorieQuestionDto categorieQuestionDto){
         CategorieQuestion categorieQuestion = new CategorieQuestion();
-
+        categorieQuestion.setIdCategorie(categorieQuestionDto.getIdCategorie());
         Set<PlainQuestionDto> plainQuestionDtos = categorieQuestionDto.getQuestions();
         Set<Question> questions1 = new HashSet<>();
-        plainQuestionDtos.forEach(plainQuestionDto -> {
-            Question question = new Question();
-            question.setLibelleQuestion(plainQuestionDto.getLibelleQuestion());
-            question.setIdQuestion(plainQuestionDto.getIdQuestion());
-            question.setScoreMaxPossibleQuestion(plainQuestionDto.getScoreMaxPossibleQuestion());
-            question.setTypeQuestion(plainQuestionDto.getTypeQuestion());
-            Set<PlainReponseDto> reponses1 = new HashSet<>();
-            question.getReponses().forEach(reponse -> {
-                PlainReponseDto plainReponseDto = new PlainReponseDto();
-                plainReponseDto.setNbPoints(reponse.getNbPoints());
-                plainReponseDto.setContenu(reponse.getContenu());
-                plainReponseDto.setIdReponse(reponse.getIdReponse());
-                reponses1.add(plainReponseDto);
+        if(plainQuestionDtos != null){
+            plainQuestionDtos.forEach(plainQuestionDto -> {
+                Question question = new Question();
+                question.setLibelleQuestion(plainQuestionDto.getLibelleQuestion());
+                question.setIdQuestion(plainQuestionDto.getIdQuestion());
+                question.setScoreMaxPossibleQuestion(plainQuestionDto.getScoreMaxPossibleQuestion());
+                question.setTypeQuestion(plainQuestionDto.getTypeQuestion());
+                Set<PlainReponseDto> reponses1 = new HashSet<>();
+                question.getReponses().forEach(reponse -> {
+                    PlainReponseDto plainReponseDto = new PlainReponseDto();
+                    plainReponseDto.setNbPoints(reponse.getNbPoints());
+                    plainReponseDto.setContenu(reponse.getContenu());
+                    plainReponseDto.setIdReponse(reponse.getIdReponse());
+                    reponses1.add(plainReponseDto);
+                });
+                plainQuestionDto.setReponses(reponses1);
+                plainQuestionDtos.add(plainQuestionDto);
+                questions1.add(question);
             });
-            plainQuestionDto.setReponses(reponses1);
-            plainQuestionDtos.add(plainQuestionDto);
-            questions1.add(question);
-        });
+        }
+
         categorieQuestion.setQuestions(questions1);
 
         Set<PlainPreconisationCategorieDto> plainPreconisationsCategorieDtos =  categorieQuestionDto.getPreconisationsCategorie();
         Set<PreconisationCategorie> preconisationsCategories1 = new HashSet<>();
-        plainPreconisationsCategorieDtos.forEach(planPreconisationsCategorie -> {
-            PreconisationCategorie preconisationCategorie = new PreconisationCategorie();
-            preconisationCategorie.setIdPreconisation(planPreconisationsCategorie.getIdPreconisation());
-            preconisationCategorie.setContenu(planPreconisationsCategorie.getContenu());
-            preconisationCategorie.setViewIfPourcentageScoreLessThan(planPreconisationsCategorie.getViewIfPourcentageScoreLessThan());
-            preconisationsCategories1.add(preconisationCategorie);
-        });
+        if(plainPreconisationsCategorieDtos != null){
+            plainPreconisationsCategorieDtos.forEach(planPreconisationsCategorie -> {
+                PreconisationCategorie preconisationCategorie = new PreconisationCategorie();
+                preconisationCategorie.setIdPreconisation(planPreconisationsCategorie.getIdPreconisation());
+                preconisationCategorie.setContenu(planPreconisationsCategorie.getContenu());
+                preconisationCategorie.setViewIfPourcentageScoreLessThan(planPreconisationsCategorie.getViewIfPourcentageScoreLessThan());
+                preconisationsCategories1.add(preconisationCategorie);
+            });
+        }
+
         categorieQuestion.setPreconisationsCategorie(preconisationsCategories1);
 
 
         Set<PlainScoreCategoryDto> plainScoreEvaluationDtos = categorieQuestionDto.getScoreEvaluations();
         Set<ScoreCategory> scoreEvaluations1 =  new HashSet<>();
-        plainScoreEvaluationDtos.forEach(plainScoreEvaluation -> {
-            ScoreCategory scoreCategory = new ScoreCategory();
-            scoreCategory.setKey(plainScoreEvaluation.getKey());
-            scoreCategory.setNbPoints(plainScoreEvaluation.getNbPoints());
-            scoreEvaluations1.add(scoreCategory);
-        });
+        if(plainScoreEvaluationDtos != null){
+            plainScoreEvaluationDtos.forEach(plainScoreEvaluation -> {
+                ScoreCategory scoreCategory = new ScoreCategory();
+                scoreCategory.setKey(plainScoreEvaluation.getKey());
+                scoreCategory.setNbPoints(plainScoreEvaluation.getNbPoints());
+                scoreEvaluations1.add(scoreCategory);
+            });
+        }
+
         categorieQuestion.setScoreEvaluations(scoreEvaluations1);
 
         categorieQuestion.setLibelle(categorieQuestionDto.getLibelle());

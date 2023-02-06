@@ -56,7 +56,7 @@ public class QuestionnaireService {
 		questionnaireToEdit.setThematique(questionnaire.getThematique());
 		questionnaireToEdit.setCategorieQuestions(questionnaire.getCategorieQuestions());
 		questionnaireToEdit.setPreconisationGlobales(questionnaire.getPreconisationGlobales());
-		return questionnaireToEdit;
+		return questionnaireRepository.save(questionnaireToEdit);
 	}
 	
 	public ResponseEntity<List<CategorieQuestionDto>> getQuestionsByQuestionnaireAndMetierIds(Integer id, Set<Integer> metierId) {

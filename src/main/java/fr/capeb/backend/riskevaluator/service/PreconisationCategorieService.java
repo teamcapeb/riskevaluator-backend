@@ -47,7 +47,7 @@ public class PreconisationCategorieService {
         preconisationCategorieToEdit.setCategorieQuestion(preconisationCategorie.getCategorieQuestion());
         preconisationCategorieToEdit.setContenu(preconisationCategorie.getContenu());
         preconisationCategorieToEdit.setViewIfPourcentageScoreLessThan(preconisationCategorie.getViewIfPourcentageScoreLessThan());
-        return preconisationCategorieToEdit;
+        return preconisationCategorieRepository.save(preconisationCategorieToEdit);
     }
 
 }
