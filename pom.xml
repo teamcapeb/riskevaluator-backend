@@ -126,6 +126,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>riskevaluator-backend</finalName>
 	</build>
 
 </project>
