@@ -1,8 +1,11 @@
 package fr.capeb.backend.riskevaluator;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Random;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -58,13 +61,13 @@ public class RiskevaluatorApplication {
 		ConfigurableApplicationContext configurableApplicationContext = SpringApplication.run(RiskevaluatorApplication.class, args);
 		ObjectMapper mapper = new ObjectMapper();
 
-		ClassPathResource entrepriseJson = new ClassPathResource("data/entreprise.json");
+		/*ClassPathResource entrepriseJson = new ClassPathResource("data/entreprise.json");
 		String entreprisePath = mapper.readTree(entrepriseJson.getInputStream()).toString();
 		JSONArray entrepriseArray = new JSONArray(entreprisePath);
-
+*/
 		EntrepriseRepository entrepriseRepository = configurableApplicationContext.getBean(EntrepriseRepository.class);
 		EntrepriseService entrepriseService = new EntrepriseService(entrepriseRepository);
-		for (Object ent : entrepriseArray) {
+		/*for (Object ent : entrepriseArray) {
 			JSONObject entJson = (JSONObject) ent;
 			Entreprise entreprise = new Entreprise();
 			entreprise.setNoSiret(entJson.getLong("nosiret"));
@@ -73,7 +76,7 @@ public class RiskevaluatorApplication {
 			entreprise.setNomEntreprise(entJson.getString("nom_entreprise"));
 			entrepriseRepository.save(entreprise);
 		}
-
+*/
 		ClassPathResource questionnaireJson = new ClassPathResource("data/questionnaire.json");
 		String questionnairePath = mapper.readTree(questionnaireJson.getInputStream()).toString();
 		JSONArray questionnaireArray = new JSONArray(questionnairePath);
@@ -83,14 +86,14 @@ public class RiskevaluatorApplication {
 		
 		
 		QuestionnaireService questionnaireService = new QuestionnaireService(questionnaireRepository, questionRepository);
-		for (Object question : questionnaireArray) {
-			JSONObject questionJson = (JSONObject) question;
-			Questionnaire questionnaire = new Questionnaire();
-			questionnaire.setThematique(questionJson.getString("thematique"));
-			questionnaire.setIdQuestionnaire(questionJson.getInt("id_questionnaire"));
-			questionnaire.setCategorieQuestions(new HashSet<CategorieQuestion>());
-			questionnaireRepository.save(questionnaire);
-		}
+//		for (Object question : questionnaireArray) {
+//			JSONObject questionJson = (JSONObject) question;
+//			Questionnaire questionnaire = new Questionnaire();
+//			questionnaire.setThematique(questionJson.getString("thematique"));
+//			questionnaire.setIdQuestionnaire(questionJson.getInt("id_questionnaire"));
+//			questionnaire.setCategorieQuestions(new HashSet<CategorieQuestion>());
+//			questionnaireRepository.save(questionnaire);
+//		}
 
 		ClassPathResource categorieQuestionJson = new ClassPathResource("data/categorieQuestion.json");
 		String categorieQuestionPath = mapper.readTree(categorieQuestionJson.getInputStream()).toString();
@@ -98,7 +101,7 @@ public class RiskevaluatorApplication {
 
 		CategorieQuestionRepository categorieQuestionRepository = configurableApplicationContext.getBean(CategorieQuestionRepository.class);
 		CategorieQuestionService categorieQuestionService = new CategorieQuestionService(categorieQuestionRepository);
-		for (Object cg : categorieQuestionArray) {
+		/*for (Object cg : categorieQuestionArray) {
 			JSONObject cgJson = (JSONObject) cg;
 			CategorieQuestion categorieQuestion = new CategorieQuestion();
 			categorieQuestion.setIdCategorie(cgJson.getInt("id_categorie"));
@@ -107,7 +110,7 @@ public class RiskevaluatorApplication {
 			questionnaire.addCategorieQuestion(categorieQuestion);
 			categorieQuestion.setQuestionnaire(questionnaire);
 			categorieQuestionRepository.save(categorieQuestion);
-		}
+		}*/
 		
 		ClassPathResource metierJson = new ClassPathResource("data/metier.json");
 		String metierPath = mapper.readTree(metierJson.getInputStream()).toString();
@@ -115,13 +118,13 @@ public class RiskevaluatorApplication {
 		
 		MetierRepository metierRepository = configurableApplicationContext.getBean(MetierRepository.class);
 		MetierService metierService = new MetierService(metierRepository);
-		for (Object met : metierArray) {
+		/*for (Object met : metierArray) {
 			JSONObject metJson = (JSONObject) met;
 			Metier metier = new Metier();
 			metier.setIdMetier(metJson.getInt("id_metier"));
 			metier.setNomMetier(metJson.getString("nom_metier"));
 			metierRepository.save(metier);
-		}
+		}*/
 
 		ClassPathResource evaluationJson = new ClassPathResource("data/evaluation.json");
 		String evaluationPath = mapper.readTree(evaluationJson.getInputStream()).toString();
@@ -135,20 +138,22 @@ public class RiskevaluatorApplication {
 			evaluation.setIdEvaluation(evalJson.getInt("id_evaluation"));
 			evaluation.setScoreGeneraleEvaluation(evalJson.getInt("score_generale"));
 			evaluation.setEntreprise(entrepriseService.getEntreprise(evalJson.getLong("nosiret")));
-			if(evaluation.getIdEvaluation() == 23) {
-				Metier metier1 = metierRepository.findById(23).get();
-				Metier metier2 = metierRepository.findById(25).get();
-				evaluation.setDate("01/02/2020");
-				evaluation.getMetiers().addAll(List.of(metier1, metier2));
-			} else if(evaluation.getIdEvaluation() == 25) {
-				evaluation.setDate("01/05/2021");
-				Metier metier3 = metierRepository.findById(28).get();
-				evaluation.getMetiers().add(metier3);
-			}
+			
+			Calendar calendar = Calendar.getInstance();
+			Random random = new Random();
+			int year = random.nextInt(7) + 2015;
+			calendar.set(Calendar.YEAR, year);
+			int dayOfYear = random.nextInt(calendar.getActualMaximum(Calendar.DAY_OF_YEAR));
+			calendar.set(Calendar.DAY_OF_YEAR, dayOfYear);
+			SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+			String formattedDate = formatter.format(calendar.getTime());
+			
+			evaluation.setDate(formattedDate);
+			
 			evaluationRepository.save(evaluation);
 		}
 		
-		ClassPathResource questionJson = new ClassPathResource("data/question.json");
+		/*ClassPathResource questionJson = new ClassPathResource("data/question.json");
 		String questionPath = mapper.readTree(questionJson.getInputStream()).toString();
 		JSONArray questionArray = new JSONArray(questionPath);
 
@@ -217,6 +222,8 @@ public class RiskevaluatorApplication {
 			reponse.setQuestion(questionService.getQuestion(metJson.getInt("id_question")));
 			reponseRepository.save(reponse);
 		}
+		*/
+		
 		
 		ClassPathResource metierQuestionJson = new ClassPathResource("data/metier_question.json");
 		String metierQuestionPath = mapper.readTree(metierQuestionJson.getInputStream()).toString();
@@ -256,7 +263,9 @@ public class RiskevaluatorApplication {
 			scoreCategorie.setNbPoints(metJson.getInt("nb_points"));
 			scoreCategorieRepository.save(scoreCategorie);
 		}
-
+		
+		
+		
 
 	}
 }

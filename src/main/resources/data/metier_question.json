@@ -1,2310 +1,2310 @@
 [
-  {
-    "id_metier": 23,
-    "id_question": 53
-  },
-  {
-    "id_metier": 23,
-    "id_question": 54
-  },
-  {
-    "id_metier": 23,
-    "id_question": 55
-  },
-  {
-    "id_metier": 23,
-    "id_question": 56
-  },
-  {
-    "id_metier": 23,
-    "id_question": 57
-  },
-  {
-    "id_metier": 23,
-    "id_question": 58
-  },
-  {
-    "id_metier": 23,
-    "id_question": 59
-  },
-  {
-    "id_metier": 23,
-    "id_question": 60
-  },
-  {
-    "id_metier": 23,
-    "id_question": 61
-  },
-  {
-    "id_metier": 23,
-    "id_question": 62
-  },
-  {
-    "id_metier": 23,
-    "id_question": 63
-  },
-  {
-    "id_metier": 23,
-    "id_question": 64
-  },
-  {
-    "id_metier": 23,
-    "id_question": 65
-  },
-  {
-    "id_metier": 23,
-    "id_question": 66
-  },
-  {
-    "id_metier": 23,
-    "id_question": 67
-  },
-  {
-    "id_metier": 23,
-    "id_question": 68
-  },
-  {
-    "id_metier": 23,
-    "id_question": 69
-  },
-  {
-    "id_metier": 23,
-    "id_question": 70
-  },
-  {
-    "id_metier": 23,
-    "id_question": 71
-  },
-  {
-    "id_metier": 23,
-    "id_question": 72
-  },
-  {
-    "id_metier": 23,
-    "id_question": 73
-  },
-  {
-    "id_metier": 23,
-    "id_question": 75
-  },
-  {
-    "id_metier": 23,
-    "id_question": 76
-  },
-  {
-    "id_metier": 23,
-    "id_question": 77
-  },
-  {
-    "id_metier": 23,
-    "id_question": 78
-  },
-  {
-    "id_metier": 23,
-    "id_question": 79
-  },
-  {
-    "id_metier": 23,
-    "id_question": 80
-  },
-  {
-    "id_metier": 23,
-    "id_question": 81
-  },
-  {
-    "id_metier": 23,
-    "id_question": 83
-  },
-  {
-    "id_metier": 23,
-    "id_question": 84
-  },
-  {
-    "id_metier": 23,
-    "id_question": 85
-  },
-  {
-    "id_metier": 23,
-    "id_question": 86
-  },
-  {
-    "id_metier": 23,
-    "id_question": 87
-  },
-  {
-    "id_metier": 23,
-    "id_question": 88
-  },
-  {
-    "id_metier": 23,
-    "id_question": 89
-  },
-  {
-    "id_metier": 23,
-    "id_question": 90
-  },
-  {
-    "id_metier": 23,
-    "id_question": 91
-  },
-  {
-    "id_metier": 23,
-    "id_question": 92
-  },
-  {
-    "id_metier": 23,
-    "id_question": 93
-  },
-  {
-    "id_metier": 23,
-    "id_question": 94
-  },
-  {
-    "id_metier": 23,
-    "id_question": 97
-  },
-  {
-    "id_metier": 23,
-    "id_question": 98
-  },
-  {
-    "id_metier": 23,
-    "id_question": 99
-  },
-  {
-    "id_metier": 23,
-    "id_question": 101
-  },
-  {
-    "id_metier": 23,
-    "id_question": 102
-  },
-  {
-    "id_metier": 23,
-    "id_question": 104
-  },
-  {
-    "id_metier": 23,
-    "id_question": 110
-  },
-  {
-    "id_metier": 23,
-    "id_question": 111
-  },
-  {
-    "id_metier": 23,
-    "id_question": 116
-  },
-  {
-    "id_metier": 23,
-    "id_question": 117
-  },
-  {
-    "id_metier": 23,
-    "id_question": 119
-  },
-  {
-    "id_metier": 23,
-    "id_question": 120
-  },
-  {
-    "id_metier": 23,
-    "id_question": 121
-  },
-  {
-    "id_metier": 23,
-    "id_question": 122
-  },
-  {
-    "id_metier": 23,
-    "id_question": 123
-  },
-  {
-    "id_metier": 25,
-    "id_question": 53
-  },
-  {
-    "id_metier": 25,
-    "id_question": 54
-  },
-  {
-    "id_metier": 25,
-    "id_question": 55
-  },
-  {
-    "id_metier": 25,
-    "id_question": 56
-  },
-  {
-    "id_metier": 25,
-    "id_question": 57
-  },
-  {
-    "id_metier": 25,
-    "id_question": 58
-  },
-  {
-    "id_metier": 25,
-    "id_question": 59
-  },
-  {
-    "id_metier": 25,
-    "id_question": 60
-  },
-  {
-    "id_metier": 25,
-    "id_question": 61
-  },
-  {
-    "id_metier": 25,
-    "id_question": 62
-  },
-  {
-    "id_metier": 25,
-    "id_question": 63
-  },
-  {
-    "id_metier": 25,
-    "id_question": 64
-  },
-  {
-    "id_metier": 25,
-    "id_question": 65
-  },
-  {
-    "id_metier": 25,
-    "id_question": 66
-  },
-  {
-    "id_metier": 25,
-    "id_question": 67
-  },
-  {
-    "id_metier": 25,
-    "id_question": 68
-  },
-  {
-    "id_metier": 25,
-    "id_question": 69
-  },
-  {
-    "id_metier": 25,
-    "id_question": 70
-  },
-  {
-    "id_metier": 25,
-    "id_question": 71
-  },
-  {
-    "id_metier": 25,
-    "id_question": 72
-  },
-  {
-    "id_metier": 25,
-    "id_question": 73
-  },
-  {
-    "id_metier": 25,
-    "id_question": 75
-  },
-  {
-    "id_metier": 25,
-    "id_question": 76
-  },
-  {
-    "id_metier": 25,
-    "id_question": 77
-  },
-  {
-    "id_metier": 25,
-    "id_question": 78
-  },
-  {
-    "id_metier": 25,
-    "id_question": 79
-  },
-  {
-    "id_metier": 25,
-    "id_question": 80
-  },
-  {
-    "id_metier": 25,
-    "id_question": 81
-  },
-  {
-    "id_metier": 25,
-    "id_question": 91
-  },
-  {
-    "id_metier": 25,
-    "id_question": 92
-  },
-  {
-    "id_metier": 25,
-    "id_question": 93
-  },
-  {
-    "id_metier": 25,
-    "id_question": 94
-  },
-  {
-    "id_metier": 25,
-    "id_question": 95
-  },
-  {
-    "id_metier": 25,
-    "id_question": 97
-  },
-  {
-    "id_metier": 25,
-    "id_question": 101
-  },
-  {
-    "id_metier": 25,
-    "id_question": 102
-  },
-  {
-    "id_metier": 25,
-    "id_question": 104
-  },
-  {
-    "id_metier": 25,
-    "id_question": 109
-  },
-  {
-    "id_metier": 25,
-    "id_question": 111
-  },
-  {
-    "id_metier": 25,
-    "id_question": 113
-  },
-  {
-    "id_metier": 25,
-    "id_question": 116
-  },
-  {
-    "id_metier": 25,
-    "id_question": 119
-  },
-  {
-    "id_metier": 25,
-    "id_question": 120
-  },
-  {
-    "id_metier": 25,
-    "id_question": 121
-  },
-  {
-    "id_metier": 25,
-    "id_question": 122
-  },
-  {
-    "id_metier": 25,
-    "id_question": 123
-  },
-  {
-    "id_metier": 27,
-    "id_question": 53
-  },
-  {
-    "id_metier": 27,
-    "id_question": 54
-  },
-  {
-    "id_metier": 27,
-    "id_question": 55
-  },
-  {
-    "id_metier": 27,
-    "id_question": 56
-  },
-  {
-    "id_metier": 27,
-    "id_question": 57
-  },
-  {
-    "id_metier": 27,
-    "id_question": 58
-  },
-  {
-    "id_metier": 27,
-    "id_question": 59
-  },
-  {
-    "id_metier": 27,
-    "id_question": 60
-  },
-  {
-    "id_metier": 27,
-    "id_question": 61
-  },
-  {
-    "id_metier": 27,
-    "id_question": 62
-  },
-  {
-    "id_metier": 27,
-    "id_question": 63
-  },
-  {
-    "id_metier": 27,
-    "id_question": 64
-  },
-  {
-    "id_metier": 27,
-    "id_question": 65
-  },
-  {
-    "id_metier": 27,
-    "id_question": 66
-  },
-  {
-    "id_metier": 27,
-    "id_question": 67
-  },
-  {
-    "id_metier": 27,
-    "id_question": 68
-  },
-  {
-    "id_metier": 27,
-    "id_question": 69
-  },
-  {
-    "id_metier": 27,
-    "id_question": 70
-  },
-  {
-    "id_metier": 27,
-    "id_question": 71
-  },
-  {
-    "id_metier": 27,
-    "id_question": 72
-  },
-  {
-    "id_metier": 27,
-    "id_question": 73
-  },
-  {
-    "id_metier": 27,
-    "id_question": 75
-  },
-  {
-    "id_metier": 27,
-    "id_question": 76
-  },
-  {
-    "id_metier": 27,
-    "id_question": 77
-  },
-  {
-    "id_metier": 27,
-    "id_question": 78
-  },
-  {
-    "id_metier": 27,
-    "id_question": 79
-  },
-  {
-    "id_metier": 27,
-    "id_question": 80
-  },
-  {
-    "id_metier": 27,
-    "id_question": 81
-  },
-  {
-    "id_metier": 27,
-    "id_question": 83
-  },
-  {
-    "id_metier": 27,
-    "id_question": 84
-  },
-  {
-    "id_metier": 27,
-    "id_question": 85
-  },
-  {
-    "id_metier": 27,
-    "id_question": 86
-  },
-  {
-    "id_metier": 27,
-    "id_question": 87
-  },
-  {
-    "id_metier": 27,
-    "id_question": 88
-  },
-  {
-    "id_metier": 27,
-    "id_question": 89
-  },
-  {
-    "id_metier": 27,
-    "id_question": 90
-  },
-  {
-    "id_metier": 27,
-    "id_question": 91
-  },
-  {
-    "id_metier": 27,
-    "id_question": 92
-  },
-  {
-    "id_metier": 27,
-    "id_question": 97
-  },
-  {
-    "id_metier": 27,
-    "id_question": 101
-  },
-  {
-    "id_metier": 27,
-    "id_question": 102
-  },
-  {
-    "id_metier": 27,
-    "id_question": 103
-  },
-  {
-    "id_metier": 27,
-    "id_question": 106
-  },
-  {
-    "id_metier": 27,
-    "id_question": 107
-  },
-  {
-    "id_metier": 27,
-    "id_question": 108
-  },
-  {
-    "id_metier": 27,
-    "id_question": 110
-  },
-  {
-    "id_metier": 27,
-    "id_question": 111
-  },
-  {
-    "id_metier": 27,
-    "id_question": 113
-  },
-  {
-    "id_metier": 27,
-    "id_question": 116
-  },
-  {
-    "id_metier": 27,
-    "id_question": 119
-  },
-  {
-    "id_metier": 27,
-    "id_question": 123
-  },
-  {
-    "id_metier": 28,
-    "id_question": 53
-  },
-  {
-    "id_metier": 28,
-    "id_question": 54
-  },
-  {
-    "id_metier": 28,
-    "id_question": 55
-  },
-  {
-    "id_metier": 28,
-    "id_question": 56
-  },
-  {
-    "id_metier": 28,
-    "id_question": 57
-  },
-  {
-    "id_metier": 28,
-    "id_question": 58
-  },
-  {
-    "id_metier": 28,
-    "id_question": 59
-  },
-  {
-    "id_metier": 28,
-    "id_question": 60
-  },
-  {
-    "id_metier": 28,
-    "id_question": 61
-  },
-  {
-    "id_metier": 28,
-    "id_question": 62
-  },
-  {
-    "id_metier": 28,
-    "id_question": 63
-  },
-  {
-    "id_metier": 28,
-    "id_question": 64
-  },
-  {
-    "id_metier": 28,
-    "id_question": 65
-  },
-  {
-    "id_metier": 28,
-    "id_question": 66
-  },
-  {
-    "id_metier": 28,
-    "id_question": 67
-  },
-  {
-    "id_metier": 28,
-    "id_question": 68
-  },
-  {
-    "id_metier": 28,
-    "id_question": 69
-  },
-  {
-    "id_metier": 28,
-    "id_question": 70
-  },
-  {
-    "id_metier": 28,
-    "id_question": 71
-  },
-  {
-    "id_metier": 28,
-    "id_question": 72
-  },
-  {
-    "id_metier": 28,
-    "id_question": 73
-  },
-  {
-    "id_metier": 28,
-    "id_question": 75
-  },
-  {
-    "id_metier": 28,
-    "id_question": 76
-  },
-  {
-    "id_metier": 28,
-    "id_question": 77
-  },
-  {
-    "id_metier": 28,
-    "id_question": 78
-  },
-  {
-    "id_metier": 28,
-    "id_question": 79
-  },
-  {
-    "id_metier": 28,
-    "id_question": 80
-  },
-  {
-    "id_metier": 28,
-    "id_question": 81
-  },
-  {
-    "id_metier": 28,
-    "id_question": 83
-  },
-  {
-    "id_metier": 28,
-    "id_question": 84
-  },
-  {
-    "id_metier": 28,
-    "id_question": 85
-  },
-  {
-    "id_metier": 28,
-    "id_question": 86
-  },
-  {
-    "id_metier": 28,
-    "id_question": 87
-  },
-  {
-    "id_metier": 28,
-    "id_question": 88
-  },
-  {
-    "id_metier": 28,
-    "id_question": 89
-  },
-  {
-    "id_metier": 28,
-    "id_question": 90
-  },
-  {
-    "id_metier": 28,
-    "id_question": 91
-  },
-  {
-    "id_metier": 28,
-    "id_question": 92
-  },
-  {
-    "id_metier": 28,
-    "id_question": 95
-  },
-  {
-    "id_metier": 28,
-    "id_question": 96
-  },
-  {
-    "id_metier": 28,
-    "id_question": 97
-  },
-  {
-    "id_metier": 28,
-    "id_question": 98
-  },
-  {
-    "id_metier": 28,
-    "id_question": 101
-  },
-  {
-    "id_metier": 28,
-    "id_question": 102
-  },
-  {
-    "id_metier": 28,
-    "id_question": 104
-  },
-  {
-    "id_metier": 28,
-    "id_question": 111
-  },
-  {
-    "id_metier": 28,
-    "id_question": 113
-  },
-  {
-    "id_metier": 28,
-    "id_question": 115
-  },
-  {
-    "id_metier": 28,
-    "id_question": 116
-  },
-  {
-    "id_metier": 28,
-    "id_question": 119
-  },
-  {
-    "id_metier": 28,
-    "id_question": 123
-  },
-  {
-    "id_metier": 29,
-    "id_question": 53
-  },
-  {
-    "id_metier": 29,
-    "id_question": 54
-  },
-  {
-    "id_metier": 29,
-    "id_question": 55
-  },
-  {
-    "id_metier": 29,
-    "id_question": 56
-  },
-  {
-    "id_metier": 29,
-    "id_question": 57
-  },
-  {
-    "id_metier": 29,
-    "id_question": 58
-  },
-  {
-    "id_metier": 29,
-    "id_question": 59
-  },
-  {
-    "id_metier": 29,
-    "id_question": 60
-  },
-  {
-    "id_metier": 29,
-    "id_question": 61
-  },
-  {
-    "id_metier": 29,
-    "id_question": 62
-  },
-  {
-    "id_metier": 29,
-    "id_question": 63
-  },
-  {
-    "id_metier": 29,
-    "id_question": 64
-  },
-  {
-    "id_metier": 29,
-    "id_question": 65
-  },
-  {
-    "id_metier": 29,
-    "id_question": 66
-  },
-  {
-    "id_metier": 29,
-    "id_question": 67
-  },
-  {
-    "id_metier": 29,
-    "id_question": 68
-  },
-  {
-    "id_metier": 29,
-    "id_question": 69
-  },
-  {
-    "id_metier": 29,
-    "id_question": 70
-  },
-  {
-    "id_metier": 29,
-    "id_question": 71
-  },
-  {
-    "id_metier": 29,
-    "id_question": 72
-  },
-  {
-    "id_metier": 29,
-    "id_question": 73
-  },
-  {
-    "id_metier": 29,
-    "id_question": 75
-  },
-  {
-    "id_metier": 29,
-    "id_question": 76
-  },
-  {
-    "id_metier": 29,
-    "id_question": 77
-  },
-  {
-    "id_metier": 29,
-    "id_question": 78
-  },
-  {
-    "id_metier": 29,
-    "id_question": 79
-  },
-  {
-    "id_metier": 29,
-    "id_question": 80
-  },
-  {
-    "id_metier": 29,
-    "id_question": 81
-  },
-  {
-    "id_metier": 29,
-    "id_question": 91
-  },
-  {
-    "id_metier": 29,
-    "id_question": 92
-  },
-  {
-    "id_metier": 29,
-    "id_question": 93
-  },
-  {
-    "id_metier": 29,
-    "id_question": 94
-  },
-  {
-    "id_metier": 29,
-    "id_question": 97
-  },
-  {
-    "id_metier": 29,
-    "id_question": 101
-  },
-  {
-    "id_metier": 29,
-    "id_question": 102
-  },
-  {
-    "id_metier": 29,
-    "id_question": 104
-  },
-  {
-    "id_metier": 29,
-    "id_question": 109
-  },
-  {
-    "id_metier": 29,
-    "id_question": 110
-  },
-  {
-    "id_metier": 29,
-    "id_question": 111
-  },
-  {
-    "id_metier": 29,
-    "id_question": 113
-  },
-  {
-    "id_metier": 29,
-    "id_question": 116
-  },
-  {
-    "id_metier": 29,
-    "id_question": 119
-  },
-  {
-    "id_metier": 29,
-    "id_question": 123
-  },
-  {
-    "id_metier": 30,
-    "id_question": 53
-  },
-  {
-    "id_metier": 30,
-    "id_question": 54
-  },
-  {
-    "id_metier": 30,
-    "id_question": 55
-  },
-  {
-    "id_metier": 30,
-    "id_question": 56
-  },
-  {
-    "id_metier": 30,
-    "id_question": 57
-  },
-  {
-    "id_metier": 30,
-    "id_question": 58
-  },
-  {
-    "id_metier": 30,
-    "id_question": 59
-  },
-  {
-    "id_metier": 30,
-    "id_question": 60
-  },
-  {
-    "id_metier": 30,
-    "id_question": 61
-  },
-  {
-    "id_metier": 30,
-    "id_question": 62
-  },
-  {
-    "id_metier": 30,
-    "id_question": 63
-  },
-  {
-    "id_metier": 30,
-    "id_question": 64
-  },
-  {
-    "id_metier": 30,
-    "id_question": 65
-  },
-  {
-    "id_metier": 30,
-    "id_question": 66
-  },
-  {
-    "id_metier": 30,
-    "id_question": 67
-  },
-  {
-    "id_metier": 30,
-    "id_question": 68
-  },
-  {
-    "id_metier": 30,
-    "id_question": 69
-  },
-  {
-    "id_metier": 30,
-    "id_question": 70
-  },
-  {
-    "id_metier": 30,
-    "id_question": 71
-  },
-  {
-    "id_metier": 30,
-    "id_question": 72
-  },
-  {
-    "id_metier": 30,
-    "id_question": 73
-  },
-  {
-    "id_metier": 30,
-    "id_question": 75
-  },
-  {
-    "id_metier": 30,
-    "id_question": 76
-  },
-  {
-    "id_metier": 30,
-    "id_question": 77
-  },
-  {
-    "id_metier": 30,
-    "id_question": 78
-  },
-  {
-    "id_metier": 30,
-    "id_question": 79
-  },
-  {
-    "id_metier": 30,
-    "id_question": 80
-  },
-  {
-    "id_metier": 30,
-    "id_question": 81
-  },
-  {
-    "id_metier": 30,
-    "id_question": 82
-  },
-  {
-    "id_metier": 30,
-    "id_question": 83
-  },
-  {
-    "id_metier": 30,
-    "id_question": 84
-  },
-  {
-    "id_metier": 30,
-    "id_question": 85
-  },
-  {
-    "id_metier": 30,
-    "id_question": 86
-  },
-  {
-    "id_metier": 30,
-    "id_question": 87
-  },
-  {
-    "id_metier": 30,
-    "id_question": 88
-  },
-  {
-    "id_metier": 30,
-    "id_question": 89
-  },
-  {
-    "id_metier": 30,
-    "id_question": 90
-  },
-  {
-    "id_metier": 30,
-    "id_question": 91
-  },
-  {
-    "id_metier": 30,
-    "id_question": 92
-  },
-  {
-    "id_metier": 30,
-    "id_question": 93
-  },
-  {
-    "id_metier": 30,
-    "id_question": 94
-  },
-  {
-    "id_metier": 30,
-    "id_question": 96
-  },
-  {
-    "id_metier": 30,
-    "id_question": 97
-  },
-  {
-    "id_metier": 30,
-    "id_question": 100
-  },
-  {
-    "id_metier": 30,
-    "id_question": 101
-  },
-  {
-    "id_metier": 30,
-    "id_question": 102
-  },
-  {
-    "id_metier": 30,
-    "id_question": 104
-  },
-  {
-    "id_metier": 30,
-    "id_question": 111
-  },
-  {
-    "id_metier": 30,
-    "id_question": 116
-  },
-  {
-    "id_metier": 30,
-    "id_question": 119
-  },
-  {
-    "id_metier": 30,
-    "id_question": 120
-  },
-  {
-    "id_metier": 30,
-    "id_question": 121
-  },
-  {
-    "id_metier": 30,
-    "id_question": 122
-  },
-  {
-    "id_metier": 30,
-    "id_question": 123
-  },
-  {
-    "id_metier": 31,
-    "id_question": 53
-  },
-  {
-    "id_metier": 31,
-    "id_question": 54
-  },
-  {
-    "id_metier": 31,
-    "id_question": 55
-  },
-  {
-    "id_metier": 31,
-    "id_question": 56
-  },
-  {
-    "id_metier": 31,
-    "id_question": 57
-  },
-  {
-    "id_metier": 31,
-    "id_question": 58
-  },
-  {
-    "id_metier": 31,
-    "id_question": 59
-  },
-  {
-    "id_metier": 31,
-    "id_question": 60
-  },
-  {
-    "id_metier": 31,
-    "id_question": 61
-  },
-  {
-    "id_metier": 31,
-    "id_question": 62
-  },
-  {
-    "id_metier": 31,
-    "id_question": 63
-  },
-  {
-    "id_metier": 31,
-    "id_question": 64
-  },
-  {
-    "id_metier": 31,
-    "id_question": 65
-  },
-  {
-    "id_metier": 31,
-    "id_question": 66
-  },
-  {
-    "id_metier": 31,
-    "id_question": 67
-  },
-  {
-    "id_metier": 31,
-    "id_question": 68
-  },
-  {
-    "id_metier": 31,
-    "id_question": 69
-  },
-  {
-    "id_metier": 31,
-    "id_question": 70
-  },
-  {
-    "id_metier": 31,
-    "id_question": 71
-  },
-  {
-    "id_metier": 31,
-    "id_question": 72
-  },
-  {
-    "id_metier": 31,
-    "id_question": 73
-  },
-  {
-    "id_metier": 31,
-    "id_question": 75
-  },
-  {
-    "id_metier": 31,
-    "id_question": 76
-  },
-  {
-    "id_metier": 31,
-    "id_question": 77
-  },
-  {
-    "id_metier": 31,
-    "id_question": 78
-  },
-  {
-    "id_metier": 31,
-    "id_question": 79
-  },
-  {
-    "id_metier": 31,
-    "id_question": 80
-  },
-  {
-    "id_metier": 31,
-    "id_question": 81
-  },
-  {
-    "id_metier": 31,
-    "id_question": 83
-  },
-  {
-    "id_metier": 31,
-    "id_question": 84
-  },
-  {
-    "id_metier": 31,
-    "id_question": 85
-  },
-  {
-    "id_metier": 31,
-    "id_question": 86
-  },
-  {
-    "id_metier": 31,
-    "id_question": 87
-  },
-  {
-    "id_metier": 31,
-    "id_question": 88
-  },
-  {
-    "id_metier": 31,
-    "id_question": 89
-  },
-  {
-    "id_metier": 31,
-    "id_question": 90
-  },
-  {
-    "id_metier": 31,
-    "id_question": 91
-  },
-  {
-    "id_metier": 31,
-    "id_question": 92
-  },
-  {
-    "id_metier": 31,
-    "id_question": 93
-  },
-  {
-    "id_metier": 31,
-    "id_question": 94
-  },
-  {
-    "id_metier": 31,
-    "id_question": 97
-  },
-  {
-    "id_metier": 31,
-    "id_question": 98
-  },
-  {
-    "id_metier": 31,
-    "id_question": 101
-  },
-  {
-    "id_metier": 31,
-    "id_question": 102
-  },
-  {
-    "id_metier": 31,
-    "id_question": 104
-  },
-  {
-    "id_metier": 31,
-    "id_question": 110
-  },
-  {
-    "id_metier": 31,
-    "id_question": 111
-  },
-  {
-    "id_metier": 31,
-    "id_question": 116
-  },
-  {
-    "id_metier": 31,
-    "id_question": 118
-  },
-  {
-    "id_metier": 31,
-    "id_question": 119
-  },
-  {
-    "id_metier": 31,
-    "id_question": 123
-  },
-  {
-    "id_metier": 32,
-    "id_question": 53
-  },
-  {
-    "id_metier": 32,
-    "id_question": 54
-  },
-  {
-    "id_metier": 32,
-    "id_question": 55
-  },
-  {
-    "id_metier": 32,
-    "id_question": 56
-  },
-  {
-    "id_metier": 32,
-    "id_question": 57
-  },
-  {
-    "id_metier": 32,
-    "id_question": 58
-  },
-  {
-    "id_metier": 32,
-    "id_question": 59
-  },
-  {
-    "id_metier": 32,
-    "id_question": 60
-  },
-  {
-    "id_metier": 32,
-    "id_question": 61
-  },
-  {
-    "id_metier": 32,
-    "id_question": 62
-  },
-  {
-    "id_metier": 32,
-    "id_question": 63
-  },
-  {
-    "id_metier": 32,
-    "id_question": 64
-  },
-  {
-    "id_metier": 32,
-    "id_question": 65
-  },
-  {
-    "id_metier": 32,
-    "id_question": 66
-  },
-  {
-    "id_metier": 32,
-    "id_question": 67
-  },
-  {
-    "id_metier": 32,
-    "id_question": 68
-  },
-  {
-    "id_metier": 32,
-    "id_question": 69
-  },
-  {
-    "id_metier": 32,
-    "id_question": 70
-  },
-  {
-    "id_metier": 32,
-    "id_question": 71
-  },
-  {
-    "id_metier": 32,
-    "id_question": 72
-  },
-  {
-    "id_metier": 32,
-    "id_question": 73
-  },
-  {
-    "id_metier": 32,
-    "id_question": 75
-  },
-  {
-    "id_metier": 32,
-    "id_question": 76
-  },
-  {
-    "id_metier": 32,
-    "id_question": 77
-  },
-  {
-    "id_metier": 32,
-    "id_question": 78
-  },
-  {
-    "id_metier": 32,
-    "id_question": 79
-  },
-  {
-    "id_metier": 32,
-    "id_question": 80
-  },
-  {
-    "id_metier": 32,
-    "id_question": 81
-  },
-  {
-    "id_metier": 32,
-    "id_question": 82
-  },
-  {
-    "id_metier": 32,
-    "id_question": 91
-  },
-  {
-    "id_metier": 32,
-    "id_question": 92
-  },
-  {
-    "id_metier": 32,
-    "id_question": 97
-  },
-  {
-    "id_metier": 32,
-    "id_question": 98
-  },
-  {
-    "id_metier": 32,
-    "id_question": 101
-  },
-  {
-    "id_metier": 32,
-    "id_question": 102
-  },
-  {
-    "id_metier": 32,
-    "id_question": 104
-  },
-  {
-    "id_metier": 32,
-    "id_question": 105
-  },
-  {
-    "id_metier": 32,
-    "id_question": 110
-  },
-  {
-    "id_metier": 32,
-    "id_question": 111
-  },
-  {
-    "id_metier": 32,
-    "id_question": 113
-  },
-  {
-    "id_metier": 32,
-    "id_question": 114
-  },
-  {
-    "id_metier": 32,
-    "id_question": 116
-  },
-  {
-    "id_metier": 32,
-    "id_question": 119
-  },
-  {
-    "id_metier": 32,
-    "id_question": 123
-  },
-  {
-    "id_metier": 33,
-    "id_question": 53
-  },
-  {
-    "id_metier": 33,
-    "id_question": 54
-  },
-  {
-    "id_metier": 33,
-    "id_question": 55
-  },
-  {
-    "id_metier": 33,
-    "id_question": 56
-  },
-  {
-    "id_metier": 33,
-    "id_question": 57
-  },
-  {
-    "id_metier": 33,
-    "id_question": 58
-  },
-  {
-    "id_metier": 33,
-    "id_question": 59
-  },
-  {
-    "id_metier": 33,
-    "id_question": 60
-  },
-  {
-    "id_metier": 33,
-    "id_question": 61
-  },
-  {
-    "id_metier": 33,
-    "id_question": 62
-  },
-  {
-    "id_metier": 33,
-    "id_question": 63
-  },
-  {
-    "id_metier": 33,
-    "id_question": 64
-  },
-  {
-    "id_metier": 33,
-    "id_question": 65
-  },
-  {
-    "id_metier": 33,
-    "id_question": 66
-  },
-  {
-    "id_metier": 33,
-    "id_question": 67
-  },
-  {
-    "id_metier": 33,
-    "id_question": 68
-  },
-  {
-    "id_metier": 33,
-    "id_question": 69
-  },
-  {
-    "id_metier": 33,
-    "id_question": 70
-  },
-  {
-    "id_metier": 33,
-    "id_question": 71
-  },
-  {
-    "id_metier": 33,
-    "id_question": 72
-  },
-  {
-    "id_metier": 33,
-    "id_question": 73
-  },
-  {
-    "id_metier": 33,
-    "id_question": 75
-  },
-  {
-    "id_metier": 33,
-    "id_question": 76
-  },
-  {
-    "id_metier": 33,
-    "id_question": 77
-  },
-  {
-    "id_metier": 33,
-    "id_question": 78
-  },
-  {
-    "id_metier": 33,
-    "id_question": 79
-  },
-  {
-    "id_metier": 33,
-    "id_question": 80
-  },
-  {
-    "id_metier": 33,
-    "id_question": 81
-  },
-  {
-    "id_metier": 33,
-    "id_question": 83
-  },
-  {
-    "id_metier": 33,
-    "id_question": 84
-  },
-  {
-    "id_metier": 33,
-    "id_question": 85
-  },
-  {
-    "id_metier": 33,
-    "id_question": 86
-  },
-  {
-    "id_metier": 33,
-    "id_question": 87
-  },
-  {
-    "id_metier": 33,
-    "id_question": 88
-  },
-  {
-    "id_metier": 33,
-    "id_question": 89
-  },
-  {
-    "id_metier": 33,
-    "id_question": 90
-  },
-  {
-    "id_metier": 33,
-    "id_question": 91
-  },
-  {
-    "id_metier": 33,
-    "id_question": 92
-  },
-  {
-    "id_metier": 33,
-    "id_question": 97
-  },
-  {
-    "id_metier": 33,
-    "id_question": 100
-  },
-  {
-    "id_metier": 33,
-    "id_question": 101
-  },
-  {
-    "id_metier": 33,
-    "id_question": 102
-  },
-  {
-    "id_metier": 33,
-    "id_question": 104
-  },
-  {
-    "id_metier": 33,
-    "id_question": 110
-  },
-  {
-    "id_metier": 33,
-    "id_question": 111
-  },
-  {
-    "id_metier": 33,
-    "id_question": 116
-  },
-  {
-    "id_metier": 33,
-    "id_question": 119
-  },
-  {
-    "id_metier": 33,
-    "id_question": 123
-  },
-  {
-    "id_metier": 34,
-    "id_question": 53
-  },
-  {
-    "id_metier": 34,
-    "id_question": 54
-  },
-  {
-    "id_metier": 34,
-    "id_question": 55
-  },
-  {
-    "id_metier": 34,
-    "id_question": 56
-  },
-  {
-    "id_metier": 34,
-    "id_question": 57
-  },
-  {
-    "id_metier": 34,
-    "id_question": 58
-  },
-  {
-    "id_metier": 34,
-    "id_question": 59
-  },
-  {
-    "id_metier": 34,
-    "id_question": 60
-  },
-  {
-    "id_metier": 34,
-    "id_question": 61
-  },
-  {
-    "id_metier": 34,
-    "id_question": 62
-  },
-  {
-    "id_metier": 34,
-    "id_question": 63
-  },
-  {
-    "id_metier": 34,
-    "id_question": 64
-  },
-  {
-    "id_metier": 34,
-    "id_question": 65
-  },
-  {
-    "id_metier": 34,
-    "id_question": 66
-  },
-  {
-    "id_metier": 34,
-    "id_question": 67
-  },
-  {
-    "id_metier": 34,
-    "id_question": 68
-  },
-  {
-    "id_metier": 34,
-    "id_question": 69
-  },
-  {
-    "id_metier": 34,
-    "id_question": 70
-  },
-  {
-    "id_metier": 34,
-    "id_question": 71
-  },
-  {
-    "id_metier": 34,
-    "id_question": 72
-  },
-  {
-    "id_metier": 34,
-    "id_question": 73
-  },
-  {
-    "id_metier": 34,
-    "id_question": 75
-  },
-  {
-    "id_metier": 34,
-    "id_question": 76
-  },
-  {
-    "id_metier": 34,
-    "id_question": 77
-  },
-  {
-    "id_metier": 34,
-    "id_question": 78
-  },
-  {
-    "id_metier": 34,
-    "id_question": 79
-  },
-  {
-    "id_metier": 34,
-    "id_question": 80
-  },
-  {
-    "id_metier": 34,
-    "id_question": 81
-  },
-  {
-    "id_metier": 34,
-    "id_question": 91
-  },
-  {
-    "id_metier": 34,
-    "id_question": 92
-  },
-  {
-    "id_metier": 34,
-    "id_question": 95
-  },
-  {
-    "id_metier": 34,
-    "id_question": 97
-  },
-  {
-    "id_metier": 34,
-    "id_question": 101
-  },
-  {
-    "id_metier": 34,
-    "id_question": 102
-  },
-  {
-    "id_metier": 34,
-    "id_question": 104
-  },
-  {
-    "id_metier": 34,
-    "id_question": 105
-  },
-  {
-    "id_metier": 34,
-    "id_question": 110
-  },
-  {
-    "id_metier": 34,
-    "id_question": 111
-  },
-  {
-    "id_metier": 34,
-    "id_question": 112
-  },
-  {
-    "id_metier": 34,
-    "id_question": 114
-  },
-  {
-    "id_metier": 34,
-    "id_question": 116
-  },
-  {
-    "id_metier": 34,
-    "id_question": 119
-  },
-  {
-    "id_metier": 34,
-    "id_question": 123
-  },
-  {
-    "id_metier": 35,
-    "id_question": 53
-  },
-  {
-    "id_metier": 35,
-    "id_question": 54
-  },
-  {
-    "id_metier": 35,
-    "id_question": 55
-  },
-  {
-    "id_metier": 35,
-    "id_question": 56
-  },
-  {
-    "id_metier": 35,
-    "id_question": 57
-  },
-  {
-    "id_metier": 35,
-    "id_question": 58
-  },
-  {
-    "id_metier": 35,
-    "id_question": 59
-  },
-  {
-    "id_metier": 35,
-    "id_question": 60
-  },
-  {
-    "id_metier": 35,
-    "id_question": 61
-  },
-  {
-    "id_metier": 35,
-    "id_question": 62
-  },
-  {
-    "id_metier": 35,
-    "id_question": 63
-  },
-  {
-    "id_metier": 35,
-    "id_question": 64
-  },
-  {
-    "id_metier": 35,
-    "id_question": 65
-  },
-  {
-    "id_metier": 35,
-    "id_question": 66
-  },
-  {
-    "id_metier": 35,
-    "id_question": 67
-  },
-  {
-    "id_metier": 35,
-    "id_question": 68
-  },
-  {
-    "id_metier": 35,
-    "id_question": 69
-  },
-  {
-    "id_metier": 35,
-    "id_question": 70
-  },
-  {
-    "id_metier": 35,
-    "id_question": 71
-  },
-  {
-    "id_metier": 35,
-    "id_question": 72
-  },
-  {
-    "id_metier": 35,
-    "id_question": 73
-  },
-  {
-    "id_metier": 35,
-    "id_question": 75
-  },
-  {
-    "id_metier": 35,
-    "id_question": 76
-  },
-  {
-    "id_metier": 35,
-    "id_question": 77
-  },
-  {
-    "id_metier": 35,
-    "id_question": 78
-  },
-  {
-    "id_metier": 35,
-    "id_question": 79
-  },
-  {
-    "id_metier": 35,
-    "id_question": 80
-  },
-  {
-    "id_metier": 35,
-    "id_question": 81
-  },
-  {
-    "id_metier": 35,
-    "id_question": 82
-  },
-  {
-    "id_metier": 35,
-    "id_question": 91
-  },
-  {
-    "id_metier": 35,
-    "id_question": 92
-  },
-  {
-    "id_metier": 35,
-    "id_question": 93
-  },
-  {
-    "id_metier": 35,
-    "id_question": 94
-  },
-  {
-    "id_metier": 35,
-    "id_question": 95
-  },
-  {
-    "id_metier": 35,
-    "id_question": 97
-  },
-  {
-    "id_metier": 35,
-    "id_question": 100
-  },
-  {
-    "id_metier": 35,
-    "id_question": 101
-  },
-  {
-    "id_metier": 35,
-    "id_question": 102
-  },
-  {
-    "id_metier": 35,
-    "id_question": 104
-  },
-  {
-    "id_metier": 35,
-    "id_question": 111
-  },
-  {
-    "id_metier": 35,
-    "id_question": 116
-  },
-  {
-    "id_metier": 35,
-    "id_question": 119
-  },
-  {
-    "id_metier": 35,
-    "id_question": 123
-  },
-  {
-    "id_metier": 36,
-    "id_question": 53
-  },
-  {
-    "id_metier": 36,
-    "id_question": 54
-  },
-  {
-    "id_metier": 36,
-    "id_question": 55
-  },
-  {
-    "id_metier": 36,
-    "id_question": 56
-  },
-  {
-    "id_metier": 36,
-    "id_question": 57
-  },
-  {
-    "id_metier": 36,
-    "id_question": 58
-  },
-  {
-    "id_metier": 36,
-    "id_question": 59
-  },
-  {
-    "id_metier": 36,
-    "id_question": 60
-  },
-  {
-    "id_metier": 36,
-    "id_question": 61
-  },
-  {
-    "id_metier": 36,
-    "id_question": 62
-  },
-  {
-    "id_metier": 36,
-    "id_question": 63
-  },
-  {
-    "id_metier": 36,
-    "id_question": 64
-  },
-  {
-    "id_metier": 36,
-    "id_question": 65
-  },
-  {
-    "id_metier": 36,
-    "id_question": 66
-  },
-  {
-    "id_metier": 36,
-    "id_question": 67
-  },
-  {
-    "id_metier": 36,
-    "id_question": 68
-  },
-  {
-    "id_metier": 36,
-    "id_question": 69
-  },
-  {
-    "id_metier": 36,
-    "id_question": 70
-  },
-  {
-    "id_metier": 36,
-    "id_question": 71
-  },
-  {
-    "id_metier": 36,
-    "id_question": 72
-  },
-  {
-    "id_metier": 36,
-    "id_question": 73
-  },
-  {
-    "id_metier": 36,
-    "id_question": 75
-  },
-  {
-    "id_metier": 36,
-    "id_question": 76
-  },
-  {
-    "id_metier": 36,
-    "id_question": 77
-  },
-  {
-    "id_metier": 36,
-    "id_question": 78
-  },
-  {
-    "id_metier": 36,
-    "id_question": 79
-  },
-  {
-    "id_metier": 36,
-    "id_question": 80
-  },
-  {
-    "id_metier": 36,
-    "id_question": 81
-  },
-  {
-    "id_metier": 36,
-    "id_question": 91
-  },
-  {
-    "id_metier": 36,
-    "id_question": 92
-  },
-  {
-    "id_metier": 36,
-    "id_question": 93
-  },
-  {
-    "id_metier": 36,
-    "id_question": 94
-  },
-  {
-    "id_metier": 36,
-    "id_question": 97
-  },
-  {
-    "id_metier": 36,
-    "id_question": 98
-  },
-  {
-    "id_metier": 36,
-    "id_question": 99
-  },
-  {
-    "id_metier": 36,
-    "id_question": 100
-  },
-  {
-    "id_metier": 36,
-    "id_question": 101
-  },
-  {
-    "id_metier": 36,
-    "id_question": 102
-  },
-  {
-    "id_metier": 36,
-    "id_question": 104
-  },
-  {
-    "id_metier": 36,
-    "id_question": 105
-  },
-  {
-    "id_metier": 36,
-    "id_question": 111
-  },
-  {
-    "id_metier": 36,
-    "id_question": 116
-  },
-  {
-    "id_metier": 36,
-    "id_question": 117
-  },
-  {
-    "id_metier": 36,
-    "id_question": 119
-  },
-  {
-    "id_metier": 36,
-    "id_question": 120
-  },
-  {
-    "id_metier": 36,
-    "id_question": 121
-  },
-  {
-    "id_metier": 36,
-    "id_question": 122
-  },
-  {
-    "id_metier": 36,
-    "id_question": 123
-  }
+	{
+		"id_metier": 23,
+		"id_question": 53
+	},
+	{
+		"id_metier": 23,
+		"id_question": 54
+	},
+	{
+		"id_metier": 23,
+		"id_question": 55
+	},
+	{
+		"id_metier": 23,
+		"id_question": 56
+	},
+	{
+		"id_metier": 23,
+		"id_question": 57
+	},
+	{
+		"id_metier": 23,
+		"id_question": 58
+	},
+	{
+		"id_metier": 23,
+		"id_question": 59
+	},
+	{
+		"id_metier": 23,
+		"id_question": 60
+	},
+	{
+		"id_metier": 23,
+		"id_question": 61
+	},
+	{
+		"id_metier": 23,
+		"id_question": 62
+	},
+	{
+		"id_metier": 23,
+		"id_question": 63
+	},
+	{
+		"id_metier": 23,
+		"id_question": 64
+	},
+	{
+		"id_metier": 23,
+		"id_question": 65
+	},
+	{
+		"id_metier": 23,
+		"id_question": 66
+	},
+	{
+		"id_metier": 23,
+		"id_question": 67
+	},
+	{
+		"id_metier": 23,
+		"id_question": 68
+	},
+	{
+		"id_metier": 23,
+		"id_question": 69
+	},
+	{
+		"id_metier": 23,
+		"id_question": 70
+	},
+	{
+		"id_metier": 23,
+		"id_question": 71
+	},
+	{
+		"id_metier": 23,
+		"id_question": 72
+	},
+	{
+		"id_metier": 23,
+		"id_question": 73
+	},
+	{
+		"id_metier": 23,
+		"id_question": 75
+	},
+	{
+		"id_metier": 23,
+		"id_question": 76
+	},
+	{
+		"id_metier": 23,
+		"id_question": 77
+	},
+	{
+		"id_metier": 23,
+		"id_question": 78
+	},
+	{
+		"id_metier": 23,
+		"id_question": 79
+	},
+	{
+		"id_metier": 23,
+		"id_question": 80
+	},
+	{
+		"id_metier": 23,
+		"id_question": 81
+	},
+	{
+		"id_metier": 23,
+		"id_question": 83
+	},
+	{
+		"id_metier": 23,
+		"id_question": 84
+	},
+	{
+		"id_metier": 23,
+		"id_question": 85
+	},
+	{
+		"id_metier": 23,
+		"id_question": 86
+	},
+	{
+		"id_metier": 23,
+		"id_question": 87
+	},
+	{
+		"id_metier": 23,
+		"id_question": 88
+	},
+	{
+		"id_metier": 23,
+		"id_question": 89
+	},
+	{
+		"id_metier": 23,
+		"id_question": 90
+	},
+	{
+		"id_metier": 23,
+		"id_question": 91
+	},
+	{
+		"id_metier": 23,
+		"id_question": 92
+	},
+	{
+		"id_metier": 23,
+		"id_question": 93
+	},
+	{
+		"id_metier": 23,
+		"id_question": 94
+	},
+	{
+		"id_metier": 23,
+		"id_question": 97
+	},
+	{
+		"id_metier": 23,
+		"id_question": 98
+	},
+	{
+		"id_metier": 23,
+		"id_question": 99
+	},
+	{
+		"id_metier": 23,
+		"id_question": 101
+	},
+	{
+		"id_metier": 23,
+		"id_question": 102
+	},
+	{
+		"id_metier": 23,
+		"id_question": 104
+	},
+	{
+		"id_metier": 23,
+		"id_question": 110
+	},
+	{
+		"id_metier": 23,
+		"id_question": 111
+	},
+	{
+		"id_metier": 23,
+		"id_question": 116
+	},
+	{
+		"id_metier": 23,
+		"id_question": 117
+	},
+	{
+		"id_metier": 23,
+		"id_question": 119
+	},
+	{
+		"id_metier": 23,
+		"id_question": 120
+	},
+	{
+		"id_metier": 23,
+		"id_question": 121
+	},
+	{
+		"id_metier": 23,
+		"id_question": 122
+	},
+	{
+		"id_metier": 23,
+		"id_question": 123
+	},
+	{
+		"id_metier": 25,
+		"id_question": 53
+	},
+	{
+		"id_metier": 25,
+		"id_question": 54
+	},
+	{
+		"id_metier": 25,
+		"id_question": 55
+	},
+	{
+		"id_metier": 25,
+		"id_question": 56
+	},
+	{
+		"id_metier": 25,
+		"id_question": 57
+	},
+	{
+		"id_metier": 25,
+		"id_question": 58
+	},
+	{
+		"id_metier": 25,
+		"id_question": 59
+	},
+	{
+		"id_metier": 25,
+		"id_question": 60
+	},
+	{
+		"id_metier": 25,
+		"id_question": 61
+	},
+	{
+		"id_metier": 25,
+		"id_question": 62
+	},
+	{
+		"id_metier": 25,
+		"id_question": 63
+	},
+	{
+		"id_metier": 25,
+		"id_question": 64
+	},
+	{
+		"id_metier": 25,
+		"id_question": 65
+	},
+	{
+		"id_metier": 25,
+		"id_question": 66
+	},
+	{
+		"id_metier": 25,
+		"id_question": 67
+	},
+	{
+		"id_metier": 25,
+		"id_question": 68
+	},
+	{
+		"id_metier": 25,
+		"id_question": 69
+	},
+	{
+		"id_metier": 25,
+		"id_question": 70
+	},
+	{
+		"id_metier": 25,
+		"id_question": 71
+	},
+	{
+		"id_metier": 25,
+		"id_question": 72
+	},
+	{
+		"id_metier": 25,
+		"id_question": 73
+	},
+	{
+		"id_metier": 25,
+		"id_question": 75
+	},
+	{
+		"id_metier": 25,
+		"id_question": 76
+	},
+	{
+		"id_metier": 25,
+		"id_question": 77
+	},
+	{
+		"id_metier": 25,
+		"id_question": 78
+	},
+	{
+		"id_metier": 25,
+		"id_question": 79
+	},
+	{
+		"id_metier": 25,
+		"id_question": 80
+	},
+	{
+		"id_metier": 25,
+		"id_question": 81
+	},
+	{
+		"id_metier": 25,
+		"id_question": 91
+	},
+	{
+		"id_metier": 25,
+		"id_question": 92
+	},
+	{
+		"id_metier": 25,
+		"id_question": 93
+	},
+	{
+		"id_metier": 25,
+		"id_question": 94
+	},
+	{
+		"id_metier": 25,
+		"id_question": 95
+	},
+	{
+		"id_metier": 25,
+		"id_question": 97
+	},
+	{
+		"id_metier": 25,
+		"id_question": 101
+	},
+	{
+		"id_metier": 25,
+		"id_question": 102
+	},
+	{
+		"id_metier": 25,
+		"id_question": 104
+	},
+	{
+		"id_metier": 25,
+		"id_question": 109
+	},
+	{
+		"id_metier": 25,
+		"id_question": 111
+	},
+	{
+		"id_metier": 25,
+		"id_question": 113
+	},
+	{
+		"id_metier": 25,
+		"id_question": 116
+	},
+	{
+		"id_metier": 25,
+		"id_question": 119
+	},
+	{
+		"id_metier": 25,
+		"id_question": 120
+	},
+	{
+		"id_metier": 25,
+		"id_question": 121
+	},
+	{
+		"id_metier": 25,
+		"id_question": 122
+	},
+	{
+		"id_metier": 25,
+		"id_question": 123
+	},
+	{
+		"id_metier": 27,
+		"id_question": 53
+	},
+	{
+		"id_metier": 27,
+		"id_question": 54
+	},
+	{
+		"id_metier": 27,
+		"id_question": 55
+	},
+	{
+		"id_metier": 27,
+		"id_question": 56
+	},
+	{
+		"id_metier": 27,
+		"id_question": 57
+	},
+	{
+		"id_metier": 27,
+		"id_question": 58
+	},
+	{
+		"id_metier": 27,
+		"id_question": 59
+	},
+	{
+		"id_metier": 27,
+		"id_question": 60
+	},
+	{
+		"id_metier": 27,
+		"id_question": 61
+	},
+	{
+		"id_metier": 27,
+		"id_question": 62
+	},
+	{
+		"id_metier": 27,
+		"id_question": 63
+	},
+	{
+		"id_metier": 27,
+		"id_question": 64
+	},
+	{
+		"id_metier": 27,
+		"id_question": 65
+	},
+	{
+		"id_metier": 27,
+		"id_question": 66
+	},
+	{
+		"id_metier": 27,
+		"id_question": 67
+	},
+	{
+		"id_metier": 27,
+		"id_question": 68
+	},
+	{
+		"id_metier": 27,
+		"id_question": 69
+	},
+	{
+		"id_metier": 27,
+		"id_question": 70
+	},
+	{
+		"id_metier": 27,
+		"id_question": 71
+	},
+	{
+		"id_metier": 27,
+		"id_question": 72
+	},
+	{
+		"id_metier": 27,
+		"id_question": 73
+	},
+	{
+		"id_metier": 27,
+		"id_question": 75
+	},
+	{
+		"id_metier": 27,
+		"id_question": 76
+	},
+	{
+		"id_metier": 27,
+		"id_question": 77
+	},
+	{
+		"id_metier": 27,
+		"id_question": 78
+	},
+	{
+		"id_metier": 27,
+		"id_question": 79
+	},
+	{
+		"id_metier": 27,
+		"id_question": 80
+	},
+	{
+		"id_metier": 27,
+		"id_question": 81
+	},
+	{
+		"id_metier": 27,
+		"id_question": 83
+	},
+	{
+		"id_metier": 27,
+		"id_question": 84
+	},
+	{
+		"id_metier": 27,
+		"id_question": 85
+	},
+	{
+		"id_metier": 27,
+		"id_question": 86
+	},
+	{
+		"id_metier": 27,
+		"id_question": 87
+	},
+	{
+		"id_metier": 27,
+		"id_question": 88
+	},
+	{
+		"id_metier": 27,
+		"id_question": 89
+	},
+	{
+		"id_metier": 27,
+		"id_question": 90
+	},
+	{
+		"id_metier": 27,
+		"id_question": 91
+	},
+	{
+		"id_metier": 27,
+		"id_question": 92
+	},
+	{
+		"id_metier": 27,
+		"id_question": 97
+	},
+	{
+		"id_metier": 27,
+		"id_question": 101
+	},
+	{
+		"id_metier": 27,
+		"id_question": 102
+	},
+	{
+		"id_metier": 27,
+		"id_question": 103
+	},
+	{
+		"id_metier": 27,
+		"id_question": 106
+	},
+	{
+		"id_metier": 27,
+		"id_question": 107
+	},
+	{
+		"id_metier": 27,
+		"id_question": 108
+	},
+	{
+		"id_metier": 27,
+		"id_question": 110
+	},
+	{
+		"id_metier": 27,
+		"id_question": 111
+	},
+	{
+		"id_metier": 27,
+		"id_question": 113
+	},
+	{
+		"id_metier": 27,
+		"id_question": 116
+	},
+	{
+		"id_metier": 27,
+		"id_question": 119
+	},
+	{
+		"id_metier": 27,
+		"id_question": 123
+	},
+	{
+		"id_metier": 28,
+		"id_question": 53
+	},
+	{
+		"id_metier": 28,
+		"id_question": 54
+	},
+	{
+		"id_metier": 28,
+		"id_question": 55
+	},
+	{
+		"id_metier": 28,
+		"id_question": 56
+	},
+	{
+		"id_metier": 28,
+		"id_question": 57
+	},
+	{
+		"id_metier": 28,
+		"id_question": 58
+	},
+	{
+		"id_metier": 28,
+		"id_question": 59
+	},
+	{
+		"id_metier": 28,
+		"id_question": 60
+	},
+	{
+		"id_metier": 28,
+		"id_question": 61
+	},
+	{
+		"id_metier": 28,
+		"id_question": 62
+	},
+	{
+		"id_metier": 28,
+		"id_question": 63
+	},
+	{
+		"id_metier": 28,
+		"id_question": 64
+	},
+	{
+		"id_metier": 28,
+		"id_question": 65
+	},
+	{
+		"id_metier": 28,
+		"id_question": 66
+	},
+	{
+		"id_metier": 28,
+		"id_question": 67
+	},
+	{
+		"id_metier": 28,
+		"id_question": 68
+	},
+	{
+		"id_metier": 28,
+		"id_question": 69
+	},
+	{
+		"id_metier": 28,
+		"id_question": 70
+	},
+	{
+		"id_metier": 28,
+		"id_question": 71
+	},
+	{
+		"id_metier": 28,
+		"id_question": 72
+	},
+	{
+		"id_metier": 28,
+		"id_question": 73
+	},
+	{
+		"id_metier": 28,
+		"id_question": 75
+	},
+	{
+		"id_metier": 28,
+		"id_question": 76
+	},
+	{
+		"id_metier": 28,
+		"id_question": 77
+	},
+	{
+		"id_metier": 28,
+		"id_question": 78
+	},
+	{
+		"id_metier": 28,
+		"id_question": 79
+	},
+	{
+		"id_metier": 28,
+		"id_question": 80
+	},
+	{
+		"id_metier": 28,
+		"id_question": 81
+	},
+	{
+		"id_metier": 28,
+		"id_question": 83
+	},
+	{
+		"id_metier": 28,
+		"id_question": 84
+	},
+	{
+		"id_metier": 28,
+		"id_question": 85
+	},
+	{
+		"id_metier": 28,
+		"id_question": 86
+	},
+	{
+		"id_metier": 28,
+		"id_question": 87
+	},
+	{
+		"id_metier": 28,
+		"id_question": 88
+	},
+	{
+		"id_metier": 28,
+		"id_question": 89
+	},
+	{
+		"id_metier": 28,
+		"id_question": 90
+	},
+	{
+		"id_metier": 28,
+		"id_question": 91
+	},
+	{
+		"id_metier": 28,
+		"id_question": 92
+	},
+	{
+		"id_metier": 28,
+		"id_question": 95
+	},
+	{
+		"id_metier": 28,
+		"id_question": 96
+	},
+	{
+		"id_metier": 28,
+		"id_question": 97
+	},
+	{
+		"id_metier": 28,
+		"id_question": 98
+	},
+	{
+		"id_metier": 28,
+		"id_question": 101
+	},
+	{
+		"id_metier": 28,
+		"id_question": 102
+	},
+	{
+		"id_metier": 28,
+		"id_question": 104
+	},
+	{
+		"id_metier": 28,
+		"id_question": 111
+	},
+	{
+		"id_metier": 28,
+		"id_question": 113
+	},
+	{
+		"id_metier": 28,
+		"id_question": 115
+	},
+	{
+		"id_metier": 28,
+		"id_question": 116
+	},
+	{
+		"id_metier": 28,
+		"id_question": 119
+	},
+	{
+		"id_metier": 28,
+		"id_question": 123
+	},
+	{
+		"id_metier": 29,
+		"id_question": 53
+	},
+	{
+		"id_metier": 29,
+		"id_question": 54
+	},
+	{
+		"id_metier": 29,
+		"id_question": 55
+	},
+	{
+		"id_metier": 29,
+		"id_question": 56
+	},
+	{
+		"id_metier": 29,
+		"id_question": 57
+	},
+	{
+		"id_metier": 29,
+		"id_question": 58
+	},
+	{
+		"id_metier": 29,
+		"id_question": 59
+	},
+	{
+		"id_metier": 29,
+		"id_question": 60
+	},
+	{
+		"id_metier": 29,
+		"id_question": 61
+	},
+	{
+		"id_metier": 29,
+		"id_question": 62
+	},
+	{
+		"id_metier": 29,
+		"id_question": 63
+	},
+	{
+		"id_metier": 29,
+		"id_question": 64
+	},
+	{
+		"id_metier": 29,
+		"id_question": 65
+	},
+	{
+		"id_metier": 29,
+		"id_question": 66
+	},
+	{
+		"id_metier": 29,
+		"id_question": 67
+	},
+	{
+		"id_metier": 29,
+		"id_question": 68
+	},
+	{
+		"id_metier": 29,
+		"id_question": 69
+	},
+	{
+		"id_metier": 29,
+		"id_question": 70
+	},
+	{
+		"id_metier": 29,
+		"id_question": 71
+	},
+	{
+		"id_metier": 29,
+		"id_question": 72
+	},
+	{
+		"id_metier": 29,
+		"id_question": 73
+	},
+	{
+		"id_metier": 29,
+		"id_question": 75
+	},
+	{
+		"id_metier": 29,
+		"id_question": 76
+	},
+	{
+		"id_metier": 29,
+		"id_question": 77
+	},
+	{
+		"id_metier": 29,
+		"id_question": 78
+	},
+	{
+		"id_metier": 29,
+		"id_question": 79
+	},
+	{
+		"id_metier": 29,
+		"id_question": 80
+	},
+	{
+		"id_metier": 29,
+		"id_question": 81
+	},
+	{
+		"id_metier": 29,
+		"id_question": 91
+	},
+	{
+		"id_metier": 29,
+		"id_question": 92
+	},
+	{
+		"id_metier": 29,
+		"id_question": 93
+	},
+	{
+		"id_metier": 29,
+		"id_question": 94
+	},
+	{
+		"id_metier": 29,
+		"id_question": 97
+	},
+	{
+		"id_metier": 29,
+		"id_question": 101
+	},
+	{
+		"id_metier": 29,
+		"id_question": 102
+	},
+	{
+		"id_metier": 29,
+		"id_question": 104
+	},
+	{
+		"id_metier": 29,
+		"id_question": 109
+	},
+	{
+		"id_metier": 29,
+		"id_question": 110
+	},
+	{
+		"id_metier": 29,
+		"id_question": 111
+	},
+	{
+		"id_metier": 29,
+		"id_question": 113
+	},
+	{
+		"id_metier": 29,
+		"id_question": 116
+	},
+	{
+		"id_metier": 29,
+		"id_question": 119
+	},
+	{
+		"id_metier": 29,
+		"id_question": 123
+	},
+	{
+		"id_metier": 30,
+		"id_question": 53
+	},
+	{
+		"id_metier": 30,
+		"id_question": 54
+	},
+	{
+		"id_metier": 30,
+		"id_question": 55
+	},
+	{
+		"id_metier": 30,
+		"id_question": 56
+	},
+	{
+		"id_metier": 30,
+		"id_question": 57
+	},
+	{
+		"id_metier": 30,
+		"id_question": 58
+	},
+	{
+		"id_metier": 30,
+		"id_question": 59
+	},
+	{
+		"id_metier": 30,
+		"id_question": 60
+	},
+	{
+		"id_metier": 30,
+		"id_question": 61
+	},
+	{
+		"id_metier": 30,
+		"id_question": 62
+	},
+	{
+		"id_metier": 30,
+		"id_question": 63
+	},
+	{
+		"id_metier": 30,
+		"id_question": 64
+	},
+	{
+		"id_metier": 30,
+		"id_question": 65
+	},
+	{
+		"id_metier": 30,
+		"id_question": 66
+	},
+	{
+		"id_metier": 30,
+		"id_question": 67
+	},
+	{
+		"id_metier": 30,
+		"id_question": 68
+	},
+	{
+		"id_metier": 30,
+		"id_question": 69
+	},
+	{
+		"id_metier": 30,
+		"id_question": 70
+	},
+	{
+		"id_metier": 30,
+		"id_question": 71
+	},
+	{
+		"id_metier": 30,
+		"id_question": 72
+	},
+	{
+		"id_metier": 30,
+		"id_question": 73
+	},
+	{
+		"id_metier": 30,
+		"id_question": 75
+	},
+	{
+		"id_metier": 30,
+		"id_question": 76
+	},
+	{
+		"id_metier": 30,
+		"id_question": 77
+	},
+	{
+		"id_metier": 30,
+		"id_question": 78
+	},
+	{
+		"id_metier": 30,
+		"id_question": 79
+	},
+	{
+		"id_metier": 30,
+		"id_question": 80
+	},
+	{
+		"id_metier": 30,
+		"id_question": 81
+	},
+	{
+		"id_metier": 30,
+		"id_question": 82
+	},
+	{
+		"id_metier": 30,
+		"id_question": 83
+	},
+	{
+		"id_metier": 30,
+		"id_question": 84
+	},
+	{
+		"id_metier": 30,
+		"id_question": 85
+	},
+	{
+		"id_metier": 30,
+		"id_question": 86
+	},
+	{
+		"id_metier": 30,
+		"id_question": 87
+	},
+	{
+		"id_metier": 30,
+		"id_question": 88
+	},
+	{
+		"id_metier": 30,
+		"id_question": 89
+	},
+	{
+		"id_metier": 30,
+		"id_question": 90
+	},
+	{
+		"id_metier": 30,
+		"id_question": 91
+	},
+	{
+		"id_metier": 30,
+		"id_question": 92
+	},
+	{
+		"id_metier": 30,
+		"id_question": 93
+	},
+	{
+		"id_metier": 30,
+		"id_question": 94
+	},
+	{
+		"id_metier": 30,
+		"id_question": 96
+	},
+	{
+		"id_metier": 30,
+		"id_question": 97
+	},
+	{
+		"id_metier": 30,
+		"id_question": 100
+	},
+	{
+		"id_metier": 30,
+		"id_question": 101
+	},
+	{
+		"id_metier": 30,
+		"id_question": 102
+	},
+	{
+		"id_metier": 30,
+		"id_question": 104
+	},
+	{
+		"id_metier": 30,
+		"id_question": 111
+	},
+	{
+		"id_metier": 30,
+		"id_question": 116
+	},
+	{
+		"id_metier": 30,
+		"id_question": 119
+	},
+	{
+		"id_metier": 30,
+		"id_question": 120
+	},
+	{
+		"id_metier": 30,
+		"id_question": 121
+	},
+	{
+		"id_metier": 30,
+		"id_question": 122
+	},
+	{
+		"id_metier": 30,
+		"id_question": 123
+	},
+	{
+		"id_metier": 31,
+		"id_question": 53
+	},
+	{
+		"id_metier": 31,
+		"id_question": 54
+	},
+	{
+		"id_metier": 31,
+		"id_question": 55
+	},
+	{
+		"id_metier": 31,
+		"id_question": 56
+	},
+	{
+		"id_metier": 31,
+		"id_question": 57
+	},
+	{
+		"id_metier": 31,
+		"id_question": 58
+	},
+	{
+		"id_metier": 31,
+		"id_question": 59
+	},
+	{
+		"id_metier": 31,
+		"id_question": 60
+	},
+	{
+		"id_metier": 31,
+		"id_question": 61
+	},
+	{
+		"id_metier": 31,
+		"id_question": 62
+	},
+	{
+		"id_metier": 31,
+		"id_question": 63
+	},
+	{
+		"id_metier": 31,
+		"id_question": 64
+	},
+	{
+		"id_metier": 31,
+		"id_question": 65
+	},
+	{
+		"id_metier": 31,
+		"id_question": 66
+	},
+	{
+		"id_metier": 31,
+		"id_question": 67
+	},
+	{
+		"id_metier": 31,
+		"id_question": 68
+	},
+	{
+		"id_metier": 31,
+		"id_question": 69
+	},
+	{
+		"id_metier": 31,
+		"id_question": 70
+	},
+	{
+		"id_metier": 31,
+		"id_question": 71
+	},
+	{
+		"id_metier": 31,
+		"id_question": 72
+	},
+	{
+		"id_metier": 31,
+		"id_question": 73
+	},
+	{
+		"id_metier": 31,
+		"id_question": 75
+	},
+	{
+		"id_metier": 31,
+		"id_question": 76
+	},
+	{
+		"id_metier": 31,
+		"id_question": 77
+	},
+	{
+		"id_metier": 31,
+		"id_question": 78
+	},
+	{
+		"id_metier": 31,
+		"id_question": 79
+	},
+	{
+		"id_metier": 31,
+		"id_question": 80
+	},
+	{
+		"id_metier": 31,
+		"id_question": 81
+	},
+	{
+		"id_metier": 31,
+		"id_question": 83
+	},
+	{
+		"id_metier": 31,
+		"id_question": 84
+	},
+	{
+		"id_metier": 31,
+		"id_question": 85
+	},
+	{
+		"id_metier": 31,
+		"id_question": 86
+	},
+	{
+		"id_metier": 31,
+		"id_question": 87
+	},
+	{
+		"id_metier": 31,
+		"id_question": 88
+	},
+	{
+		"id_metier": 31,
+		"id_question": 89
+	},
+	{
+		"id_metier": 31,
+		"id_question": 90
+	},
+	{
+		"id_metier": 31,
+		"id_question": 91
+	},
+	{
+		"id_metier": 31,
+		"id_question": 92
+	},
+	{
+		"id_metier": 31,
+		"id_question": 93
+	},
+	{
+		"id_metier": 31,
+		"id_question": 94
+	},
+	{
+		"id_metier": 31,
+		"id_question": 97
+	},
+	{
+		"id_metier": 31,
+		"id_question": 98
+	},
+	{
+		"id_metier": 31,
+		"id_question": 101
+	},
+	{
+		"id_metier": 31,
+		"id_question": 102
+	},
+	{
+		"id_metier": 31,
+		"id_question": 104
+	},
+	{
+		"id_metier": 31,
+		"id_question": 110
+	},
+	{
+		"id_metier": 31,
+		"id_question": 111
+	},
+	{
+		"id_metier": 31,
+		"id_question": 116
+	},
+	{
+		"id_metier": 31,
+		"id_question": 118
+	},
+	{
+		"id_metier": 31,
+		"id_question": 119
+	},
+	{
+		"id_metier": 31,
+		"id_question": 123
+	},
+	{
+		"id_metier": 32,
+		"id_question": 53
+	},
+	{
+		"id_metier": 32,
+		"id_question": 54
+	},
+	{
+		"id_metier": 32,
+		"id_question": 55
+	},
+	{
+		"id_metier": 32,
+		"id_question": 56
+	},
+	{
+		"id_metier": 32,
+		"id_question": 57
+	},
+	{
+		"id_metier": 32,
+		"id_question": 58
+	},
+	{
+		"id_metier": 32,
+		"id_question": 59
+	},
+	{
+		"id_metier": 32,
+		"id_question": 60
+	},
+	{
+		"id_metier": 32,
+		"id_question": 61
+	},
+	{
+		"id_metier": 32,
+		"id_question": 62
+	},
+	{
+		"id_metier": 32,
+		"id_question": 63
+	},
+	{
+		"id_metier": 32,
+		"id_question": 64
+	},
+	{
+		"id_metier": 32,
+		"id_question": 65
+	},
+	{
+		"id_metier": 32,
+		"id_question": 66
+	},
+	{
+		"id_metier": 32,
+		"id_question": 67
+	},
+	{
+		"id_metier": 32,
+		"id_question": 68
+	},
+	{
+		"id_metier": 32,
+		"id_question": 69
+	},
+	{
+		"id_metier": 32,
+		"id_question": 70
+	},
+	{
+		"id_metier": 32,
+		"id_question": 71
+	},
+	{
+		"id_metier": 32,
+		"id_question": 72
+	},
+	{
+		"id_metier": 32,
+		"id_question": 73
+	},
+	{
+		"id_metier": 32,
+		"id_question": 75
+	},
+	{
+		"id_metier": 32,
+		"id_question": 76
+	},
+	{
+		"id_metier": 32,
+		"id_question": 77
+	},
+	{
+		"id_metier": 32,
+		"id_question": 78
+	},
+	{
+		"id_metier": 32,
+		"id_question": 79
+	},
+	{
+		"id_metier": 32,
+		"id_question": 80
+	},
+	{
+		"id_metier": 32,
+		"id_question": 81
+	},
+	{
+		"id_metier": 32,
+		"id_question": 82
+	},
+	{
+		"id_metier": 32,
+		"id_question": 91
+	},
+	{
+		"id_metier": 32,
+		"id_question": 92
+	},
+	{
+		"id_metier": 32,
+		"id_question": 97
+	},
+	{
+		"id_metier": 32,
+		"id_question": 98
+	},
+	{
+		"id_metier": 32,
+		"id_question": 101
+	},
+	{
+		"id_metier": 32,
+		"id_question": 102
+	},
+	{
+		"id_metier": 32,
+		"id_question": 104
+	},
+	{
+		"id_metier": 32,
+		"id_question": 105
+	},
+	{
+		"id_metier": 32,
+		"id_question": 110
+	},
+	{
+		"id_metier": 32,
+		"id_question": 111
+	},
+	{
+		"id_metier": 32,
+		"id_question": 113
+	},
+	{
+		"id_metier": 32,
+		"id_question": 114
+	},
+	{
+		"id_metier": 32,
+		"id_question": 116
+	},
+	{
+		"id_metier": 32,
+		"id_question": 119
+	},
+	{
+		"id_metier": 32,
+		"id_question": 123
+	},
+	{
+		"id_metier": 33,
+		"id_question": 53
+	},
+	{
+		"id_metier": 33,
+		"id_question": 54
+	},
+	{
+		"id_metier": 33,
+		"id_question": 55
+	},
+	{
+		"id_metier": 33,
+		"id_question": 56
+	},
+	{
+		"id_metier": 33,
+		"id_question": 57
+	},
+	{
+		"id_metier": 33,
+		"id_question": 58
+	},
+	{
+		"id_metier": 33,
+		"id_question": 59
+	},
+	{
+		"id_metier": 33,
+		"id_question": 60
+	},
+	{
+		"id_metier": 33,
+		"id_question": 61
+	},
+	{
+		"id_metier": 33,
+		"id_question": 62
+	},
+	{
+		"id_metier": 33,
+		"id_question": 63
+	},
+	{
+		"id_metier": 33,
+		"id_question": 64
+	},
+	{
+		"id_metier": 33,
+		"id_question": 65
+	},
+	{
+		"id_metier": 33,
+		"id_question": 66
+	},
+	{
+		"id_metier": 33,
+		"id_question": 67
+	},
+	{
+		"id_metier": 33,
+		"id_question": 68
+	},
+	{
+		"id_metier": 33,
+		"id_question": 69
+	},
+	{
+		"id_metier": 33,
+		"id_question": 70
+	},
+	{
+		"id_metier": 33,
+		"id_question": 71
+	},
+	{
+		"id_metier": 33,
+		"id_question": 72
+	},
+	{
+		"id_metier": 33,
+		"id_question": 73
+	},
+	{
+		"id_metier": 33,
+		"id_question": 75
+	},
+	{
+		"id_metier": 33,
+		"id_question": 76
+	},
+	{
+		"id_metier": 33,
+		"id_question": 77
+	},
+	{
+		"id_metier": 33,
+		"id_question": 78
+	},
+	{
+		"id_metier": 33,
+		"id_question": 79
+	},
+	{
+		"id_metier": 33,
+		"id_question": 80
+	},
+	{
+		"id_metier": 33,
+		"id_question": 81
+	},
+	{
+		"id_metier": 33,
+		"id_question": 83
+	},
+	{
+		"id_metier": 33,
+		"id_question": 84
+	},
+	{
+		"id_metier": 33,
+		"id_question": 85
+	},
+	{
+		"id_metier": 33,
+		"id_question": 86
+	},
+	{
+		"id_metier": 33,
+		"id_question": 87
+	},
+	{
+		"id_metier": 33,
+		"id_question": 88
+	},
+	{
+		"id_metier": 33,
+		"id_question": 89
+	},
+	{
+		"id_metier": 33,
+		"id_question": 90
+	},
+	{
+		"id_metier": 33,
+		"id_question": 91
+	},
+	{
+		"id_metier": 33,
+		"id_question": 92
+	},
+	{
+		"id_metier": 33,
+		"id_question": 97
+	},
+	{
+		"id_metier": 33,
+		"id_question": 100
+	},
+	{
+		"id_metier": 33,
+		"id_question": 101
+	},
+	{
+		"id_metier": 33,
+		"id_question": 102
+	},
+	{
+		"id_metier": 33,
+		"id_question": 104
+	},
+	{
+		"id_metier": 33,
+		"id_question": 110
+	},
+	{
+		"id_metier": 33,
+		"id_question": 111
+	},
+	{
+		"id_metier": 33,
+		"id_question": 116
+	},
+	{
+		"id_metier": 33,
+		"id_question": 119
+	},
+	{
+		"id_metier": 33,
+		"id_question": 123
+	},
+	{
+		"id_metier": 34,
+		"id_question": 53
+	},
+	{
+		"id_metier": 34,
+		"id_question": 54
+	},
+	{
+		"id_metier": 34,
+		"id_question": 55
+	},
+	{
+		"id_metier": 34,
+		"id_question": 56
+	},
+	{
+		"id_metier": 34,
+		"id_question": 57
+	},
+	{
+		"id_metier": 34,
+		"id_question": 58
+	},
+	{
+		"id_metier": 34,
+		"id_question": 59
+	},
+	{
+		"id_metier": 34,
+		"id_question": 60
+	},
+	{
+		"id_metier": 34,
+		"id_question": 61
+	},
+	{
+		"id_metier": 34,
+		"id_question": 62
+	},
+	{
+		"id_metier": 34,
+		"id_question": 63
+	},
+	{
+		"id_metier": 34,
+		"id_question": 64
+	},
+	{
+		"id_metier": 34,
+		"id_question": 65
+	},
+	{
+		"id_metier": 34,
+		"id_question": 66
+	},
+	{
+		"id_metier": 34,
+		"id_question": 67
+	},
+	{
+		"id_metier": 34,
+		"id_question": 68
+	},
+	{
+		"id_metier": 34,
+		"id_question": 69
+	},
+	{
+		"id_metier": 34,
+		"id_question": 70
+	},
+	{
+		"id_metier": 34,
+		"id_question": 71
+	},
+	{
+		"id_metier": 34,
+		"id_question": 72
+	},
+	{
+		"id_metier": 34,
+		"id_question": 73
+	},
+	{
+		"id_metier": 34,
+		"id_question": 75
+	},
+	{
+		"id_metier": 34,
+		"id_question": 76
+	},
+	{
+		"id_metier": 34,
+		"id_question": 77
+	},
+	{
+		"id_metier": 34,
+		"id_question": 78
+	},
+	{
+		"id_metier": 34,
+		"id_question": 79
+	},
+	{
+		"id_metier": 34,
+		"id_question": 80
+	},
+	{
+		"id_metier": 34,
+		"id_question": 81
+	},
+	{
+		"id_metier": 34,
+		"id_question": 91
+	},
+	{
+		"id_metier": 34,
+		"id_question": 92
+	},
+	{
+		"id_metier": 34,
+		"id_question": 95
+	},
+	{
+		"id_metier": 34,
+		"id_question": 97
+	},
+	{
+		"id_metier": 34,
+		"id_question": 101
+	},
+	{
+		"id_metier": 34,
+		"id_question": 102
+	},
+	{
+		"id_metier": 34,
+		"id_question": 104
+	},
+	{
+		"id_metier": 34,
+		"id_question": 105
+	},
+	{
+		"id_metier": 34,
+		"id_question": 110
+	},
+	{
+		"id_metier": 34,
+		"id_question": 111
+	},
+	{
+		"id_metier": 34,
+		"id_question": 112
+	},
+	{
+		"id_metier": 34,
+		"id_question": 114
+	},
+	{
+		"id_metier": 34,
+		"id_question": 116
+	},
+	{
+		"id_metier": 34,
+		"id_question": 119
+	},
+	{
+		"id_metier": 34,
+		"id_question": 123
+	},
+	{
+		"id_metier": 35,
+		"id_question": 53
+	},
+	{
+		"id_metier": 35,
+		"id_question": 54
+	},
+	{
+		"id_metier": 35,
+		"id_question": 55
+	},
+	{
+		"id_metier": 35,
+		"id_question": 56
+	},
+	{
+		"id_metier": 35,
+		"id_question": 57
+	},
+	{
+		"id_metier": 35,
+		"id_question": 58
+	},
+	{
+		"id_metier": 35,
+		"id_question": 59
+	},
+	{
+		"id_metier": 35,
+		"id_question": 60
+	},
+	{
+		"id_metier": 35,
+		"id_question": 61
+	},
+	{
+		"id_metier": 35,
+		"id_question": 62
+	},
+	{
+		"id_metier": 35,
+		"id_question": 63
+	},
+	{
+		"id_metier": 35,
+		"id_question": 64
+	},
+	{
+		"id_metier": 35,
+		"id_question": 65
+	},
+	{
+		"id_metier": 35,
+		"id_question": 66
+	},
+	{
+		"id_metier": 35,
+		"id_question": 67
+	},
+	{
+		"id_metier": 35,
+		"id_question": 68
+	},
+	{
+		"id_metier": 35,
+		"id_question": 69
+	},
+	{
+		"id_metier": 35,
+		"id_question": 70
+	},
+	{
+		"id_metier": 35,
+		"id_question": 71
+	},
+	{
+		"id_metier": 35,
+		"id_question": 72
+	},
+	{
+		"id_metier": 35,
+		"id_question": 73
+	},
+	{
+		"id_metier": 35,
+		"id_question": 75
+	},
+	{
+		"id_metier": 35,
+		"id_question": 76
+	},
+	{
+		"id_metier": 35,
+		"id_question": 77
+	},
+	{
+		"id_metier": 35,
+		"id_question": 78
+	},
+	{
+		"id_metier": 35,
+		"id_question": 79
+	},
+	{
+		"id_metier": 35,
+		"id_question": 80
+	},
+	{
+		"id_metier": 35,
+		"id_question": 81
+	},
+	{
+		"id_metier": 35,
+		"id_question": 82
+	},
+	{
+		"id_metier": 35,
+		"id_question": 91
+	},
+	{
+		"id_metier": 35,
+		"id_question": 92
+	},
+	{
+		"id_metier": 35,
+		"id_question": 93
+	},
+	{
+		"id_metier": 35,
+		"id_question": 94
+	},
+	{
+		"id_metier": 35,
+		"id_question": 95
+	},
+	{
+		"id_metier": 35,
+		"id_question": 97
+	},
+	{
+		"id_metier": 35,
+		"id_question": 100
+	},
+	{
+		"id_metier": 35,
+		"id_question": 101
+	},
+	{
+		"id_metier": 35,
+		"id_question": 102
+	},
+	{
+		"id_metier": 35,
+		"id_question": 104
+	},
+	{
+		"id_metier": 35,
+		"id_question": 111
+	},
+	{
+		"id_metier": 35,
+		"id_question": 116
+	},
+	{
+		"id_metier": 35,
+		"id_question": 119
+	},
+	{
+		"id_metier": 35,
+		"id_question": 123
+	},
+	{
+		"id_metier": 36,
+		"id_question": 53
+	},
+	{
+		"id_metier": 36,
+		"id_question": 54
+	},
+	{
+		"id_metier": 36,
+		"id_question": 55
+	},
+	{
+		"id_metier": 36,
+		"id_question": 56
+	},
+	{
+		"id_metier": 36,
+		"id_question": 57
+	},
+	{
+		"id_metier": 36,
+		"id_question": 58
+	},
+	{
+		"id_metier": 36,
+		"id_question": 59
+	},
+	{
+		"id_metier": 36,
+		"id_question": 60
+	},
+	{
+		"id_metier": 36,
+		"id_question": 61
+	},
+	{
+		"id_metier": 36,
+		"id_question": 62
+	},
+	{
+		"id_metier": 36,
+		"id_question": 63
+	},
+	{
+		"id_metier": 36,
+		"id_question": 64
+	},
+	{
+		"id_metier": 36,
+		"id_question": 65
+	},
+	{
+		"id_metier": 36,
+		"id_question": 66
+	},
+	{
+		"id_metier": 36,
+		"id_question": 67
+	},
+	{
+		"id_metier": 36,
+		"id_question": 68
+	},
+	{
+		"id_metier": 36,
+		"id_question": 69
+	},
+	{
+		"id_metier": 36,
+		"id_question": 70
+	},
+	{
+		"id_metier": 36,
+		"id_question": 71
+	},
+	{
+		"id_metier": 36,
+		"id_question": 72
+	},
+	{
+		"id_metier": 36,
+		"id_question": 73
+	},
+	{
+		"id_metier": 36,
+		"id_question": 75
+	},
+	{
+		"id_metier": 36,
+		"id_question": 76
+	},
+	{
+		"id_metier": 36,
+		"id_question": 77
+	},
+	{
+		"id_metier": 36,
+		"id_question": 78
+	},
+	{
+		"id_metier": 36,
+		"id_question": 79
+	},
+	{
+		"id_metier": 36,
+		"id_question": 80
+	},
+	{
+		"id_metier": 36,
+		"id_question": 81
+	},
+	{
+		"id_metier": 36,
+		"id_question": 91
+	},
+	{
+		"id_metier": 36,
+		"id_question": 92
+	},
+	{
+		"id_metier": 36,
+		"id_question": 93
+	},
+	{
+		"id_metier": 36,
+		"id_question": 94
+	},
+	{
+		"id_metier": 36,
+		"id_question": 97
+	},
+	{
+		"id_metier": 36,
+		"id_question": 98
+	},
+	{
+		"id_metier": 36,
+		"id_question": 99
+	},
+	{
+		"id_metier": 36,
+		"id_question": 100
+	},
+	{
+		"id_metier": 36,
+		"id_question": 101
+	},
+	{
+		"id_metier": 36,
+		"id_question": 102
+	},
+	{
+		"id_metier": 36,
+		"id_question": 104
+	},
+	{
+		"id_metier": 36,
+		"id_question": 105
+	},
+	{
+		"id_metier": 36,
+		"id_question": 111
+	},
+	{
+		"id_metier": 36,
+		"id_question": 116
+	},
+	{
+		"id_metier": 36,
+		"id_question": 117
+	},
+	{
+		"id_metier": 36,
+		"id_question": 119
+	},
+	{
+		"id_metier": 36,
+		"id_question": 120
+	},
+	{
+		"id_metier": 36,
+		"id_question": 121
+	},
+	{
+		"id_metier": 36,
+		"id_question": 122
+	},
+	{
+		"id_metier": 36,
+		"id_question": 123
+	}
 ]

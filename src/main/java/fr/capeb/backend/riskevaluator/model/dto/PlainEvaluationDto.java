@@ -27,16 +27,16 @@ public class PlainEvaluationDto {
         evaluationDto.setScoreGeneraleEvaluation(evaluationEntity.getScoreGeneraleEvaluation());
         evaluationDto.setDate(evaluationDto.getDate());
 
-        Set<PlainMetierDto> plainMetiers  = new HashSet<>();
-        evaluationEntity.getMetiers().forEach(metier -> {
-            PlainMetierDto plainMetierDto = new PlainMetierDto();
-            plainMetierDto.setNomMetier(metier.getNomMetier());
-            plainMetierDto.setIdMetier(metier.getIdMetier());
-            plainMetiers.add(plainMetierDto);
-        });
+//        Set<PlainMetierDto> plainMetiers  = new HashSet<>();
+//        evaluationEntity.getMetiers().forEach(metier -> {
+//            PlainMetierDto plainMetierDto = new PlainMetierDto();
+//            plainMetierDto.setNomMetier(metier.getNomMetier());
+//            plainMetierDto.setIdMetier(metier.getIdMetier());
+//            plainMetiers.add(plainMetierDto);
+//        });
 
 
-        evaluationDto.setMetiers(plainMetiers);
+//        evaluationDto.setMetiers(plainMetiers);
         return evaluationDto;
     }
 

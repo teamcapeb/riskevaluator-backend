@@ -26,8 +26,10 @@ public class Metier {
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "metier", cascade = CascadeType.ALL)
     private Set<MetierQuestion> questions = new HashSet<>();
-
-
+    
+    @ManyToMany(mappedBy = "metiers")
+    private Set<Evaluation> evaluations = new HashSet<>();
+    
     public static Metier from(MetierDto metierDto){
         Metier metier = new Metier();
         metier.setIdMetier(metierDto.getIdMetier());
