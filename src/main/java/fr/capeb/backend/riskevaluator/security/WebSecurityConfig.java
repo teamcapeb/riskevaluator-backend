@@ -1,11 +1,12 @@
 package fr.capeb.backend.riskevaluator.security;
 
-import java.util.Arrays;
-import java.util.List;
-
+import fr.capeb.backend.riskevaluator.security.jwt.AuthEntryPointJwt;
+import fr.capeb.backend.riskevaluator.security.jwt.AuthTokenFilter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -18,25 +19,24 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
-import fr.capeb.backend.riskevaluator.security.jwt.AuthEntryPointJwt;
-import fr.capeb.backend.riskevaluator.security.jwt.AuthTokenFilter;
-import lombok.RequiredArgsConstructor;
+import java.util.Arrays;
 
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(
-		securedEnabled = true,
-		jsr250Enabled = true,
+		// securedEnabled = true,
+		// jsr250Enabled = true,
 		prePostEnabled = true)
-@RequiredArgsConstructor
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	
-	private final AuthEntryPointJwt unauthorizedHandler;
+	@Autowired
+	private AuthEntryPointJwt unauthorizedHandler;
 	
 	@Bean
 	public AuthTokenFilter authenticationJwtTokenFilter() {
 		return new AuthTokenFilter();
 	}
+	
 	
 	@Bean
 	@Override
@@ -52,7 +52,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		
-		var allowedList = new String[] {
+		var allowedList = new String[]{
 				"/swagger-ui/**",
 				"/api-docs/**",
 				"/swagger-ui.html",
@@ -72,20 +72,24 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	}
 	
 	@Bean
-	CorsConfigurationSource corsConfigurationSource() {
-		CorsConfiguration configuration = new CorsConfiguration();
-		configuration.setAllowedOrigins(List.of("*"));
+	public CorsConfigurationSource corsConfigurationSource() {
+		final CorsConfiguration config = new CorsConfiguration();
 		
-		configuration.setAllowedHeaders(Arrays.asList("Origin", "Access-Control-Allow-Origin",
-				"Content-Type", "Accept", "Authorization", "Content-Type", "Cache-Control"));
+		config.setAllowedOrigins(
+				Arrays.asList(
+						"https://riskevaluator-frontend-dev.herokuapp.com/",
+						"http://riskevaluator-frontend-dev.herokuapp.com/",
+						"https://capeb-riskeval.herokuapp.com/",
+						"http://capeb-riskeval.herokuapp.com/",
+						"http://localhost:4200/"));
+		config.setAllowedMethods(Arrays.asList("GET", "POST", "OPTIONS", "DELETE", "PUT", "PATCH"));
+		config.setAllowCredentials(true);
+		config.setAllowedHeaders(Arrays.asList("Authorization", "Cache-Control", "Content-Type"));
 		
-		configuration.setAllowedMethods(Arrays.asList("GET", "POST", "DELETE", "PUT", "PATCH", "OPTIONS"));
-		
-		configuration.setAllowCredentials(true);
-		
-		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-		source.registerCorsConfiguration("/**", configuration);
+		final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+		source.registerCorsConfiguration("/**", config);
 		
 		return source;
 	}
+	
 }
