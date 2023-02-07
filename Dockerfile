@@ -6,4 +6,5 @@ RUN mvn -f /home/app/pom.xml clean package
 FROM openjdk:11
 COPY --from=build /home/app/target/riskevaluator-backend.jar /usr/local/lib/riskevaluator-backend.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "-Dserver.port=$PORT", "/usr/local/lib/riskevaluator-backend.jar"]
+ENV JAVA_OPTS="-Xmx512m"
+ENTRYPOINT ["java", "$JAVA_OPTS", "-jar", "-Dserver.port=$PORT", "/usr/local/lib/riskevaluator-backend.jar"]
