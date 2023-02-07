@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import fr.capeb.backend.riskevaluator.model.Metier;
 import fr.capeb.backend.riskevaluator.model.exception.MetierNotFoundException;
+import fr.capeb.backend.riskevaluator.projection.MetierScoreProjection;
 import fr.capeb.backend.riskevaluator.repository.MetierRepository;
 
 @Service
@@ -48,6 +49,11 @@ public class MetierService {
 		metierToEdit.setNomMetier(metier.getNomMetier());
 		metierToEdit.setQuestions(metier.getQuestions());
 		return metierRepository.save(metierToEdit);
+	}
+	
+	@Transactional
+	public List<MetierScoreProjection> findScoreByMetier(){
+		return metierRepository.findScoreByMetier();
 	}
 	
 }

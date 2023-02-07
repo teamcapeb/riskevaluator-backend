@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import fr.capeb.backend.riskevaluator.model.Metier;
 import fr.capeb.backend.riskevaluator.model.dto.MetierDto;
+import fr.capeb.backend.riskevaluator.projection.MetierScoreProjectionResponse;
 import fr.capeb.backend.riskevaluator.service.MetierService;
 
 @RestController
@@ -62,5 +63,13 @@ public class MetierController {
 			@RequestBody final MetierDto metierDto) {
 		Metier editedMetier = metierService.editMetier(id, Metier.from(metierDto));
 		return new ResponseEntity<>(MetierDto.from(editedMetier), HttpStatus.OK);
+	}
+	
+	@GetMapping(value = "/scores")
+	public ResponseEntity<List<MetierScoreProjectionResponse>> getScoreParMetier() {
+		return ResponseEntity.ok(metierService.findScoreByMetier()
+				.stream()
+				.map(MetierScoreProjectionResponse::new)
+				.collect(Collectors.toList()));
 	}
 }
