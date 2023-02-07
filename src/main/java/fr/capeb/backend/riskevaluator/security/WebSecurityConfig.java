@@ -1,8 +1,8 @@
 package fr.capeb.backend.riskevaluator.security;
 
 import java.util.Arrays;
+import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -20,17 +20,18 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import fr.capeb.backend.riskevaluator.security.jwt.AuthEntryPointJwt;
 import fr.capeb.backend.riskevaluator.security.jwt.AuthTokenFilter;
+import lombok.RequiredArgsConstructor;
 
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(
-		// securedEnabled = true,
-		// jsr250Enabled = true,
+		securedEnabled = true,
+		jsr250Enabled = true,
 		prePostEnabled = true)
+@RequiredArgsConstructor
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	
-	@Autowired
-	private AuthEntryPointJwt unauthorizedHandler;
+	private final AuthEntryPointJwt unauthorizedHandler;
 	
 	@Bean
 	public AuthTokenFilter authenticationJwtTokenFilter() {
@@ -71,24 +72,20 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	}
 	
 	@Bean
-	public CorsConfigurationSource corsConfigurationSource() {
-		final CorsConfiguration config = new CorsConfiguration();
+	CorsConfigurationSource corsConfigurationSource() {
+		CorsConfiguration configuration = new CorsConfiguration();
+		configuration.setAllowedOrigins(List.of("*"));
 		
-		config.setAllowedOrigins(
-				Arrays.asList(
-						"https://riskevaluator-frontend-dev2.herokuapp.com/",
-						"https://riskevaluator-frontend-dev.herokuapp.com/",
-						"https://capeb-riskeval.herokuapp.com/",
-						"http://capeb-riskeval.herokuapp.com/",
-						"http://localhost:4200/"));
-		config.setAllowedMethods(Arrays.asList("GET", "POST", "OPTIONS", "DELETE", "PUT", "PATCH"));
-		config.setAllowCredentials(true);
-		config.setAllowedHeaders(Arrays.asList("Authorization", "Cache-Control", "Content-Type"));
+		configuration.setAllowedHeaders(Arrays.asList("Origin", "Access-Control-Allow-Origin",
+				"Content-Type", "Accept", "Authorization", "Content-Type", "Cache-Control"));
 		
-		final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-		source.registerCorsConfiguration("/**", config);
+		configuration.setAllowedMethods(Arrays.asList("GET", "POST", "DELETE", "PUT", "PATCH"));
+		
+		configuration.setAllowCredentials(true);
+		
+		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+		source.registerCorsConfiguration("/**", configuration);
 		
 		return source;
 	}
-	
 }
