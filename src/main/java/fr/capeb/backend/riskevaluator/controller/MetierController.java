@@ -14,10 +14,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import fr.capeb.backend.riskevaluator.model.Metier;
 import fr.capeb.backend.riskevaluator.model.dto.MetierDto;
+import fr.capeb.backend.riskevaluator.projection.MetierScoreProjection;
 import fr.capeb.backend.riskevaluator.projection.MetierScoreProjectionResponse;
 import fr.capeb.backend.riskevaluator.service.MetierService;
 
@@ -66,8 +68,8 @@ public class MetierController {
 	}
 	
 	@GetMapping(value = "/scores")
-	public ResponseEntity<List<MetierScoreProjectionResponse>> getScoreParMetier() {
-		return ResponseEntity.ok(metierService.findScoreByMetier()
+	public ResponseEntity<List<MetierScoreProjectionResponse>> getScoreParMetier(@RequestParam("metiers") List<String> metiers) {
+		return ResponseEntity.ok(metierService.findScoreByMetier(metiers)
 				.stream()
 				.map(MetierScoreProjectionResponse::new)
 				.collect(Collectors.toList()));

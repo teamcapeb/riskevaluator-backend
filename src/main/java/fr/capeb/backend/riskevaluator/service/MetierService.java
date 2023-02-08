@@ -2,6 +2,7 @@ package fr.capeb.backend.riskevaluator.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import javax.transaction.Transactional;
 
@@ -51,9 +52,14 @@ public class MetierService {
 		return metierRepository.save(metierToEdit);
 	}
 	
-	@Transactional
-	public List<MetierScoreProjection> findScoreByMetier(){
-		return metierRepository.findScoreByMetier();
+	public List<MetierScoreProjection> findScoreByMetier(List<String> metiers){
+		if(!metiers.isEmpty()){
+			return metierRepository.findScoreForAllMetiers()
+					.stream().filter(metier -> metiers.contains(metier.getNomMetier()))
+					.collect(Collectors.toList());
+		}
+		
+		return metierRepository.findScoreForAllMetiers();
 	}
 	
 }

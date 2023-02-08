@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import fr.capeb.backend.riskevaluator.model.Metier;
@@ -22,6 +23,6 @@ public interface MetierRepository extends JpaRepository<Metier, Integer> {
 			"ON em.evaluation_id = e.id_evaluation " +
 			"GROUP BY m.nom_metier " +
 			"ORDER BY m.nom_metier", nativeQuery = true)
-	List<MetierScoreProjection> findScoreByMetier();
+	List<MetierScoreProjection> findScoreForAllMetiers();
 	
 }
