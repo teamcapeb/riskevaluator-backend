@@ -14,10 +14,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import fr.capeb.backend.riskevaluator.model.Evaluation;
 import fr.capeb.backend.riskevaluator.model.dto.EvaluationDto;
+import fr.capeb.backend.riskevaluator.projection.CategorieEvaluationProjectionResponse;
 import fr.capeb.backend.riskevaluator.service.EvaluationService;
 
 @RestController
@@ -64,5 +66,13 @@ public class EvaluationController {
 		return new ResponseEntity<>(EvaluationDto.from(editedEvaluation), HttpStatus.OK);
 	}
 	
+	@GetMapping("/categories")
+	public ResponseEntity<List<CategorieEvaluationProjectionResponse>> getNombreEvaluationParCategorie(
+			@RequestParam(value = "thematiques", required = false) List<String> thematiques) {
+		return ResponseEntity.ok(evaluationService.getNombreEvaluationParCategorie(thematiques)
+				.stream()
+				.map(CategorieEvaluationProjectionResponse::new)
+				.collect(Collectors.toList()));
+	}
 	
 }

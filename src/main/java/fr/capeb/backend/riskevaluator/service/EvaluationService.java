@@ -2,6 +2,7 @@ package fr.capeb.backend.riskevaluator.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import javax.transaction.Transactional;
 
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Service;
 import fr.capeb.backend.riskevaluator.model.Evaluation;
 import fr.capeb.backend.riskevaluator.model.Metier;
 import fr.capeb.backend.riskevaluator.model.exception.EvaluationNotFoundException;
+import fr.capeb.backend.riskevaluator.projection.CategorieEvaluationProjection;
 import fr.capeb.backend.riskevaluator.repository.EvaluationRepository;
 
 @Service
@@ -69,6 +71,15 @@ public class EvaluationService {
 			metier.getEvaluations().add(evaluation);
 		});
 		return evaluationRepository.save(evaluationToEdit);
+	}
+	
+	public List<CategorieEvaluationProjection> getNombreEvaluationParCategorie(List<String> thematiques) {
+		if (thematiques == null || thematiques.isEmpty()) {
+			return evaluationRepository.getNumberOfEvaluationParCategorie();
+		}
+		return evaluationRepository.getNumberOfEvaluationParCategorie()
+				.stream().filter(e -> thematiques.contains(e.getThematique()))
+				.collect(Collectors.toList());
 	}
 	
 }
