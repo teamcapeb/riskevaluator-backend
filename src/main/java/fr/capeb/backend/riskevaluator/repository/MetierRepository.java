@@ -15,11 +15,11 @@ public interface MetierRepository extends JpaRepository<Metier, Integer> {
 	
 	Metier findTopByOrderByIdMetierDesc();
 	
-	@Query(value = "SELECT m.nom_metier as nomMetier, COALESCE(AVG(e.score_generale), 0) AS scoreMoyen " +
+	@Query(value = "SELECT m.nom_metier as nomMetier, AVG(e.score_generale) AS scoreMoyen " +
 			"FROM metier m " +
-			"LEFT JOIN evaluations_metiers em " +
+			"JOIN evaluations_metiers em " +
 			"ON m.id_metier = em.metier_id " +
-			"LEFT JOIN evaluation e " +
+			"JOIN evaluation e " +
 			"ON em.evaluation_id = e.id_evaluation " +
 			"GROUP BY m.nom_metier " +
 			"ORDER BY m.nom_metier", nativeQuery = true)
