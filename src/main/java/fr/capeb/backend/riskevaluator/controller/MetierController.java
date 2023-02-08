@@ -68,7 +68,8 @@ public class MetierController {
 	}
 	
 	@GetMapping(value = "/scores")
-	public ResponseEntity<List<MetierScoreProjectionResponse>> getScoreParMetier(@RequestParam("metiers") List<String> metiers) {
+	public ResponseEntity<List<MetierScoreProjectionResponse>> getScoreParMetier(
+			@RequestParam(value = "metiers", required = false) List<String> metiers) {
 		return ResponseEntity.ok(metierService.findScoreByMetier(metiers)
 				.stream()
 				.map(MetierScoreProjectionResponse::new)
