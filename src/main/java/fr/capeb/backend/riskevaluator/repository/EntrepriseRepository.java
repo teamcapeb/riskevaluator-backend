@@ -67,8 +67,7 @@ public interface EntrepriseRepository extends JpaRepository<Entreprise, Long> {
 			"  ) t2 " +
 			"  WHERE rn = 1 " +
 			"  GROUP BY nom_entreprise, taille, thematique " +
-			"  ORDER BY nom_entreprise " +
-			")", nativeQuery = true)
+			"  ORDER BY nom_entreprise ", nativeQuery = true)
 	List<ScoreMoyenEntreprise> findScoreMoyen();
 	
 	
