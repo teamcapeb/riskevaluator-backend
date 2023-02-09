@@ -1,7 +1,7 @@
 package fr.capeb.backend.riskevaluator.projection;
 public class ScoreMoyenByTailleAndThematiqueResponse implements ScoreMoyenByTailleAndThematique {
 	
-	private final int taille;
+	private final String taille;
 	
 	private final String thematique;
 	
@@ -14,7 +14,7 @@ public class ScoreMoyenByTailleAndThematiqueResponse implements ScoreMoyenByTail
 	}
 	
 	@Override
-	public int getTaille() {
+	public String getTaille() {
 		return taille;
 	}
 	

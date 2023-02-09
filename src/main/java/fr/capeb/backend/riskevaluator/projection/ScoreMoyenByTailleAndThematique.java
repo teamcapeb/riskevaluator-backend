@@ -1,7 +1,7 @@
 package fr.capeb.backend.riskevaluator.projection;
 public interface ScoreMoyenByTailleAndThematique {
 	
-	int getTaille();
+	String getTaille();
 	
 	String getThematique();
 	
