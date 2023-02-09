@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import fr.capeb.backend.riskevaluator.model.Evaluation;
 import fr.capeb.backend.riskevaluator.model.dto.EvaluationDto;
-import fr.capeb.backend.riskevaluator.projection.CategorieEvaluationProjectionResponse;
+import fr.capeb.backend.riskevaluator.projection.CategorieEvaluationResponse;
 import fr.capeb.backend.riskevaluator.service.EvaluationService;
 
 @RestController
@@ -67,11 +67,11 @@ public class EvaluationController {
 	}
 	
 	@GetMapping("/categories")
-	public ResponseEntity<List<CategorieEvaluationProjectionResponse>> getNombreEvaluationParCategorie(
+	public ResponseEntity<List<CategorieEvaluationResponse>> getNombreEvaluationParCategorie(
 			@RequestParam(value = "thematiques", required = false) List<String> thematiques) {
 		return ResponseEntity.ok(evaluationService.getNombreEvaluationParCategorie(thematiques)
 				.stream()
-				.map(CategorieEvaluationProjectionResponse::new)
+				.map(CategorieEvaluationResponse::new)
 				.collect(Collectors.toList()));
 	}
 	

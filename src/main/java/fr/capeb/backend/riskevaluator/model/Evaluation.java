@@ -59,11 +59,6 @@ public class Evaluation {
 			inverseJoinColumns = @JoinColumn(name = "metier_id")
 	)
 	private Set<Metier> metiers = new HashSet<>();
-
-//    @OneToMany(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "evaluation_id")
-//    private Set<Metier> metiers = new HashSet<>();
-	
 	
 	public static Evaluation from(EvaluationDto evaluationDto) {
 		Evaluation evaluationEntity = new Evaluation();

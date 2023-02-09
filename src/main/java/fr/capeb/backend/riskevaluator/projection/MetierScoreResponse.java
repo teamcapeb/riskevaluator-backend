@@ -1,11 +1,11 @@
 package fr.capeb.backend.riskevaluator.projection;
-public class MetierScoreProjectionResponse implements MetierScoreProjection {
+public class MetierScoreResponse implements MetierScoreProjection {
 	
 	private final String nomMetier;
 	
 	private final double scoreMoyen;
 	
-	public MetierScoreProjectionResponse(MetierScoreProjection metierScoreProjection) {
+	public MetierScoreResponse(MetierScoreProjection metierScoreProjection) {
 		this.nomMetier = metierScoreProjection.getNomMetier();
 		this.scoreMoyen = metierScoreProjection.getScoreMoyen();
 	}

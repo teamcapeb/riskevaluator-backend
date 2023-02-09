@@ -1,5 +1,5 @@
 package fr.capeb.backend.riskevaluator.projection;
-public class CategorieEvaluationProjectionResponse implements CategorieEvaluationProjection {
+public class CategorieEvaluationResponse implements CategorieEvaluationProjection {
 	
 	private final String libelle;
 	
@@ -21,7 +21,7 @@ public class CategorieEvaluationProjectionResponse implements CategorieEvaluatio
 		return count;
 	}
 	
-	public CategorieEvaluationProjectionResponse(CategorieEvaluationProjection categorieEvaluationProjection) {
+	public CategorieEvaluationResponse(CategorieEvaluationProjection categorieEvaluationProjection) {
 		this.count = categorieEvaluationProjection.getCount();
 		this.libelle = categorieEvaluationProjection.getLibelle();
 		this.thematique = categorieEvaluationProjection.getThematique();
