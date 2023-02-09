@@ -14,7 +14,7 @@ public interface EntrepriseRepository extends JpaRepository<Entreprise, Long> {
 	
 	@Query(value = "SELECT taille, thematique, AVG(score_moyen) as score_moyen " +
 			"FROM ( " +
-			"  SELECT nom_entreprise, taille, thematique, AVG(score_moyen) as score_moyen " +
+			"  SELECT nom_entreprise, taille, thematique, AVG(score_generale) as score_moyen " +
 			"  FROM ( " +
 			"    SELECT *, row_number() over (partition by nom_entreprise, nom_metier, thematique ORDER BY id_evaluation desc) as rn " +
 			"    FROM ( " +
