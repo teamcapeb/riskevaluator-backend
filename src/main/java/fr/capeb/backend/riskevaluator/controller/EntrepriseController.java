@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import fr.capeb.backend.riskevaluator.model.Entreprise;
 import fr.capeb.backend.riskevaluator.model.dto.EntrepriseDto;
 import fr.capeb.backend.riskevaluator.projection.ScoreMoyenByTailleAndThematiqueResponse;
+import fr.capeb.backend.riskevaluator.projection.ScoreMoyenEntrepriseResponse;
 import fr.capeb.backend.riskevaluator.service.EntrepriseService;
 import fr.capeb.backend.riskevaluator.service.MetierService;
 
@@ -82,6 +83,14 @@ public class EntrepriseController {
 		return ResponseEntity.ok(entrepriseService.findScoreMoyenByTailleAndThematique()
 				.stream()
 				.map(ScoreMoyenByTailleAndThematiqueResponse::new)
+				.collect(Collectors.toList()));
+	}
+	
+	@GetMapping("/scores/all")
+	public ResponseEntity<List<ScoreMoyenEntrepriseResponse>> getScoreMoyenParEntreprise() {
+		return ResponseEntity.ok(entrepriseService.findScoreMoyenParEntreprise()
+				.stream()
+				.map(ScoreMoyenEntrepriseResponse::new)
 				.collect(Collectors.toList()));
 	}
 	

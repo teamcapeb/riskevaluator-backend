@@ -1,6 +1,7 @@
 package fr.capeb.backend.riskevaluator.service;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import javax.transaction.Transactional;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Service;
 import fr.capeb.backend.riskevaluator.model.Entreprise;
 import fr.capeb.backend.riskevaluator.projection.ScoreMoyenByTailleAndThematique;
 import fr.capeb.backend.riskevaluator.projection.ScoreMoyenByTailleAndThematiqueResponse;
+import fr.capeb.backend.riskevaluator.projection.ScoreMoyenEntreprise;
 import fr.capeb.backend.riskevaluator.repository.EntrepriseRepository;
 
 @Service
@@ -61,5 +63,9 @@ public class EntrepriseService {
 	
 	public List<ScoreMoyenByTailleAndThematique> findScoreMoyenByTailleAndThematique() {
 		return entrepriseRepository.findScoreMoyenByTailleAndThematique();
+	}
+	
+	public List<ScoreMoyenEntreprise> findScoreMoyenParEntreprise() {
+		return entrepriseRepository.findScoreMoyen();
 	}
 }
