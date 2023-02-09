@@ -5,5 +5,5 @@ public interface ScoreMoyenByTailleAndThematique {
 	
 	String getThematique();
 	
-	int getScoreMoyen();
+	Double getScoreMoyen();
 }

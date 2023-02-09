@@ -5,7 +5,7 @@ public class ScoreMoyenByTailleAndThematiqueResponse implements ScoreMoyenByTail
 	
 	private final String thematique;
 	
-	private final int scoreMoyen;
+	private final Double scoreMoyen;
 	
 	public ScoreMoyenByTailleAndThematiqueResponse(ScoreMoyenByTailleAndThematique scoreMoyenByTailleAndThematique) {
 		this.taille = scoreMoyenByTailleAndThematique.getTaille();
@@ -24,7 +24,7 @@ public class ScoreMoyenByTailleAndThematiqueResponse implements ScoreMoyenByTail
 	}
 	
 	@Override
-	public int getScoreMoyen() {
+	public Double getScoreMoyen() {
 		return scoreMoyen;
 	}
 }

@@ -12,7 +12,7 @@ import fr.capeb.backend.riskevaluator.projection.ScoreMoyenByTailleAndThematique
 @Repository
 public interface EntrepriseRepository extends JpaRepository<Entreprise, Long> {
 	
-	@Query(value = "SELECT taille, thematique, AVG(score_moyen) as score_moyen " +
+	@Query(value = "SELECT taille, thematique, AVG(score_moyen) as scoreMoyen " +
 			"FROM ( " +
 			"  SELECT nom_entreprise, taille, thematique, AVG(score_generale) as score_moyen " +
 			"  FROM ( " +
