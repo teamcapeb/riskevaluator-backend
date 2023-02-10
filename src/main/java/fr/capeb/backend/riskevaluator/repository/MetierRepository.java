@@ -21,7 +21,7 @@ public interface MetierRepository extends JpaRepository<Metier, Integer> {
 			"ON e.id_evaluation = em.evaluation_id " +
 			"JOIN metier m " +
 			"ON m.id_metier = em.metier_id " +
-			"join score_category sc on sc.id_evaluation = e.id_evaluation" +
+			"join score_category sc on sc.id_evaluation = e.id_evaluation " +
 			"join categorie_question cq on cq.id_categorie = sc.id_categorie " +
 			"join questionnaire q on q.id_questionnaire = cq.id_questionnaire " +
 			"GROUP BY m.nom_metier, q.thematique " +
