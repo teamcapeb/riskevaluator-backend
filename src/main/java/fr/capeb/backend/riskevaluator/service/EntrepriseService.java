@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import fr.capeb.backend.riskevaluator.model.Entreprise;
+import fr.capeb.backend.riskevaluator.projection.ScoreMetierEntreprise;
 import fr.capeb.backend.riskevaluator.projection.ScoreMoyenByTailleAndThematique;
 import fr.capeb.backend.riskevaluator.projection.ScoreMoyenByTailleAndThematiqueResponse;
 import fr.capeb.backend.riskevaluator.projection.ScoreMoyenEntreprise;
@@ -68,4 +69,9 @@ public class EntrepriseService {
 	public List<ScoreMoyenEntreprise> findScoreMoyenParEntreprise() {
 		return entrepriseRepository.findScoreMoyen();
 	}
+	
+	public List<ScoreMetierEntreprise> findScoreParMetierParEntreprise() {
+		return entrepriseRepository.findScoreParMetier();
+	}
+	
 }
